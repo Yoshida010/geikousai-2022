@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<script>
+			(function (d) {
+				var config = {
+						kitId: "cea8vmg",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<title>芸工祭2022</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="left-content">
+				<div class="logo-wrapper">
+					<img
+						src="./image/common/icon/logo-icon.svg"
+						alt="芸工祭のロゴアイコン"
+					/>
+				</div>
+				<div class="text-wrapper">
+					<svg
+						width="182"
+						height="16"
+						viewBox="0 0 182 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.4619 13.3323H5.66155C4.85181 13.3323 4.11955 13.0348 3.60813 12.4906C3.08896 11.9427 2.86037 11.2207 2.96111 10.4552L3.59263 5.64804C3.79797 4.06984 5.28574 2.83267 6.9711 2.83267H11.8373L11.5235 5.21993H13.6002L14.1232 1.23632H6.28533C3.9762 1.23269 1.86078 2.99593 1.57795 5.16551L0.787576 11.1845C0.655847 12.1967 0.950301 13.1436 1.6167 13.8511C2.27534 14.5477 3.22457 14.9323 4.2939 14.9323H12.3294L12.8524 10.9486H10.7757L10.4619 13.3359V13.3323Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M9.65211 7.17909L9.41577 8.98587H14.4602L14.6966 7.17909H9.65211Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M29.1637 3.22088L29.4194 1.26535H18.2379L16.4402 14.9649H27.6255L27.8813 12.9949H18.7261L19.2452 9.0294H26.5291L26.7887 7.05574H19.5048L20.0085 3.22088H29.1637Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M33.2897 1.26534L31.4919 14.9649H33.6732L35.4671 1.26534H33.2897Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M42.4411 8.22396C42.4876 7.86116 42.7627 7.47296 43.2354 7.10652L49.3608 2.3719L48.0667 0.90979L41.9297 5.746C41.4764 6.10155 41.1122 6.48612 40.8487 6.88521L41.5849 1.26534H39.5431L37.7454 14.9685H39.7872L40.5039 9.49741C40.6821 9.9219 40.9805 10.3174 41.3873 10.6548L46.9858 15.4039L48.5743 13.9345L42.9448 9.25433C42.5651 8.94595 42.3908 8.5904 42.4372 8.22396H42.4411Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M62.7196 2.31384C62.0687 1.62451 61.1117 1.24719 60.0269 1.24719H56.1951C53.9906 1.24719 52.127 2.77461 51.8597 4.80269L51.0034 11.3187C50.8756 12.3055 51.1546 13.2234 51.7977 13.9055C52.4447 14.5912 53.4017 14.9685 54.4904 14.9685H58.2873C60.5034 14.9685 62.3748 13.4339 62.6421 11.3985L63.4983 4.88251C63.6262 3.89931 63.3511 2.98866 62.7196 2.31747V2.31384ZM61.3674 4.89702L60.5344 11.2352C60.4027 12.2257 59.4806 12.9731 58.3842 12.9731H54.7577C54.2308 12.9731 53.7814 12.8026 53.4869 12.4906C53.2002 12.1858 53.0762 11.7686 53.1344 11.3114L53.9674 4.97321C54.0991 3.96461 54.9979 3.23537 56.1021 3.23537H59.7634C60.2942 3.23537 60.7437 3.40589 61.0342 3.71428C61.3171 4.01178 61.4294 4.42175 61.3674 4.89702Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M73.1884 4.99135C73.324 3.95735 74.2306 3.23537 75.3929 3.23537H82.6264L82.8859 1.2617H75.5014C73.2387 1.2617 71.3287 2.81089 71.0574 4.86437L70.9993 5.31425C70.8637 6.33736 71.1504 7.27703 71.7975 7.96274C72.4522 8.65932 73.4402 9.04027 74.5793 9.04027H78.4963C79.0387 9.04027 79.4881 9.21079 79.7903 9.53006C80.0925 9.85296 80.2242 10.3101 80.1584 10.818L80.108 11.2026C79.9685 12.2765 79.0929 12.9731 77.8841 12.9731H70.3756L70.116 14.9468H77.7601C80.0228 14.9468 81.9329 13.3903 82.2041 11.3259L82.2622 10.8906C82.3978 9.84933 82.1033 8.88064 81.4253 8.16591C80.7628 7.46569 79.7981 7.08112 78.7094 7.08112H74.8272C74.2306 7.08112 73.7618 6.91422 73.4673 6.60221C73.1884 6.30471 73.076 5.88386 73.1419 5.38681L73.1961 4.9841L73.1884 4.99135Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M96.3026 2.2848C95.6711 1.61724 94.7451 1.24718 93.6991 1.24718H90.278C88.1199 1.24718 86.2137 2.86529 85.9425 4.92966L84.6252 14.9649H86.7368L87.3722 10.1214H94.3306L93.6952 14.9649H95.8067L97.1163 4.99134C97.2519 3.95008 96.9613 2.99228 96.2949 2.2848H96.3026ZM95.0125 4.99497L94.594 8.18041H87.6356L88.0425 5.08567C88.1781 4.03716 89.1234 3.21722 90.1927 3.21722H93.4395C93.9354 3.21722 94.35 3.37685 94.6367 3.67798C94.9427 4.0045 95.0822 4.48341 95.0164 4.99134L95.0125 4.99497Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M101.742 1.26534L99.9446 14.9649H102.126L103.92 1.26534H101.742Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M123.888 2.361C123.21 1.64264 122.157 1.25081 120.921 1.25081H113.978L113.722 3.19182H120.626C121.347 3.19182 121.909 3.38411 122.257 3.75054C122.563 4.07344 122.687 4.53421 122.618 5.07841L122.536 5.69156C122.381 6.87431 121.331 7.67248 119.925 7.67248H117.023C114.388 7.67248 112.881 8.97858 112.544 11.5509L112.095 14.9721H123.346L123.602 13.0166H114.427L114.598 11.725C114.772 10.3935 115.241 9.56633 117.027 9.56633H119.898C122.358 9.56633 124.272 8.0498 124.559 5.88384L124.671 5.03125C124.81 3.97548 124.539 3.05396 123.892 2.36825L123.888 2.361Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M138.212 2.30294C137.569 1.62087 136.616 1.24718 135.523 1.24718H131.676C129.471 1.24718 127.608 2.76734 127.344 4.78454L126.484 11.3332C126.356 12.3164 126.635 13.227 127.271 13.8982C127.918 14.5839 128.886 14.9613 129.991 14.9613H133.787C135.992 14.9613 137.856 13.4338 138.123 11.4058L138.983 4.8571C139.111 3.87027 138.84 2.95962 138.216 2.29932L138.212 2.30294ZM136.864 4.90064L136.035 11.2243C135.903 12.2184 134.942 12.9948 133.846 12.9948H130.289C129.754 12.9948 129.285 12.8134 128.972 12.4797C128.673 12.164 128.541 11.7468 128.6 11.3005L129.429 4.97683C129.58 3.81585 130.645 3.20633 131.618 3.20633H135.225C135.759 3.20633 136.217 3.38048 136.519 3.69975C136.806 4.0045 136.926 4.42173 136.864 4.90064Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M152.106 2.361C151.428 1.64264 150.374 1.25081 149.138 1.25081H142.195L141.939 3.19182H148.843C149.564 3.19182 150.126 3.38411 150.475 3.75054C150.781 4.07344 150.905 4.53421 150.835 5.07841L150.753 5.69156C150.599 6.87431 149.549 7.67248 148.142 7.67248H145.24C142.606 7.67248 141.099 8.97858 140.761 11.5509L140.312 14.9721H151.563L151.819 13.0166H142.644L142.815 11.725C142.989 10.3935 143.458 9.56633 145.244 9.56633H148.115C150.575 9.56633 152.489 8.0498 152.776 5.88384L152.888 5.03125C153.028 3.97548 152.757 3.05396 152.11 2.36825L152.106 2.361Z"
+							fill="#3E3E3E"
+						/>
+						<path
+							d="M166.011 2.361C165.333 1.64264 164.279 1.25081 163.043 1.25081H156.1L155.844 3.19182H162.748C163.469 3.19182 164.031 3.38411 164.38 3.75054C164.686 4.07344 164.81 4.53421 164.74 5.07841L164.659 5.69156C164.504 6.87431 163.454 7.67248 162.047 7.67248H159.145C156.511 7.67248 155.004 8.97858 154.666 11.5509L154.217 14.9721H165.468L165.724 13.0166H156.549L156.72 11.725C156.894 10.3935 157.363 9.56633 159.149 9.56633H162.02C164.48 9.56633 166.394 8.0498 166.681 5.88384L166.793 5.03125C166.933 3.97548 166.662 3.05396 166.015 2.36825L166.011 2.361Z"
+							fill="#3E3E3E"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="right-content pc">
+				<div class="menu">
+					<p>ABOUT</p>
+					<div class="hover-content">
+						<a href="./about.html">ABOUTトップ</a>
+						<a href="./about.html#theme">今年のテーマ</a>
+						<a href="./about.html#access">芸工への行き方</a>
+						<a href="./about.html#sns">SNS</a>
+					</div>
+				</div>
+				<div class="menu">
+					<p>EVENT</p>
+					<div class="hover-content">
+						<a href="event.html">EVENTトップ</a>
+						<a href="event.html#ws">ワークショップ</a>
+						<a href="event.html#stage">ステージ</a>
+						<a href="event.html#cafe">カフェ</a>
+						<a href="event.html#booth">ブース</a>
+					</div>
+				</div>
+				<div class="menu">
+					<p>CM</p>
+					<div class="hover-content">
+						<a href="cm.html">CMトップ</a>
+						<a href="cm.html#movie">映像</a>
+						<a href="cm.html#goods">グッズ</a>
+					</div>
+				</div>
+				<div class="menu">
+					<a href="#">GAME</a>
+				</div>
+			</div>
+		</header>
+		<div id="spMenu" class="sp-menu">
+			<div id="humbMenuIcon" class="humb-menu-icon sp">
+				<div class="bar-wrapper">
+					<span class="top-bar"></span>
+					<span class="middle-bar"></span>
+					<span class="bottom-bar"></span>
+				</div>
+			</div>
+			<div class="menu-content">
+				<div class="menu-container sp">
+					<div class="menu">
+						<p>ABOUT</p>
+						<div class="hover-content">
+							<a href="./about.html#theme">今年のテーマ</a>
+							<a href="./about.html#access">芸工への行き方</a>
+							<a href="./about.html#sns">SNS</a>
+						</div>
+					</div>
+					<div class="menu">
+						<p>EVENT</p>
+						<div class="hover-content">
+							<a href="workshop.html">ワークショップ</a>
+							<a href="stage.html">ステージ</a>
+							<a href="cafe.html">カフェ</a>
+							<a href="booth.html">ブース</a>
+						</div>
+					</div>
+					<div class="menu">
+						<p>CM</p>
+						<div class="hover-content">
+							<a href="">映像</a>
+							<a href="">グッズ</a>
+						</div>
+					</div>
+					<div class="menu">
+						<p>GAME</p>
+					</div>
+				</div>
+				<a class="news-btn sp">新型コロナウイルス<br />について</a>
+			</div>
+		</div>
+		<div class="main-content top">
+			<section class="mv">
+				<div class="img-wrapper pc">
+					<img src="./image/index/mv_pc.png" alt="PC版メインビジュアル" />
+				</div>
+				<div class="img-wrapper sp">
+					<img src="./image/index/mv_sp.png" alt="sp版メインビジュアル" />
+				</div>
+			</section>
+			<div class="parallax-content">
+				<section class="mv-space"></section>
+				<section class="sponsor-top">
+					<ul class="slider-top" id="js-slider-2">
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="./image/index/spn_slider.jpg" alt="" /></li>
+					</ul>
+					<div class="dots-top">
+						<div class="dots-top-bg"></div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="container">
+						<div class="text-container">
+							<h1 class="title">ABOUT</h1>
+							<div class="text-wrapper">
+								<h2 class="title-another">
+									<span class="fs-l">芸工生</span
+									><span class="fs-s">で</span>作る<br class="pc" />ひとつ<span
+										class="fs-s"
+										>の</span
+									>作品!!
+								</h2>
+								<p class="text">
+									装飾に彩られたキャンパス、<br />
+									笑いの溢れるステージ企画に<br />
+									アイデアたっぷりの模擬店。<br />
+									お洒落で美味しい本格カフェも。<br />
+									とにかく見どころ満載で<br />
+									満足間違いなしです！！！
+								</p>
+							</div>
+						</div>
+						<div class="btn-wrapper">
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/btn_theme_pc.png"
+									alt="今年のテーマボタンのpc版画像"
+								/>
+								<img
+									class="sp"
+									src="./image/index/btn_theme_sp.png"
+									alt="今年のテーマボタンのsp版画像"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/btn_access_pc.png"
+									alt="芸工へのアクセスのpc版画像"
+								/>
+								<img
+									class="sp"
+									src="./image/index/btn_access_sp.png"
+									alt="芸工へのアクセスのsp版画像"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/btn_sns_pc.png"
+									alt="snsのpc版画像"
+								/>
+								<img
+									class="sp"
+									src="./image/index/btn_sns_sp.png"
+									alt="snsのsp版画像"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="event">
+					<div class="container">
+						<h1 class="title">EVENT</h1>
+						<div class="bnr-wrapper">
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/bnr01.png"
+									alt="ステージのバナー"
+								/>
+								<img
+									class="sp"
+									src="./image/index/bnr01_sp.png"
+									alt="ステージのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/bnr02.png"
+									alt="カフェのバナー"
+								/>
+								<img
+									class="sp"
+									src="./image/index/bnr02_sp.png"
+									alt="カフェのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/bnr03.png"
+									alt="wsのバナー"
+								/>
+								<img
+									class="sp"
+									src="./image/index/bnr03_sp.png"
+									alt="wsのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="pc"
+									src="./image/index/bnr04.png"
+									alt="ブースのバナー"
+								/>
+								<img
+									class="sp"
+									src="./image/index/bnr04_sp.png"
+									alt="ブースのバナー"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="cm">
+					<div class="container">
+						<h1 class="title">CM</h1>
+						<div class="wrapper">
+							<div class="content movie">
+								<iframe
+									src="https://www.youtube.com/embed/jhz4PRRG2Q8"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+								<a class="btn-more" href="#" class="btn-more">もっと見る</a>
+							</div>
+							<div class="content graphic">
+								<div class="img-wrapper">
+									<img src="./image/index/cm02.jpg" alt="グラ部署のサムネ" />
+								</div>
+								<a class="btn-more" href="#" class="btn-more">もっと見る</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="game">
+					<div class="container">
+						<h1 class="title">GAME</h1>
+						<p>
+							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+						</p>
+						<div class="thumb-wrapper">
+							<img src="./image/index/cm02.jpg" alt="ゲームのサムネ" />
+							<img
+								class="pc"
+								src="./image/index/cm02.jpg"
+								alt="ゲームのサムネ"
+							/>
+						</div>
+						<a class="btn-more" href="#" class="btn-more">もっと見る</a>
+					</div>
+				</section>
+				<section class="sponsor-bottom">
+					<div class="container">
+						<div class="thumb-wrapper">
+							<img src="./image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="./image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="./image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="./image/index/spn02.jpg" alt="スポンサーサムネ" />
+							<img src="./image/index/spn02.jpg" alt="スポンサーサムネ" />
+							<img src="./image/index/spn02.jpg" alt="スポンサーサムネ" />
+						</div>
+					</div>
+				</section>
+				<footer id="footer">
+					<div class="container">
+						<div class="left-content">
+							<img
+								src="./image/common/icon/logo-icon.svg"
+								alt="芸工祭のロゴ(テキスト無し)の画像"
+							/>
+						</div>
+						<div class="right-content">
+							<div class="top-content">
+								<h3>名古屋市立大学芸術工学部</h3>
+								<a
+									href="https://www.nagoya-cu.ac.jp/sda/"
+									target="_blank"
+									rel="noopener noreferrer"
+									>名古屋市立大学芸術工学部HP</a
+								>
+							</div>
+							<p>
+								〒464-008 名古屋市千種区北千種2丁目1番10号<br />
+								TEL052-721-1225(代) FAX052-721-3110
+							</p>
+							<small><span>&copy;</span> Copyright 2022geikosai</small>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="./assets/js/common.js"></script>
+		<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+		<script>
+			$(function () {
+				$("#js-slider-2").slick({
+					arrows: true, // 前・次のボタンを表示する
+					dots: true, // ドットナビゲーションを表示する
+					appendDots: $(".dots-top"), // ドットナビゲーションの生成位置を変更
+					speed: 800, // スライドさせるスピード（ミリ秒）
+					centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+					variableWidth: true, // スライド幅の自動計算を無効化
+					slidesToShow: 5,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 2000,
+				});
+			});
+		</script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
