@@ -1,0 +1,400 @@
+@font-face {
+  font-family: shin-go-r;
+  src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
+}
+@font-face {
+  font-family: shin-go-m;
+  src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
+}
+@font-face {
+  font-family: shin-go-b;
+  src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
+}
+@font-face {
+  font-family: shin-go-h;
+  src: url(../font/A-OTF-ShinGoPr6N-Heavy.otf);
+}
+.cmpc {
+  display: block;
+}
+
+.cmsp {
+  display: none !important;
+}
+.top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-family: vdl-gigajr;
+}
+
+.topbtns {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.selectbtn {
+  width: 250px;
+}
+
+.topbtn {
+  position: relative;
+}
+
+.topbtn p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.topbtng {
+  color: rgb(78, 132, 101);
+}
+
+.stagebtn {
+  color: white;
+}
+
+.movieli {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  gap: 129px;
+  margin-top: 116px;
+  margin-bottom: 226px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.row3 {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: shin-go-m;
+}
+
+.comingsoon {
+  width: 380px;
+}
+
+.movies {
+  width: 380px;
+  height: 213.75px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cmpc {
+    display: none !important;
+  }
+  .cmsp {
+    display: block !important;
+  }
+  .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-family: vdl-gigajr;
+    font-weight: 400;
+  }
+  .selectbtn {
+    width: 100%;
+  }
+
+  .topbtn {
+    position: relative;
+    width: 255px;
+  }
+
+  .topbtn p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .topbtng {
+    color: rgb(78, 132, 101);
+  }
+
+  .stagebtn {
+    color: white;
+  }
+
+  .movies {
+    width: 315px;
+    height: 177.19px;
+  }
+  .comingsoon {
+    width: 315px;
+  }
+
+  .movieli {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 129px;
+    margin-top: 116px;
+    margin-bottom: 60px;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+  }
+
+  .icon {
+    margin: 0 auto;
+    width: 44px;
+    margin-bottom: 62px;
+  }
+
+  .movie p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: shin-go-m;
+  }
+
+  /*カルーセル*/
+  .carousel {
+    width: 315px;
+    margin: 40px auto auto auto;
+  }
+  .carouselimg {
+    width: 100%;
+  }
+
+  .slider {
+    width: 315px;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-arrow {
+    z-index: 5 !important;
+  }
+  .slick-arrow:before {
+    content: "" !important;
+    width: 200% !important;
+    height: 200% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slick-next:before {
+    background: url(btn_right.png) !important;
+    background-size: contain !important;
+    margin-left: -20px;
+    margin-top: 165px;
+  }
+
+  .slick-prev:before {
+    background: url(btn_left.png) !important;
+    background-size: contain !important;
+    margin-left: 0;
+    margin-top: 165px;
+  }
+
+  .txt {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 13px;
+  }
+  .cal {
+    height: 401px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: rgb(78, 132, 101);
+  }
+}
+/*スマホ*/
+@media screen and (max-width: 767px) {
+  .cmpc {
+    display: none !important;
+  }
+
+  .cmsp {
+    display: block !important;
+  }
+  .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-family: vdl-gigajr;
+    font-weight: 400;
+  }
+
+  .topbtns {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .selectbtn {
+    width: 100%;
+  }
+
+  .topbtn {
+    position: relative;
+    width: 150px;
+    height: 36px;
+  }
+
+  .topbtn p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .topbtng {
+    color: rgb(78, 132, 101);
+  }
+
+  .stagebtn {
+    color: white;
+  }
+  .movies {
+    width: 315px;
+    height: 177.19px;
+  }
+  .comingsoon {
+    width: 315px;
+  }
+  .movieli {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 129px;
+    margin-top: 116px;
+    margin-bottom: 60px;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+  }
+
+  .icon {
+    margin: 0 auto;
+    width: 22px;
+    margin-bottom: 62px;
+  }
+
+  .movie p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: shin-go-m;
+  }
+
+  /*カルーセル*/
+  .carousel {
+    width: 315px;
+    margin: 40px auto auto auto;
+  }
+  .carouselimg {
+    width: 100%;
+  }
+
+  .slider {
+    width: 315px;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-arrow {
+    z-index: 5 !important;
+  }
+  .slick-arrow:before {
+    content: "" !important;
+    width: 200% !important;
+    height: 200% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slick-next:before {
+    background: url(btn_right.png) !important;
+    background-size: contain !important;
+    margin-left: -20px;
+    margin-top: 165px;
+  }
+
+  .slick-prev:before {
+    background: url(btn_left.png) !important;
+    background-size: contain !important;
+    margin-left: 0;
+    margin-top: 165px;
+  }
+
+  .txt {
+    text-align: center;
+  }
+  .cal {
+    height: 401px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: rgb(78, 132, 101);
+  }
+}
