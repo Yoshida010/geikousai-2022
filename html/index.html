@@ -123,10 +123,10 @@
 		</button>
 		<div class="main-content top">
 			<section class="mv">
-				<div class="img-wrapper pc">
+				<div class="img-wrapper only-pc">
 					<img src="../image/index/mv_pc.png" alt="PC版メインビジュアル" />
 				</div>
-				<div class="img-wrapper sp">
+				<div class="img-wrapper only-sp">
 					<img src="../image/index/mv_sp.png" alt="sp版メインビジュアル" />
 				</div>
 			</section>
@@ -134,7 +134,9 @@
 				<section class="mv-space"></section>
 				<section class="sponsor-top">
 					<ul class="slider-top" id="js-slider-2">
-						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li>
+							<img src="../image/index/spn_slider.jpg" alt="" />
+						</li>
 						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
 						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
 						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
@@ -156,10 +158,9 @@
 							<div class="text-wrapper">
 								<h2 class="title-another">
 									<span class="fs-l">芸工生</span
-									><span class="fs-s">で</span>作る<br class="pc" />ひとつ<span
-										class="fs-s"
-										>の</span
-									>作品!!
+									><span class="fs-s">で</span>作る<br
+										class="only-pc"
+									/>ひとつ<span class="fs-s">の</span>作品!!
 								</h2>
 								<p class="text">
 									装飾に彩られたキャンパス、<br />
@@ -174,36 +175,36 @@
 						<div class="btn-wrapper">
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/btn_theme_pc.png"
 									alt="今年のテーマボタンのpc版画像"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/btn_theme_sp.png"
 									alt="今年のテーマボタンのsp版画像"
 								/>
 							</a>
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/btn_access_pc.png"
 									alt="芸工へのアクセスのpc版画像"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/btn_access_sp.png"
 									alt="芸工へのアクセスのsp版画像"
 								/>
 							</a>
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/btn_sns_pc.png"
 									alt="snsのpc版画像"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/btn_sns_sp.png"
 									alt="snsのsp版画像"
 								/>
@@ -217,48 +218,48 @@
 						<div class="bnr-wrapper">
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/bnr01.png"
 									alt="ステージのバナー"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/bnr01_sp.png"
 									alt="ステージのバナー"
 								/>
 							</a>
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/bnr02.png"
 									alt="カフェのバナー"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/bnr02_sp.png"
 									alt="カフェのバナー"
 								/>
 							</a>
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/bnr03.png"
 									alt="wsのバナー"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/bnr03_sp.png"
 									alt="wsのバナー"
 								/>
 							</a>
 							<a href="#">
 								<img
-									class="pc"
+									class="only-pc"
 									src="../image/index/bnr04.png"
 									alt="ブースのバナー"
 								/>
 								<img
-									class="sp"
+									class="only-sp"
 									src="../image/index/bnr04_sp.png"
 									alt="ブースのバナー"
 								/>
@@ -270,22 +271,42 @@
 					<div class="container">
 						<h1 class="title">CM</h1>
 						<div class="wrapper">
-							<div class="content movie">
-								<iframe
-									src="https://www.youtube.com/embed/jhz4PRRG2Q8"
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
-								></iframe>
-								<a class="btn-more" href="#" class="btn-more">もっと見る</a>
-							</div>
-							<div class="content graphic">
+							<a class="content movie" href="./cm/index.html">
+								<h2 class="thumb-ttl">
+									GEIKO SAI 2022<br /><span>Official movie</span>
+								</h2>
 								<div class="img-wrapper">
-									<img src="../image/index/cm02.jpg" alt="グラ部署のサムネ" />
+									<img
+										class="only-pc"
+										src="../image/index/frame_w526.png"
+										alt="映像部署のサムネ"
+									/>
+									<img
+										class="only-sp"
+										src="../image/index/frame_w319.png"
+										alt="映像部署のサムネ"
+									/>
 								</div>
-								<a class="btn-more" href="#" class="btn-more">もっと見る</a>
-							</div>
+								<button class="btn-more">もっと見る</button>
+							</a>
+							<a class="content graphic" href="./cm/goods.html">
+								<h2 class="thumb-ttl">
+									GEIKO SAI 2022<br /><span>Official goods</span>
+								</h2>
+								<div class="img-wrapper">
+									<img
+										class="only-pc"
+										src="../image/index/frame_w526.png"
+										alt="グラフィック部署のサムネ"
+									/>
+									<img
+										class="only-sp"
+										src="../image/index/frame_w319.png"
+										alt="グラフィック部署のサムネ"
+									/>
+								</div>
+								<button class="btn-more" href="#">もっと見る</button>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -296,10 +317,10 @@
 							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 						</p>
 						<div class="thumb-wrapper">
-							<img src="../image/index/cm02.jpg" alt="ゲームのサムネ" />
+							<img src="../image/index/thumb_game01.jpg" alt="ゲームのサムネ" />
 							<img
-								class="pc"
-								src="../image/index/cm02.jpg"
+								class="only-pc"
+								src="../image/index/thumb_game02.jpg"
 								alt="ゲームのサムネ"
 							/>
 						</div>

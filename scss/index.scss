@@ -19,7 +19,7 @@
 		width: 100%;
 	}
 
-	.pc {
+	.only-pc {
 		@media screen and (min-width: 768px) {
 			display: block !important;
 		}
@@ -27,7 +27,7 @@
 			display: none !important;
 		}
 	}
-	.sp {
+	.only-sp {
 		@media screen and (min-width: 768px) {
 			display: none !important;
 		}
@@ -39,6 +39,9 @@
 		width: 93%;
 		max-width: 1198px;
 		margin: auto;
+		@media screen and (max-width: 767px) {
+			max-width: 400px;
+		}
 	}
 	.title {
 		color: #3e3e3e;
@@ -90,7 +93,7 @@
 		//スポンサー
 		.sponsor-top {
 			width: 100%;
-			height: 377px;
+			height: 378px;
 			background-color: rgba($color: #e4e4e4, $alpha: 0.36);
 		}
 
@@ -183,32 +186,45 @@
 		.cm {
 			padding: 100px 0 130px 0;
 			background-color: #fff;
-			.container {
-				.wrapper {
-					display: flex;
-					justify-content: space-between;
-					margin-top: 45px;
-					.content {
-						width: 46%;
-						position: relative;
-						display: inline-block;
-						padding: 1% 1% 0.9% 1%;
-						background-image: url(../image/index/frame_w526.png);
-						background-repeat: no-repeat;
-						background-size: 100% 100%;
-						iframe {
-							width: 100%;
-							aspect-ratio: 25/14;
-							vertical-align: bottom;
-						}
-						a {
-							position: absolute;
-							bottom: 0px;
-							right: 0px;
-							transform: translateX(21px) translateY(50%);
-						}
-					}
+			.wrapper {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 45px;
+			}
+			.content {
+				width: 46%;
+				position: relative;
+				display: inline-block;
+				margin: 1px;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.thumb-ttl {
+				position: absolute;
+				top: 12%;
+				left: 5%;
+				padding-left: 7px;
+				font-family: vdl-gigajr;
+				font-size: clamp(10px, 1.1vw, 16px);
+				color: #fff;
+				border-left: 9px solid #fff;
+				span {
+					display: inline-block;
+					margin-top: 4px;
+					font-size: clamp(20px, 2.8vw, 40px);
 				}
+			}
+			.btn-more {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				transform: translateX(21px) translateY(50%);
+			}
+			.movie {
+				background-image: url(../image/index/thumb_cm01.jpg);
+			}
+			.graphic {
+				background-image: url(../image/index/thumb_cm02.jpg);
 			}
 		}
 
@@ -288,9 +304,11 @@
 				padding-top: 180px;
 				padding-bottom: 150px;
 				.text-container {
-					margin-bottom: 20px;
+					height: auto;
+					margin-bottom: 30px;
 					.text-wrapper {
 						.title-another {
+							margin-top: 28px;
 							font-size: 22px;
 							line-height: 40px;
 							//ふきだし
@@ -309,7 +327,7 @@
 							}
 						}
 						.text {
-							font-size: 12px;
+							font-size: 14px;
 							letter-spacing: 0.15em;
 						}
 					}
@@ -318,6 +336,9 @@
 
 			//cm
 			.cm {
+				.thumb-ttl {
+					border-width: 5px;
+				}
 				.btn-more {
 					font-size: 14px;
 				}
@@ -350,16 +371,43 @@
 			}
 
 			.about {
+				position: relative;
+				padding-top: 50px;
+				padding-bottom: 85px;
 				background-color: #fff;
+				z-index: -5;
 				.text-container {
 					display: block;
 					.text-wrapper {
 						text-align: center;
 					}
 				}
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					width: 21.6%;
+					max-width: 130px;
+					height: 30%;
+					background-image: url(../image/index/bg_line_pc.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: bottom left;
+				}
+				&::before {
+					top: 200px;
+					left: 0px;
+					transform: rotate(180deg);
+				}
+				&::after {
+					bottom: 147px;
+					right: 0px;
+					z-index: -1;
+				}
 			}
 
 			.event {
+				background-image: url(../image/index/bg_event_sp.jpg);
 				.container {
 					.bnr-wrapper {
 						flex-direction: column;
@@ -376,13 +424,13 @@
 			}
 
 			.cm {
+				position: relative;
+				z-index: -5;
 				.container {
 					.wrapper {
 						flex-direction: column;
 						.content {
 							width: 100%;
-							padding: 9px;
-							background-image: url(../image/index/frame_w319.png);
 							&:last-child {
 								margin-top: 64px;
 							}
@@ -393,10 +441,34 @@
 						}
 					}
 				}
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					width: 21.6%;
+					max-width: 130px;
+					height: 30%;
+					background-image: url(../image/index/bg_line_sp.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: bottom left;
+				}
+				&::before {
+					top: 432px;
+					left: 0px;
+					transform: rotate(180deg);
+				}
+				&::after {
+					bottom: 56px;
+					right: 0px;
+					z-index: -1;
+				}
 			}
 
 			.game {
+				background-image: url(../image/index/bg_game_sp.jpg);
 				.thumb-wrapper {
+					flex-direction: column;
 					img {
 						width: 100%;
 					}
@@ -439,18 +511,20 @@
 	width: 320px;
 	position: relative;
 	overflow: hidden;
-	transform: scale(0.7);
+}
+.slider-top .slick-slide div {
+	margin: 0 17.5px;
 }
 .slider-top .slick-slide img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transform: scale(0.75);
 }
 .slider-top .slick-center {
-	transform: scale(1.2);
 	img {
-		transform: scale(0.8);
+		transform: scale(1);
 	}
 }
 
@@ -470,31 +544,49 @@
 	background-image: url(../image/common/btn/btn_r.png);
 	background-size: cover;
 	right: 50%;
-	transform: translateX(300px);
+	transform: translateX(225px);
 	@media screen and (max-width: 767px) {
-		transform: translateX(200px);
+		transform: translateX(168px);
 	}
 }
 .slider-top .slick-prev {
 	background-image: url(../image/common/btn/btn_l.png);
 	background-size: cover;
 	left: 50%;
-	transform: translateX(-300px);
+	transform: translateX(-225px);
 	@media screen and (max-width: 767px) {
-		transform: translateX(-200px);
+		transform: translateX(-168px);
 	}
 }
 
 //下のバー
 .dots-top .slick-dots {
 	text-align: center;
+	width: 330px;
+	position: relative;
+	margin: auto;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		height: 11px;
+		background-color: #d9d9d9;
+		border-radius: 10px;
+		transform: skewX(-20deg);
+	}
+	@media screen and (max-width: 767px) {
+		width: 240px;
+	}
 }
 .dots-top .slick-dots li {
 	display: inline-block;
+	width: 10%;
 }
 .dots-top .slick-dots button {
 	display: block;
-	width: 50px;
+	width: 100%;
 	height: 10px;
 	font-size: 0;
 	padding: 0;
@@ -502,10 +594,8 @@
 	outline: none;
 	cursor: pointer;
 	background: #d9d9d9;
+	border-radius: 10px;
 	transform: skewX(-20deg);
-	@media screen and (max-width: 767px) {
-		width: 30px;
-	}
 }
 .dots-top .slick-dots .slick-active button {
 	background: linear-gradient(90deg, #99c955 0%, #30895e 100%);
