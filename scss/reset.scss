@@ -10,19 +10,25 @@
 	box-sizing: border-box;
 }
 
-a,
-button {
-	cursor: revert;
-}
-
 ol,
 ul,
 menu {
 	list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span {
+	line-height: 1em;
+}
+
 img {
-	max-width: 100%;
+	width: 100%;
+	vertical-align: top;
 }
 
 table {

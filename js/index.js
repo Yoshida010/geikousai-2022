@@ -1,4 +1,7 @@
-document.getElementById("humbMenuIcon").onclick = () => {
-	document.getElementById("spMenu").classList.toggle("menu-open");
-	document.getElementById("header").classList.toggle("menu-open");
+document.getElementById("hamburgerBtn").onclick = () => {
+	console.log("ib");
+	document.getElementById("hamburgerMenu").classList.toggle("hamburger-active");
+	document
+		.getElementById("hamburgerBtn")
+		.classList.toggle("hamburger-btn-active");
 };

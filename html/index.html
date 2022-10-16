@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script>
+			(function (d) {
+				var config = {
+						kitId: "cea8vmg",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<title>芸工祭2022</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="left-content">
+				<a class="logo-wrapper" href="#">
+					<img
+						class="logo-icon"
+						src="../image/common/icon/logo_icon.svg"
+						alt="芸工祭のロゴアイコン"
+					/>
+					<img
+						class="logo-text"
+						src="../image/common/icon/logo_text_bl.svg"
+						alt="芸工祭のロゴテキスト"
+					/>
+				</a>
+			</div>
+			<div id="hamburgerMenu" class="right-content">
+				<a class="pc-none logo-wrapper" href="#">
+					<img
+						class="logo-icon"
+						src="../image/common/icon/logo_icon.svg"
+						alt="芸工祭のロゴアイコン"
+					/>
+					<img
+						class="logo-text"
+						src="../image/common/icon/logo_text_w.svg"
+						alt="芸工祭のロゴテキスト"
+					/>
+				</a>
+				<nav class="menu-wrapper">
+					<div class="menu">
+						<a class="menu-ttl" href="./about/index.html">ABOUT</a>
+						<div class="menu-contents">
+							<a href="./about/index.html#theme">今年のテーマ</a>
+							<a href="./about/index.html#access">芸工への行き方</a>
+							<a href="./about/index.html#sns">SNS</a>
+						</div>
+					</div>
+					<div class="menu">
+						<a class="menu-ttl" href="./event/index.html">EVENT</a>
+						<div class="menu-contents">
+							<a href="./event/workshop.html">ワークショップ</a>
+							<a href="./event/index.html">ステージ</a>
+							<a href="./event/cafe.html">カフェ</a>
+							<a href="./event/booth.html">ブース</a>
+						</div>
+					</div>
+					<div class="menu">
+						<a class="menu-ttl" href="./cm/index.html">CM</a>
+						<div class="menu-contents">
+							<a href="./cm/index.html">映像</a>
+							<a href="./cm/goods.html">グッズ</a>
+						</div>
+					</div>
+					<div class="menu">
+						<a
+							class="menu-ttl"
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer"
+							>GAME</a
+						>
+					</div>
+				</nav>
+				<a class="bnr-news pc-none" href="./news/index.html"
+					>新型コロナウイルス<br />について</a
+				>
+			</div>
+		</header>
+		<button id="hamburgerBtn" class="hamburger-btn pc-none">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div class="main-content top">
+			<section class="mv">
+				<div class="img-wrapper only-pc">
+					<img src="../image/index/mv_pc.png" alt="PC版メインビジュアル" />
+				</div>
+				<div class="img-wrapper only-sp">
+					<img src="../image/index/mv_sp.png" alt="sp版メインビジュアル" />
+				</div>
+			</section>
+			<div class="parallax-content">
+				<section class="mv-space"></section>
+				<section class="sponsor-top">
+					<ul class="slider-top" id="js-slider-2">
+						<li>
+							<img src="../image/index/spn_slider.jpg" alt="" />
+						</li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+						<li><img src="../image/index/spn_slider.jpg" alt="" /></li>
+					</ul>
+					<div class="dots-top">
+						<div class="dots-top-bg"></div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="container">
+						<div class="text-container">
+							<h1 class="title">ABOUT</h1>
+							<div class="text-wrapper">
+								<h2 class="title-another">
+									<span class="fs-l">芸工生</span
+									><span class="fs-s">で</span>作る<br
+										class="only-pc"
+									/>ひとつ<span class="fs-s">の</span>作品!!
+								</h2>
+								<p class="text">
+									装飾に彩られたキャンパス、<br />
+									笑いの溢れるステージ企画に<br />
+									アイデアたっぷりの模擬店。<br />
+									お洒落で美味しい本格カフェも。<br />
+									とにかく見どころ満載で<br />
+									満足間違いなしです！！！
+								</p>
+							</div>
+						</div>
+						<div class="btn-wrapper">
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/btn_theme_pc.png"
+									alt="今年のテーマボタンのpc版画像"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/btn_theme_sp.png"
+									alt="今年のテーマボタンのsp版画像"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/btn_access_pc.png"
+									alt="芸工へのアクセスのpc版画像"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/btn_access_sp.png"
+									alt="芸工へのアクセスのsp版画像"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/btn_sns_pc.png"
+									alt="snsのpc版画像"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/btn_sns_sp.png"
+									alt="snsのsp版画像"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="event">
+					<div class="container">
+						<h1 class="title">EVENT</h1>
+						<div class="bnr-wrapper">
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/bnr01.png"
+									alt="ステージのバナー"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/bnr01_sp.png"
+									alt="ステージのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/bnr02.png"
+									alt="カフェのバナー"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/bnr02_sp.png"
+									alt="カフェのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/bnr03.png"
+									alt="wsのバナー"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/bnr03_sp.png"
+									alt="wsのバナー"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="only-pc"
+									src="../image/index/bnr04.png"
+									alt="ブースのバナー"
+								/>
+								<img
+									class="only-sp"
+									src="../image/index/bnr04_sp.png"
+									alt="ブースのバナー"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="cm">
+					<div class="container">
+						<h1 class="title">CM</h1>
+						<div class="wrapper">
+							<a class="content movie" href="./cm/index.html">
+								<h2 class="thumb-ttl">
+									GEIKO SAI 2022<br /><span>Official movie</span>
+								</h2>
+								<div class="img-wrapper">
+									<img
+										class="only-pc"
+										src="../image/index/frame_w526.png"
+										alt="映像部署のサムネ"
+									/>
+									<img
+										class="only-sp"
+										src="../image/index/frame_w319.png"
+										alt="映像部署のサムネ"
+									/>
+								</div>
+								<button class="btn-more">もっと見る</button>
+							</a>
+							<a class="content graphic" href="./cm/goods.html">
+								<h2 class="thumb-ttl">
+									GEIKO SAI 2022<br /><span>Official goods</span>
+								</h2>
+								<div class="img-wrapper">
+									<img
+										class="only-pc"
+										src="../image/index/frame_w526.png"
+										alt="グラフィック部署のサムネ"
+									/>
+									<img
+										class="only-sp"
+										src="../image/index/frame_w319.png"
+										alt="グラフィック部署のサムネ"
+									/>
+								</div>
+								<button class="btn-more" href="#">もっと見る</button>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="game">
+					<div class="container">
+						<h1 class="title">GAME</h1>
+						<p>
+							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+						</p>
+						<div class="thumb-wrapper">
+							<img src="../image/index/thumb_game01.jpg" alt="ゲームのサムネ" />
+							<img
+								class="only-pc"
+								src="../image/index/thumb_game02.jpg"
+								alt="ゲームのサムネ"
+							/>
+						</div>
+						<a class="btn-more" href="#" class="btn-more">もっと見る</a>
+					</div>
+				</section>
+				<section class="sponsor-bottom">
+					<div class="container">
+						<div class="thumb-wrapper">
+							<img src="../image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="../image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="../image/index/spn01.jpg" alt="スポンサーサムネ" />
+							<img src="../image/index/spn02.jpg" alt="スポンサーサムネ" />
+							<img src="../image/index/spn02.jpg" alt="スポンサーサムネ" />
+							<img src="../image/index/spn02.jpg" alt="スポンサーサムネ" />
+						</div>
+					</div>
+				</section>
+				<footer id="footer">
+					<div class="f-container">
+						<div class="left-content">
+							<img
+								src="../image/common/icon/logo_icon.svg"
+								alt="芸工祭のロゴ(テキスト無し)の画像"
+							/>
+						</div>
+						<div class="right-content">
+							<div class="top-content">
+								<h3>名古屋市立大学芸術工学部</h3>
+								<a
+									href="https://www.nagoya-cu.ac.jp/sda/"
+									target="_blank"
+									rel="noopener noreferrer"
+									>名古屋市立大学芸術工学部HP</a
+								>
+							</div>
+							<p>
+								〒464-008 名古屋市千種区北千種2丁目1番10号<br />
+								TEL052-721-1225(代) FAX052-721-3110
+							</p>
+							<small><span>&copy;</span> Copyright 2022geikosai</small>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="./assets/js/common.js"></script>
+		<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+		<script>
+			$(function () {
+				$("#js-slider-2").slick({
+					arrows: true, // 前・次のボタンを表示する
+					dots: true, // ドットナビゲーションを表示する
+					appendDots: $(".dots-top"), // ドットナビゲーションの生成位置を変更
+					speed: 800, // スライドさせるスピード（ミリ秒）
+					centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+					variableWidth: true, // スライド幅の自動計算を無効化
+					slidesToShow: 5,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 2000,
+				});
+			});
+		</script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>
