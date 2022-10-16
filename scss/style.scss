@@ -3,161 +3,217 @@
 	src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
 }
 
-.sp {
-	display: none;
+@font-face {
+	font-family: shin-go-b;
+	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
+}
+
+html {
+	height: -webkit-fill-available;
+}
+
+a {
+	cursor: pointer;
 }
 
 header {
-	width: 100%;
-	height: 109px;
 	position: fixed;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 50px;
+	width: 100%;
+	height: 80px;
+	padding-top: 25px;
+	padding-left: 20px;
 	background-color: #fff;
-	z-index: 100;
-	.left-content {
-		width: 250px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		.logo-wrapper {
-			width: 52px;
-		}
-		.text-wrapper {
-			width: 181px;
-		}
-	}
-	.right-content {
-		display: flex;
-		height: 100%;
-	}
-}
+	z-index: 1000;
 
-//メニュー再利用したいから外出した
-.menu {
-	cursor: pointer;
-	height: fit-content;
-	position: relative;
-	margin-top: 33px;
-	padding-right: 20px;
-	transition: 0.3s;
-	font-family: vdl-gigajr;
-	font-size: 20px;
-	&:nth-child(n + 2) {
-		margin-left: 30px;
-	}
-	&:not(:last-child) {
-		&::before {
-			content: "";
-			width: 12px;
-			height: 13px;
-			position: absolute;
-			top: 20px;
-			right: 0px;
-			transform: translateY(-50%);
-			background-image: url(../image/common/icon/arrow.svg);
-			background-size: contain;
-			background-repeat: no-repeat;
+	.logo-wrapper {
+		display: flex;
+		width: 208px;
+		align-items: center;
+		justify-content: space-between;
+		.logo-icon {
+			width: 20.6%;
+		}
+		.logo-text {
+			width: 72.1%;
 		}
 	}
-	.hover-content {
-		display: none;
+
+	.right-content {
 		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		padding: 13px 0px 13px 35px;
-		background-color: #0d2e4f;
+		width: 100%;
+		height: 100vh;
+		min-height: 100vh;
+		min-height: -webkit-fill-available;
+		top: 0px;
+		left: 100%;
+		padding: 25px 20px;
 		color: #fff;
-		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-		a {
-			width: 100%;
-			display: inline-block;
+		background-color: #0d2e4f;
+
+		// ------------------------
+		// ナビゲーション
+		// ------------------------
+		.menu-wrapper {
 			position: relative;
-			padding: 7px 41px 7px 0;
-			font-family: shin-go-r;
-			font-size: 18px;
-			white-space: nowrap;
-			&::before {
-				content: "";
-				width: 15px;
-				height: 15px;
-				position: absolute;
-				top: 50%;
-				left: -19px;
-				transform: translateY(-50%) rotate(-90deg);
-				background-image: url(../image/common/icon/icon_pol_pc.png);
-				background-size: contain;
-				background-repeat: no-repeat;
-				opacity: 0;
-				transition: 0.3s;
+			width: 100%;
+			max-width: 330px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding: 0 4px;
+			margin: 18vh auto 0 auto;
+		}
+		.menu {
+			width: 44.7%;
+			&:nth-child(n + 3) {
+				margin-top: 40px;
 			}
-			&:hover {
+		}
+		.menu-ttl {
+			display: inline-block;
+			margin-bottom: 20px;
+			font-family: vdl-gigajr;
+			font-size: 35px;
+		}
+		.menu-contents {
+			a {
+				position: relative;
+				display: block;
+				padding-left: 25px;
+				font-family: shin-go-b;
+				font-size: 16px;
+				// 緑の三角矢印
 				&::before {
-					opacity: 1;
+					content: "";
+					width: 18px;
+					height: 13px;
+					position: absolute;
+					top: 50%;
+					left: 2px;
+					transform: translateY(-50%);
+					background-image: url(../image/common/icon/icon_pol.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+				&:not(:last-child) {
+					margin-bottom: 20px;
 				}
 			}
 		}
-	}
-	&:hover {
-		padding-bottom: 10px;
-		.hover-content {
-			display: block;
+
+		// ------------------------
+		// 感染者情報バナー
+		// ------------------------
+		.bnr-news {
+			position: absolute;
+			display: flex;
+			width: 41%;
+			max-width: 200px;
+			aspect-ratio: 78/35;
+			right: 0px;
+			bottom: 90px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 12px;
+			font-family: shin-go-b;
+			line-height: 1.25em;
+			background-image: url(../image/common/btn/bnr_bg_news.png);
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
+	}
+}
+
+.hamburger-active {
+	transition: 0.3s;
+	transform: translateX(-100%);
+}
+
+.hamburger-btn {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 17px 13px;
+	background-color: #0d2e4f;
+	border-radius: 50vw;
+	border: 2px solid #fff;
+	z-index: 2000;
+	span {
+		display: inline-block;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		border-radius: 50vw;
+		transition: 0.3s;
+	}
+}
+
+.hamburger-btn-active {
+	span:nth-child(1) {
+		transform: translateY(5px) rotate(-45deg);
+	}
+	span:nth-child(2) {
+		display: none;
+	}
+	span:nth-child(3) {
+		transform: translateY(-5px) rotate(45deg);
 	}
 }
 
 .main-content {
-	padding-top: 109px;
+	padding-top: 80px;
 }
 
 footer {
 	width: 100%;
+	padding: 50px 30px;
 	background-color: #0d2e4f;
 	color: #fff;
-	.container {
-		width: 90%;
-		max-width: 1200px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	.f-container {
+		display: block;
+		max-width: 300px;
 		margin: auto;
-		padding: 50px 0;
 		.left-content {
-			width: 277px;
-			margin-left: 13px;
+			width: 210px;
+			margin: auto;
 		}
 		.right-content {
+			margin-top: 30px;
 			.top-content {
 				display: flex;
-				align-items: flex-end;
-				margin-bottom: 17px;
+				justify-content: center;
+				margin-bottom: 14px;
 				h3 {
-					font-size: 22px;
-					font-weight: bold;
+					font-size: 13px;
 				}
 				a {
-					font-size: 18px;
-					margin-left: 23px;
+					font-size: 10px;
+					margin-left: 8px;
+					margin-bottom: 1px;
 					text-decoration: underline;
 				}
 			}
 			p {
-				margin-bottom: 30px;
-				font-size: 18px;
+				width: fit-content;
+				margin: auto;
+				font-size: 10px;
+				line-height: 1.7em;
 			}
 			small {
 				display: flex;
+				justify-content: center;
 				align-items: center;
-				justify-content: flex-end;
-				font-size: 18px;
-				font-weight: 300;
+				font-size: 10px;
+				margin-top: 20px;
 				span {
-					font-size: 32px;
-					line-height: 18px;
-					margin-right: 8px;
+					font-size: 15px;
+					margin-right: 3px;
 				}
 			}
 		}
@@ -165,245 +221,188 @@ footer {
 }
 
 // タブレット
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
 	header {
-		padding: 0 40px;
+		height: 109px;
+		padding: 0 50px;
+		.left-content {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			.logo-wrapper {
+				width: 251px;
+			}
+		}
+		.right-content {
+			padding: 30px 50px;
+			.menu-wrapper {
+				max-width: 400px;
+			}
+			.menu:nth-child(n + 3) {
+				margin-top: 64px;
+			}
+			.menu-ttl {
+				font-size: 42px;
+				margin-bottom: 28px;
+			}
+			.menu-contents {
+				a {
+					font-size: 20px;
+					&:not(:last-child) {
+						margin-bottom: 28px;
+					}
+				}
+			}
+			.bnr-news {
+				max-width: 240px;
+				font-size: 16px;
+			}
+		}
+	}
+	.hamburger-btn {
+		width: 60px;
+		height: 60px;
+		padding: 20px 14px;
+		top: 25px;
+		right: 45px;
+	}
+	.hamburger-btn-active {
+		span:nth-child(1) {
+			transform: translateY(7px) rotate(-45deg);
+		}
+		span:nth-child(3) {
+			transform: translateY(-7px) rotate(45deg);
+		}
+	}
+	.main-content {
+		padding-top: 109px;
+	}
+}
+
+// pc
+@media screen and (min-width: 1024px) {
+	.pc-none {
+		display: none !important;
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		.right-content {
+			position: static;
+			width: auto;
+			height: auto;
+			padding: 0;
+			background-color: #fff;
+			.menu-wrapper {
+				max-width: none;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				margin: 0;
+			}
+			.menu {
+				position: relative;
+				width: auto;
+				&:nth-child(n + 3) {
+					margin: 0;
+				}
+				&:not(:last-child) {
+					margin-right: 30px;
+				}
+				&:hover {
+					margin-top: 20px;
+					padding-bottom: 20px;
+					.menu-contents {
+						opacity: 1;
+						pointer-events: all;
+						transition: 0.3s;
+					}
+				}
+			}
+			.menu-ttl {
+				position: relative;
+				display: flex;
+				align-items: center;
+				margin: 0px;
+				font-size: 20px;
+				color: #3e3e3e;
+				&:not(:last-child) {
+					padding-right: 21px;
+					&::before {
+						content: "";
+						position: absolute;
+						width: 12px;
+						height: 13px;
+						top: 4px;
+						right: 0px;
+						background-image: url(../image/common/icon/arrow.svg);
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+			}
+			.menu-contents {
+				position: absolute;
+				top: 40px;
+				left: 50%;
+				transform: translateX(-50%);
+				padding: 20px 37px 20px 10px;
+				opacity: 0;
+				background-color: #0d2e4f;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+				white-space: nowrap;
+				pointer-events: none;
+
+				a {
+					font-family: shin-go-r;
+					&::before {
+						opacity: 0;
+					}
+					&:hover {
+						&::before {
+							transition: 0.3s;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
 	}
 	footer {
-		.container {
-			width: 92%;
+		padding: 50px 0;
+		.f-container {
+			width: 82%;
+			max-width: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			.left-content {
-				width: 220px;
-				margin-left: 0;
+				width: 277px;
+				margin: 0;
 			}
 			.right-content {
+				margin: 0;
 				.top-content {
+					margin-bottom: 16px;
 					h3 {
-						font-size: 20px;
+						font-size: 22px;
 					}
 					a {
-						font-size: 16px;
+						font-size: 18px;
 					}
 				}
 				p,
 				small {
-					font-size: 16px;
+					width: 100%;
+					font-size: 18px;
 				}
 				small {
-					line-height: 20px;
+					justify-content: flex-end;
+					text-align: right;
 					span {
-						font-size: 28px;
 						margin-right: 4px;
+						font-size: 27px;
 					}
-				}
-			}
-		}
-	}
-}
-
-// sp
-@media screen and (max-width: 767px) {
-	header {
-		height: 80px;
-		display: block;
-		padding-left: 20px;
-		padding-top: 25px;
-		.left-content {
-			width: 200px;
-			.logo-wrapper {
-				width: 43px;
-				height: 40px;
-			}
-			.text-wrapper {
-				width: 140px;
-			}
-		}
-		.pc {
-			display: none;
-		}
-	}
-	//ハンバーガーメニューが閉じている時
-	.humb-menu-icon {
-		width: 50px;
-		height: 50px;
-		position: fixed;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		top: 20px;
-		right: 20px;
-		background-color: #0d2e4f;
-		border-radius: 50%;
-		border: 2px solid #fff;
-		z-index: 100;
-		cursor: pointer;
-		.bar-wrapper {
-			width: 22px;
-			display: flex;
-			flex-wrap: wrap;
-			.top-bar,
-			.middle-bar,
-			.bottom-bar {
-				display: inline-block;
-				width: 100%;
-				height: 2px;
-				background-color: #fff;
-				border-radius: 1px;
-				transition: 0.3s;
-				&:nth-child(n + 2) {
-					margin-top: 3px;
-				}
-			}
-		}
-	}
-	.sp-menu {
-		.menu-content {
-			position: fixed;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 100vh;
-			padding-left: 24px;
-			padding-right: 24px;
-			background-color: #0d2e4f;
-			color: #fff;
-			top: -100%;
-			transition: 0.6s cubic-bezier(0.17, 0, 0.1, 0.99);
-			z-index: 90;
-			.menu-container {
-				max-width: 326px;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				.menu {
-					width: 140px;
-					display: inline-block;
-					margin-top: 0px;
-					margin-left: 0px;
-					&:nth-child(n + 3) {
-						margin-top: 16px;
-					}
-					p {
-						display: inline-block;
-						font-size: 35px;
-					}
-					&::before {
-						display: none;
-					}
-					.hover-content {
-						display: flex;
-						flex-direction: column;
-						position: static;
-						padding: 0;
-						transform: translate(0);
-						box-shadow: none;
-						a {
-							width: fit-content;
-							font-size: 16px;
-							padding-left: 28px;
-							padding-right: 0px;
-							&::before {
-								background-image: url(../image/common/icon/icon_pol_sp.png);
-								opacity: 1;
-								left: 4px;
-							}
-						}
-					}
-					&:hover {
-						padding-bottom: 0;
-					}
-				}
-			}
-			.news-btn {
-				width: 156px;
-				height: 70px;
-				display: none;
-				align-items: center;
-				justify-content: center;
-				position: fixed;
-				bottom: 90px;
-				right: 0px;
-				font-size: 12px;
-				text-align: center;
-				background-image: url(../image/common/btn/bnr_bg_news.png);
-				background-size: contain;
-				background-repeat: no-repeat;
-			}
-		}
-	}
-	//ハンバーガーメニューが開いてる時
-	//ヘッダー部分
-	.menu-open {
-		background-color: #0d2e4f;
-		z-index: 100;
-		.left-content {
-			.text-wrapper {
-				svg {
-					path {
-						fill: #fff;
-					}
-				}
-			}
-		}
-	}
-	//ハンバーガーメニューの内容部分
-	.menu-open {
-		.humb-menu-icon {
-			.bar-wrapper {
-				.top-bar {
-					transform: translateY(50%) rotate(-45deg);
-				}
-				.middle-bar {
-					display: none;
-				}
-				.bottom-bar {
-					margin: 0px;
-					transform: translateY(-50%) rotate(45deg);
-				}
-			}
-		}
-		.menu-content {
-			transform: translateY(100%);
-			.news-btn {
-				display: flex;
-			}
-		}
-	}
-	.main-content {
-		padding-top: 80px;
-	}
-	footer {
-		.container {
-			display: block;
-			.left-content {
-				margin: auto;
-			}
-			.right-content {
-				margin-top: 30px;
-				.top-content {
-					justify-content: center;
-					margin-bottom: 14px;
-					h3 {
-						line-height: 13px;
-						font-size: 13px;
-					}
-					a {
-						line-height: 10px;
-						font-size: 10px;
-						margin-left: 8px;
-						margin-bottom: 1px;
-					}
-				}
-				p {
-					width: fit-content;
-					margin: auto;
-					font-size: 10px;
-				}
-				small {
-					justify-content: center;
-					font-size: 10px;
-					margin-top: 20px;
 				}
 			}
 		}
