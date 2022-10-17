@@ -1,7 +1,11 @@
-document.getElementById("hamburgerBtn").onclick = () => {
-	console.log("ib");
-	document.getElementById("hamburgerMenu").classList.toggle("hamburger-active");
-	document
-		.getElementById("hamburgerBtn")
-		.classList.toggle("hamburger-btn-active");
-};
+$("#hamburgerBtn").click(function () {
+	$("#hamburgerMenu").toggleClass("hamburger-active");
+	$("#hamburgerBtn").toggleClass("hamburger-btn-active");
+});
+
+$('a[href*="#"]').click(function () {
+	var elmHash = $(this).attr("href");
+	var pos = $(elmHash).offset().top;
+	$("body,html").animate({ scrollTop: pos }, 800);
+	return false;
+});
