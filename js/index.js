@@ -1,4 +1,11 @@
-document.getElementById("humbMenuIcon").onclick = () => {
-	document.getElementById("spMenu").classList.toggle("menu-open");
-	document.getElementById("header").classList.toggle("menu-open");
-};
+$("#hamburgerBtn").click(function () {
+	$("#hamburgerMenu").toggleClass("hamburger-active");
+	$("#hamburgerBtn").toggleClass("hamburger-btn-active");
+});
+
+$('a[href*="#"]').click(function () {
+	var elmHash = $(this).attr("href");
+	var pos = $(elmHash).offset().top;
+	$("body,html").animate({ scrollTop: pos }, 800);
+	return false;
+});
