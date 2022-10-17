@@ -49,10 +49,6 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		//ラジオボタンを削除
-		input[name="tab_name"] {
-			display: none;
-		}
 		.tab-label {
 			width: 20%;
 			max-width: 250px;
@@ -68,21 +64,13 @@
 			background-repeat: no-repeat;
 			order: -1;
 			transition: 0.3s;
-			//なぜにn+4??
-			&:nth-child(n + 4) {
+			&:nth-child(n + 1) {
 				margin-left: 4vw;
 			}
-		}
-		input:checked + .tab-label {
-			color: #fff;
-			background-image: url(../image/common/btn/bg_subhd_pc.png);
-		}
-		.tab-content {
-			display: none;
-			width: 100%;
-		}
-		input:checked + .tab-label + .tab-content {
-			display: block;
+			&:nth-child(3) {
+				color: #fff;
+				background-image: url(../image/common/btn/bg_subhd_pc.png);
+			}
 		}
 	}
 
@@ -164,8 +152,9 @@
 			max-width: 960px;
 			margin: auto;
 		}
+
 		// -----------------------------
-		// lineup共通
+		// ws > lineup共通
 		// -----------------------------
 		.lineup {
 			position: relative;
@@ -366,10 +355,13 @@
 			.tab-label {
 				width: 40%;
 				font-family: shin-go-m;
+				&:nth-child(2n + 1) {
+					margin-left: 0;
+				}
 				&:nth-child(2n) {
 					margin-left: 3vw;
 				}
-				&:nth-child(n + 8) {
+				&:nth-child(n + 3) {
 					margin-top: 20px;
 				}
 			}
@@ -390,7 +382,7 @@
 			.container-lineup {
 				margin-top: 20px;
 				padding-top: 20px;
-				background-size: 78%;
+				background-size: 30%;
 			}
 			.wrapper {
 				max-width: 315px;

@@ -126,6 +126,106 @@
 		<div class="main-content">
 			<!--  ここからページの内容を記載していく  -->
 			<h1 class="top">EVENT</h1>
+			<section class="sub-header">
+				<h1 class="title">EVENT</h1>
+				<div class="tabs">
+					<input type="radio" name="tab_name" id="tab01" />
+					<label class="tab-label" for="tab01">ステージ</label>
+					<section class="tab-content stage">
+						<h1 class="page-title">ステージ</h1>
+					</section>
+					<input type="radio" name="tab_name" id="tab02" />
+					<label class="tab-label" for="tab02">カフェ</label>
+					<section class="tab-content cafe">
+						<h1 class="page-title">カフェ</h1>
+					</section>
+					<input type="radio" name="tab_name" id="tab03" checked />
+					<label class="tab-label" for="tab03">ワークショップ</label>
+					<section class="tab-content ws">
+						<h1 class="page-title">ワークショップ</h1>
+						<p class="band">Workshop</p>
+						<div class="container-lineup">
+							<div class="wrapper">
+								<div class="lineup lineup01">
+									<div class="text-area">
+										<h2 class="title-lineup">模型作り</h2>
+										<p class="price">芸工棟M102　参加費100円</p>
+										<p class="text">
+											GOOOONのコンセプトであるRPG風「自分だけのアジト」を作ってみませんか？真っ白な模型に壁紙や家具を配置しながら、オリジナル作品を作ってみてください。大人も子供も誰でも簡単に作ることができます！どんなアジトができるかは、そう、あなた次第！！出来上がったらおうちに連れて帰って誰かに自慢しよう:)
+										</p>
+									</div>
+									<div class="img-area">
+										<img
+											class="only-pc"
+											src="../../image/ws/ws01_pc.jpg"
+											alt="模型作りをしている写真"
+										/>
+										<img
+											class="only-sp"
+											src="../../image/ws/ws01_sp.jpg"
+											alt="模型作りをしている写真"
+										/>
+									</div>
+								</div>
+								<div class="lineup lineup02">
+									<div class="text-area">
+										<h2 class="title-lineup">
+											参加型<br class="only-pc" />インスタレーション
+										</h2>
+										<p class="price">芸工棟アトリウム前　参加費0円</p>
+										<p class="text">
+											投票箱のキューブをみんなで積み上げて、会場の皆さんで3つのモザイクアートを作りあげます。皆さんが何色のキューブをどこに配置するかでどんなものが出来上がるかが決まっていきます。テトリスみたいに並べたり、一色ごとに置いてみたり…どんな作品が出来上がるのでしょうか？！アトリウムのインテリアと一緒にインスタ映え写真も撮ってみてくださいね！
+										</p>
+									</div>
+									<div class="img-area">
+										<img
+											class="only-pc"
+											src="../../image/ws/ws02_pc.jpg"
+											alt="参加型インスタレーションの写真"
+										/>
+										<img
+											class="only-sp"
+											src="../../image/ws/ws02_sp.jpg"
+											alt="参加型インスタレーションの写真"
+										/>
+									</div>
+								</div>
+								<div class="lineup lineup03">
+									<div class="text-area">
+										<h2 class="title-lineup">マップ作り</h2>
+										<p class="price">芸工棟M103　参加費100円</p>
+										<p class="text">
+											せっかく芸工祭を楽しむなら！あちこちのブースに潜んでいるイラストペーパーを集めて、どんな順番に回ったかを記録してみましょう。全てイラストペーパーを集められると、台紙にシーリングスタンプを押すことができます。古びた宝の地図のような台紙には、大人も子供もワクワクすること間違いなし！
+										</p>
+									</div>
+									<div class="img-area">
+										<img
+											class="only-pc"
+											src="../../image/ws/ws03_pc.jpg"
+											alt="マップ作りをしている写真"
+										/>
+										<img
+											class="only-sp"
+											src="../../image/ws/ws03_sp.jpg"
+											alt="マップ作りをしている写真"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container-cm">
+							<div class="wrapper">
+								<p>cmが入る</p>
+							</div>
+						</div>
+					</section>
+					<input type="radio" name="tab_name" id="tab04" />
+					<label class="tab-label" for="tab04">ブース</label>
+					<section class="tab-content booth">
+						<h1 class="page-title">ブース</h1>
+					</section>
+				</div>
+			</section>
 			<div class="topbtns">
 				<div class="topbtn">
 					<img class="selectbtn" src="../../image/stage/btn_subHD_pc.png" />
@@ -220,9 +320,9 @@
 				</div>
 			</div>
 		</footer>
-		<script src="../../js/index.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="../../js/index.js"></script>
 		<script>
 			$(".slider").slick({
 				autoplay: true,
