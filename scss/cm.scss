@@ -24,6 +24,12 @@
 .cmsp {
 	display: none !important;
 }
+iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+	vertical-align: top;
+}
 
 .sub-header {
 	.title {
@@ -35,7 +41,6 @@
 		text-align: center;
 		transform: skewX(-7deg);
 	}
-
 	.tabs {
 		display: flex;
 		flex-wrap: wrap;
@@ -49,14 +54,14 @@
 		align-items: center;
 		justify-content: center;
 		font-family: shin-go-db;
-		font-size: 24px;
+		font-size: clamp(16px, 2vw, 24px);
 		color: #4e8465;
 		background-image: url(../image/common/btn/bg_subhd_w_pc.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		order: -1;
 		transition: 0.3s;
-		&:nth-child(n + 2) {
+		&:nth-child(2) {
 			margin-left: 4vw;
 		}
 		&:nth-child(1) {
@@ -64,150 +69,48 @@
 			background-image: url(../image/common/btn/bg_subhd_pc.png);
 		}
 	}
+	@media screen and (max-width: 1023px) {
+		.title {
+			margin-bottom: 20px;
+			font-size: 36px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.title {
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+		.tab-label {
+			width: 40%;
+			font-family: shin-go-m;
+			&:nth-child(2n) {
+				margin-left: 3vw;
+			}
+		}
+	}
 }
 
-.movieli {
+.movie-container {
+	width: 90%;
+	max-width: 1184px;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
-	justify-content: center;
-	gap: 129px;
-	margin-top: 116px;
-	margin-bottom: 226px;
-}
-
-.row1 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.row2 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.row3 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.movie {
-	text-align: center;
-}
-
-.movie p {
-	margin-top: 20px;
-	font-size: 20px;
-	font-family: shin-go-m;
-}
-
-.comingsoon {
-	width: 380px;
-}
-
-.movies {
-	width: 380px;
-	height: 213.75px;
-}
-
-@media screen and (max-width: 1023px) {
-	.movies {
-		width: 315px;
-		height: 177.19px;
+	justify-content: space-between;
+	margin: 116px auto 226px;
+	.movie:nth-child(n + 6) {
+		margin-top: 88px;
 	}
-	.comingsoon {
-		width: 315px;
-	}
-
-	.movieli {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-between;
-		justify-content: center;
-		gap: 129px;
-		margin-top: 116px;
-		margin-bottom: 60px;
-	}
-
-	.row1 {
-		display: flex;
-		flex-direction: column;
-		gap: 62px;
-	}
-
-	.icon {
-		margin: 0 auto;
-		width: 44px;
-		margin-bottom: 62px;
-	}
-
-	.movie p {
-		margin-top: 20px;
-		font-size: 16px;
-		font-family: shin-go-m;
-	}
-
-	/*カルーセル*/
-	.carousel {
-		width: 315px;
-		margin: 40px auto auto auto;
-	}
-	.carouselimg {
-		width: 100%;
-	}
-
-	.slider {
-		width: 315px;
-	}
-	.slick-next {
-		right: 0 !important;
-	}
-	.slick-prev {
-		left: 0 !important;
-	}
-	.slick-arrow {
-		z-index: 5 !important;
-	}
-	.slick-arrow:before {
-		content: "" !important;
-		width: 200% !important;
-		height: 200% !important;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.slick-next:before {
-		background: url(btn_right.png) !important;
-		background-size: contain !important;
-		margin-left: -20px;
-		margin-top: 165px;
-	}
-
-	.slick-prev:before {
-		background: url(btn_left.png) !important;
-		background-size: contain !important;
-		margin-left: 0;
-		margin-top: 165px;
-	}
-
-	.txt {
-		text-align: center;
-		margin-bottom: 35px;
-		margin-top: 13px;
-	}
-	.cal {
-		height: 401px;
-	}
-
-	.slick-dots li.slick-active button:before {
-		color: rgb(78, 132, 101);
+	.movie {
+		width: 32%;
+		p {
+			margin-top: 20px;
+			font-size: 20px;
+			font-family: shin-go-m;
+			text-align: center;
+		}
 	}
 }
-/*スマホ*/
+
 @media screen and (max-width: 767px) {
 	.cmpc {
 		display: none !important;
@@ -215,93 +118,77 @@
 	.cmsp {
 		display: block !important;
 	}
-	.movies {
+	.movie-container {
 		width: 315px;
-		height: 177.19px;
-	}
-	.comingsoon {
-		width: 315px;
-	}
-	.movieli {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-between;
-		justify-content: center;
-		gap: 129px;
-		margin-top: 116px;
-		margin-bottom: 60px;
-	}
-
-	.row1 {
-		display: flex;
 		flex-direction: column;
-		gap: 62px;
+		margin-top: 73px;
+		margin-bottom: 60px;
+		.movie {
+			width: 100%;
+			p {
+				margin-top: 18px;
+				font-size: 16px;
+			}
+			&:nth-child(2) {
+				margin-top: 68px;
+			}
+		}
 	}
-
 	.icon {
-		margin: 0 auto;
 		width: 22px;
-		margin-bottom: 62px;
-	}
-
-	.movie p {
-		margin-top: 20px;
-		font-size: 16px;
-		font-family: shin-go-m;
+		margin: 0 auto 62px;
 	}
 
 	/*カルーセル*/
+	/*カルーセル*/
 	.carousel {
+		// arrow含む幅
 		width: 315px;
-		margin: 40px auto auto auto;
-	}
-	.carouselimg {
-		width: 100%;
-	}
-
-	.slider {
-		width: 315px;
-	}
-	.slick-next {
-		right: 0 !important;
-	}
-	.slick-prev {
-		left: 0 !important;
-	}
-	.slick-arrow {
-		z-index: 5 !important;
-	}
-	.slick-arrow:before {
-		content: "" !important;
-		width: 200% !important;
-		height: 200% !important;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.slick-next:before {
-		background: url(btn_right.png) !important;
-		background-size: contain !important;
-		margin-left: -20px;
-		margin-top: 165px;
-	}
-
-	.slick-prev:before {
-		background: url(btn_left.png) !important;
-		background-size: contain !important;
-		margin-left: 0;
-		margin-top: 165px;
-	}
-
-	.txt {
-		text-align: center;
-	}
-	.cal {
-		height: 401px;
-	}
-
-	.slick-dots li.slick-active button:before {
-		color: rgb(78, 132, 101);
+		margin: 0 auto 150px auto;
+		.slider {
+			width: 100%;
+			p {
+				margin-top: 18px;
+				font-family: shin-go-m;
+				text-align: center;
+			}
+			.slick-arrow {
+				width: 40px;
+				height: 40px;
+				top: auto;
+				bottom: -80px;
+				z-index: 5;
+			}
+			.slick-next {
+				background: url("../image/common/btn/btn_r.png") no-repeat top/contain !important;
+				right: 0px;
+				&::before {
+					content: "" !important;
+				}
+			}
+			.slick-prev {
+				background: url("../image/common/btn/btn_l.png") no-repeat top/contain !important;
+				left: 0px;
+				&::before {
+					content: "" !important;
+				}
+			}
+			.slick-dots {
+				bottom: -50px;
+				li {
+					width: 13px;
+					height: 13px;
+					margin: 0 1px;
+				}
+				li button:before {
+					color: #d9d9d9;
+					opacity: 1;
+				}
+				li.slick-active button:before {
+					color: #9fc771;
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
