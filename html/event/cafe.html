@@ -114,110 +114,53 @@
 			<span></span>
 			<span></span>
 		</button>
-		<div class="main-content">
-			<!--  ここからページの内容を記載していく  -->
-			<!-- same-main-title -->
-			<h1 class="main-title">EVENT</h1>
-			<!-- btn-pc -->
-			<div class="btn-pc">
-				<div class="off-pc">
-					<img src="../../image/cafe/btn_subHDnot_pc.png" alt="btn_stage_pc" />
-					<a href="#">ステージ</a>
+		<a href="#top" class="anchor-btn only-sp">
+			<img
+				src="../../image/common/btn/btn_anchor.svg"
+				alt="トップに戻るボタン"
+			/>
+		</a>
+		<main id="top" class="main-content event">
+			<section class="sub-header">
+				<h1 class="title">EVENT</h1>
+				<div class="sh-link-wrapper">
+					<a href="./index.html" class="sh-link">ステージ</a>
+					<a href="./cafe.html" class="sh-link">カフェ</a>
+					<a href="#" class="sh-link">ワークショップ</a>
+					<a href="./booth.html" class="sh-link">ブース</a>
 				</div>
-				<div class="on-pc">
-					<img src="../../image/cafe/btn_subHD_pc.png" alt="btn_cafe_pc" />
-					<a href="#">カフェ</a>
-				</div>
-				<div class="off-pc">
-					<img
-						src="../../image/cafe/btn_subHDnot_pc.png"
-						alt="btn_work-shop_pc"
-					/>
-					<a href="#">ワークショップ</a>
-				</div>
-				<div class="off-pc">
-					<img src="../../image/cafe/btn_subHDnot_pc.png" alt="btn_booth_pc" />
-					<a href="#">ブース</a>
-				</div>
-			</div>
-			<!-- btn-sp -->
-			<div class="btn-sp-1">
-				<div class="off-sp">
-					<img src="../../image/cafe/btn_subHDnot_sp.png" alt="btn_stage_sp" />
-					<a href="#">ステージ</a>
-				</div>
-				<div class="on-sp">
-					<img src="../../image/cafe/btn_subHD_sp.png" alt="btn_cafe_sp" />
-					<a href="#">カフェ</a>
-				</div>
-			</div>
-			<div class="btn-sp-2">
-				<div class="off-sp">
-					<img
-						src="../../image/cafe/btn_subHDnot_sp.png"
-						alt="btn_work-shop_sp"
-					/>
-					<a href="#">ワークショップ</a>
-				</div>
-				<div class="off-sp">
-					<img src="../../image/cafe/btn_subHDnot_sp.png" alt="btn_booth_sp" />
-					<a href="#">ブース</a>
-				</div>
-			</div>
-			<!-- sub-title -->
-			<h1 class="sub-title">カフェ</h1>
-			<!-- same-bar -->
-			<div class="bar">
-				<p>Cafe</p>
-			</div>
-			<!-- icon-pc -->
-			<div class="line-l">
-				<img src="../../image/cafe/line_pc.png" alt="line-pc-l" />
-			</div>
-			<div class="btn-site-pc">
-				<img src="../../image/cafe/btn_more_pc.png" alt="btn-site-pc" />
-				<a href="#">特設サイトを見る</a>
-				<div class="arrow">
-					<img src="../../image/cafe/arrow.svg" alt="arrow" />
-				</div>
-				<div class="cafe-icon">
-					<img src="../../image/cafe/cafe-icon.svg" alt="cafe-icon" />
-				</div>
-				<div class="selected">
-					<img src="../../image/cafe/icon_selected.svg" alt="icon-selected" />
-				</div>
-			</div>
-			<div class="line-r">
-				<img src="../../image/cafe/line_pc.png" alt="line-pc-r" />
-			</div>
-			<!-- icon-sp -->
-			<div class="btn-site-sp">
-				<img src="../../image/cafe/btn_more_sp.png" alt="btn-site-sp" />
-				<a href="#">特設サイト</a>
-				<div class="arrow">
-					<img src="../../image/cafe/arrow.svg" alt="arrow" />
-				</div>
-				<div class="cafe-icon">
-					<img src="../../image/cafe/cafe-icon.svg" alt="cafe-icon" />
-				</div>
-				<div class="selected">
-					<img src="../../image/cafe/icon_selected.svg" alt="icon-selected" />
-				</div>
-			</div>
-			<!-- cm -->
-			<div class="cm">
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/3c2CEmkGaUE"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>
-			</div>
-			<!--  ここまでにページの内容を記載する  -->
-		</div>
+			</section>
+			<section class="page-content">
+				<h1 class="page-title">カフェ</h1>
+				<p class="band">Cafe</p>
+				<section class="cafe-main">
+					<a class="cafe-btn-wrapper" href="#">
+						<div class="cafe-icon">
+							<img src="../../image/cafe/cafe-icon.svg" alt="cafe-icon" />
+						</div>
+						<p class="cafe-btn">
+							特設サイト<span class="only-pc">を見る</span>
+							<img
+								class="arrow"
+								src="../../image/common/btn/arrow_l.svg"
+								alt="arrow"
+							/>
+						</p>
+					</a>
+				</section>
+				<section class="cafe-cm">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/3c2CEmkGaUE"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</section>
+			</section>
+		</main>
 		<footer id="footer">
 			<div class="f-container">
 				<div class="left-content">
@@ -244,6 +187,11 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/index.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="../../js/index.js"></script>
 	</body>
 </html>
