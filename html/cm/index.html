@@ -125,35 +125,13 @@
 		</button>
 		<div class="main-content">
 			<!--  ここからページの内容を記載していく  -->
-			<h1 class="top">CM</h1>
-			<div class="topbtns">
-				<a class="topbtn" href="#">
-					<img
-						class="selectbtn cmpc"
-						src="../../image/stage/btn_subHD_pc.png"
-						alt="pc版ボタン"
-					/>
-					<img
-						class="cmsp"
-						src="../../image/btn/btn_sp/btn_subHD_sp.png"
-						alt="sp版ボタン"
-					/>
-					<p class="stagebtn">映像</p>
-				</a>
-				<a class="topbtn" href="#">
-					<img
-						class="selectbtn cmpc"
-						src="../../image/cm/btn_subHDnot_pc.png"
-						alt="pc版ボタン"
-					/>
-					<img
-						class="selectbtn cmsp"
-						src="../../image/btn/btn_sp/btn_subHDnot_sp.png"
-						alt="sp版ボタン"
-					/>
-					<p class="topbtng">グッズ</p>
-				</a>
-			</div>
+			<section class="sub-header">
+				<h1 class="title">CM</h1>
+				<div class="tabs">
+					<a href="#" class="tab-label" for="tab01">映像</a>
+					<a href="./goods.html" class="tab-label" for="tab02">グッズ</a>
+				</div>
+			</section>
 			<div class="movieli">
 				<div class="row1">
 					<div class="movie tops cmpc">
@@ -342,9 +320,9 @@
 				</div>
 			</div>
 		</footer>
-		<script src="../../js/index.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="../../js/index.js"></script>
 		<script>
 			$(".slider").slick({
 				asNavFor: "#text-slider",

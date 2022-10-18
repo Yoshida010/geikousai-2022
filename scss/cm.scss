@@ -7,6 +7,10 @@
 	src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
 }
 @font-face {
+	font-family: shin-go-db;
+	src: url(../font/A-OTF-ShinGoPr6N-DeBold.otf);
+}
+@font-face {
 	font-family: shin-go-b;
 	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
 }
@@ -17,52 +21,49 @@
 .cmpc {
 	display: block;
 }
-
 .cmsp {
 	display: none !important;
 }
-.top {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;
-	font-size: 50px;
-	font-family: vdl-gigajr;
-}
 
-.topbtns {
-	display: flex;
-	justify-content: center;
-	gap: 64px;
-}
+.sub-header {
+	.title {
+		margin-bottom: 30px;
+		color: #0d2e4f;
+		font-family: vdl-gigajr;
+		font-size: 48px;
+		line-height: 2em;
+		text-align: center;
+		transform: skewX(-7deg);
+	}
 
-.selectbtn {
-	width: 250px;
-}
-
-.topbtn {
-	position: relative;
-}
-
-.topbtn p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
-}
-
-.topbtng {
-	color: rgb(78, 132, 101);
-}
-
-.stagebtn {
-	color: white;
+	.tabs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.tab-label {
+		width: 20%;
+		max-width: 250px;
+		aspect-ratio: 25/6;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: shin-go-db;
+		font-size: 24px;
+		color: #4e8465;
+		background-image: url(../image/common/btn/bg_subhd_w_pc.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		order: -1;
+		transition: 0.3s;
+		&:nth-child(n + 2) {
+			margin-left: 4vw;
+		}
+		&:nth-child(1) {
+			color: #fff;
+			background-image: url(../image/common/btn/bg_subhd_pc.png);
+		}
+	}
 }
 
 .movieli {
@@ -113,52 +114,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-	.cmpc {
-		display: none !important;
-	}
-	.cmsp {
-		display: block !important;
-	}
-	.top {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-		font-size: 48px;
-		font-family: vdl-gigajr;
-		font-weight: 400;
-	}
-	.selectbtn {
-		width: 100%;
-	}
-
-	.topbtn {
-		position: relative;
-		width: 255px;
-	}
-
-	.topbtn p {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		margin: 0;
-		padding: 0;
-		width: 170px;
-		text-align: center;
-		font-size: 24px;
-	}
-	.topbtng {
-		color: rgb(78, 132, 101);
-	}
-
-	.stagebtn {
-		color: white;
-	}
-
 	.movies {
 		width: 315px;
 		height: 177.19px;
@@ -257,56 +212,8 @@
 	.cmpc {
 		display: none !important;
 	}
-
 	.cmsp {
 		display: block !important;
-	}
-	.top {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-		font-size: 24px;
-		font-family: vdl-gigajr;
-		font-weight: 400;
-	}
-
-	.topbtns {
-		display: flex;
-		justify-content: center;
-		gap: 18px;
-	}
-
-	.selectbtn {
-		width: 100%;
-	}
-
-	.topbtn {
-		position: relative;
-		width: 150px;
-		height: 36px;
-	}
-
-	.topbtn p {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		margin: 0;
-		padding: 0;
-		width: 48px;
-		text-align: center;
-		font-size: 16px;
-	}
-	.topbtng {
-		color: rgb(78, 132, 101);
-	}
-
-	.stagebtn {
-		color: white;
 	}
 	.movies {
 		width: 315px;
