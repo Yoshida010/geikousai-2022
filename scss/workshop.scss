@@ -1,13 +1,5 @@
 //フォント
 @font-face {
-	font-family: shin-go-el;
-	src: url(../font/A-OTF-ShinGoPr6N-ExLight.otf);
-}
-@font-face {
-	font-family: shin-go-l;
-	src: url(../font/A-OTF-ShinGoPr6N-Light.otf);
-}
-@font-face {
 	font-family: shin-go-r;
 	src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
 }
@@ -26,10 +18,6 @@
 @font-face {
 	font-family: shin-go-h;
 	src: url(../font/A-OTF-ShinGoPr6N-Heavy.otf);
-}
-@font-face {
-	font-family: shin-go-u;
-	src: url(../font/A-OTF-ShinGoPr6N-Ultra.otf);
 }
 
 // -----------------------------
@@ -61,12 +49,12 @@
 			transform: skewX(-7deg);
 		}
 
-		.tabs {
+		.sh-link-wrapper {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.tab-label {
+		.sh-link {
 			width: 20%;
 			max-width: 250px;
 			aspect-ratio: 25/6;
@@ -74,14 +62,14 @@
 			align-items: center;
 			justify-content: center;
 			font-family: shin-go-db;
-			font-size: 24px;
+			font-size: clamp(16px, 2vw, 24px);
 			color: #4e8465;
 			background-image: url(../image/common/btn/bg_subhd_w_pc.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			order: -1;
-			transition: 0.3s;
-			&:nth-child(n + 1) {
+			cursor: pointer;
+			&:nth-child(n + 2) {
 				margin-left: 4vw;
 			}
 			&:nth-child(3) {
@@ -91,7 +79,7 @@
 		}
 	}
 
-	.tab-content {
+	.page-content {
 		margin-top: 100px;
 		.page-title {
 			margin-bottom: 20px;
@@ -362,12 +350,8 @@
 				margin-bottom: 20px;
 				font-size: 36px;
 			}
-			.tab-label {
-				font-size: 16px;
-				cursor: pointer;
-			}
 		}
-		.tab-content {
+		.page-content {
 			margin-top: 80px;
 			.page-title {
 				margin-bottom: 16px;
@@ -413,7 +397,11 @@
 				margin-bottom: 15px;
 				font-size: 24px;
 			}
-			.tab-label {
+			.sh-link-wrapper {
+				max-width: 400px;
+				margin: auto;
+			}
+			.sh-link {
 				width: 40%;
 				font-family: shin-go-m;
 				&:nth-child(2n + 1) {
@@ -428,7 +416,7 @@
 			}
 		}
 
-		.tab-content {
+		.page-content {
 			margin-top: 40px;
 			.page-title {
 				margin-bottom: 10px;
