@@ -240,14 +240,14 @@
 		.slide-active {
 			&::before {
 				animation-name: slide-animation;
-				animation-duration: 2s;
+				animation-duration: 1s;
 				animation-fill-mode: forwards;
 			}
 			&::after,
 			.text-area,
 			.img-area {
 				animation-name: appear-animation;
-				animation-duration: 2s;
+				animation-duration: 1s;
 				animation-fill-mode: forwards;
 			}
 			@keyframes slide-animation {
@@ -337,8 +337,6 @@
 			padding: 50px 0 150px;
 			.wrapper {
 				max-width: 800px;
-				aspect-ratio: 16/9;
-				background-color: #ddd;
 			}
 		}
 	}
@@ -466,12 +464,6 @@
 			.img-area {
 				width: 100%;
 				order: -1;
-			}
-
-			.container-cm {
-				.wrapper {
-					max-width: 315px;
-				}
 			}
 		}
 	}

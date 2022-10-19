@@ -1,15 +1,3 @@
-let thisOffset = [1, 2, 3];
-$(window).on("load", function () {
-	$(".lineup").each(function (i, el) {
-		thisOffset[i] = $(el).offset().top + $(el).outerHeight();
-		$(window).scroll(function () {
-			if ($(window).scrollTop() + $(window).height() * 1.2 > thisOffset[i]) {
-				$(el).addClass("slide-active");
-			}
-		});
-	});
-});
-
 var access = $.cookie("access");
 if (!access) {
 	flag = true;
