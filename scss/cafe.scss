@@ -21,6 +21,8 @@
 .event {
 	.sub-header {
 		.title {
+			width: 300px;
+			margin: 0 auto;
 			margin-bottom: 30px;
 			color: #0d2e4f;
 			font-family: vdl-gigajr;
@@ -252,15 +254,8 @@
 }
 
 .cafe-cm {
-	width: 80%;
-	max-width: 800px;
+	width: 100%;
 	margin: 100px auto 150px;
-	text-align: center;
-	iframe {
-		width: 100%;
-		height: auto;
-		aspect-ratio: 16/9;
-	}
 }
 
 /*sp*/

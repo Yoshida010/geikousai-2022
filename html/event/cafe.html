@@ -4,9 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+		/>
 		<link rel="stylesheet" href="../../css/reset.css" />
 		<link rel="stylesheet" href="../../css/style.css" />
 		<link rel="stylesheet" href="../../css/cafe.css" />
+		<link rel="stylesheet" href="../../css/youtube.css" />
 		<script>
 			(function (d) {
 				var config = {
@@ -149,15 +155,23 @@
 					</a>
 				</section>
 				<section class="cafe-cm">
-					<iframe
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/3c2CEmkGaUE"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
+					<div class="youtube-wrapper">
+						<a
+							href="https://www.youtube.com/embed/nVXr5WcfWW4"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/nVXr5WcfWW4/mqdefault.jpg"
+								alt="カフェのサムネ"
+								class="only-sp"
+							/>
+							<img
+								src="http://i.ytimg.com/vi/nVXr5WcfWW4/maxresdefault.jpg"
+								alt="カフェのサムネ"
+								class="only-pc"
+							/>
+						</a>
+					</div>
 				</section>
 			</section>
 		</main>
@@ -192,6 +206,9 @@
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script src="../../js/index.js"></script>
+		<script src="../../js/cafe.js"></script>
 	</body>
 </html>

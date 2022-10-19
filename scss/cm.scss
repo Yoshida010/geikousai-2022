@@ -12,15 +12,11 @@
 .cmsp {
 	display: none !important;
 }
-// iframe {
-// 	width: 100%;
-// 	height: auto;
-// 	aspect-ratio: 16/9;
-// 	vertical-align: top;
-// }
 
 .sub-header {
 	.title {
+		width: 300px;
+		margin: 0 auto;
 		margin-bottom: 30px;
 		color: #0d2e4f;
 		font-family: vdl-gigajr;
@@ -183,29 +179,4 @@
 			}
 		}
 	}
-}
-
-// モーダル
-.modaal-video-wrap {
-	//動画表示時の横幅
-	width: 90%;
-	margin: auto;
-	max-width: 960px;
-}
-/*動画表示のモーダルの余白を変更したい場合*/
-.modaal-video .modaal-inner-wrapper {
-	padding: 0;
-}
-
-/*モーダルのボタンの色を変更したい場合*/
-.modaal-close:after,
-.modaal-close:before {
-	background: #ccc;
-}
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before {
-	background: #666;
 }

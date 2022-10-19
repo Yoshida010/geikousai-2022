@@ -1,0 +1,78 @@
+img {
+	vertical-align: top;
+}
+.only-pc {
+	display: block !important;
+}
+.only-sp {
+	display: none !important;
+}
+.youtube-wrapper {
+	width: 95%;
+	max-width: 800px;
+	margin: auto;
+}
+.video-thumb {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	background-color: #000;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-image: url(../image/common/icon/btn_play.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+	img {
+		opacity: 0.7;
+	}
+}
+@media screen and (max-width: 767px) {
+	.only-pc {
+		display: none !important;
+	}
+	.only-sp {
+		display: block !important;
+	}
+	.youtube-wrapper {
+		max-width: 315px;
+	}
+	.video-thumb {
+		&::before {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+// モーダル
+.modaal-video-wrap {
+	//動画表示時の横幅
+	width: 90%;
+	margin: auto;
+	max-width: 960px;
+}
+/*動画表示のモーダルの余白を変更したい場合*/
+.modaal-video .modaal-inner-wrapper {
+	padding: 0;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+	background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+	background: #666;
+}
