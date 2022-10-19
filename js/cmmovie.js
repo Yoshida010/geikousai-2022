@@ -4,7 +4,6 @@ $(".slider").slick({
 	dots: true,
 });
 
-//初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
 var access = $.cookie("access");
 if (!access) {
 	flag = true;
@@ -15,7 +14,6 @@ if (!access) {
 
 //モーダル表示
 $(".video-open").modaal({
-	start_open: flag, // ページロード時に表示するか
 	overlay_close: true, //モーダル背景クリック時に閉じるか
 	type: "video",
 	background: "#000", // 背景色
