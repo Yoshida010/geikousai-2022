@@ -40,11 +40,11 @@ header {
 }
 
 .main-content {
-	max-width: 960px;
-	margin: auto;
 	padding-top: 109px;
 	.page-ttl {
 		width: 100%;
+		max-width: 960px;
+		margin: auto;
 		padding-left: 20px;
 		font-family: shin-go-b;
 		font-size: 20px;
@@ -58,6 +58,9 @@ header {
 			url(../image/common/bg/bg_dot.svg);
 	}
 	.crumb-list {
+		width: 100%;
+		max-width: 960px;
+		margin: auto;
 		display: flex;
 		align-items: center;
 		font-family: shin-go-r;
@@ -68,6 +71,7 @@ header {
 	}
 	.container {
 		width: 90%;
+		max-width: 960px;
 		display: flex;
 		justify-content: space-between;
 		margin: 57px auto 0;
@@ -271,15 +275,13 @@ footer {
 			padding: 0 20px;
 			.text-wrapper {
 				width: 100%;
-				max-width: 600px;
 				margin: auto;
 				padding: 30px 20px;
 			}
 		}
 		.btn-wrapper {
-			max-width: 600px;
-			margin-top: 20px;
-			margin-bottom: 40px;
+			width: auto;
+			margin: 20px 20px 40px 20px;
 		}
 	}
 }
