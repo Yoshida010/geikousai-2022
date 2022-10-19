@@ -12,12 +12,12 @@
 .cmsp {
 	display: none !important;
 }
-iframe {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	vertical-align: top;
-}
+// iframe {
+// 	width: 100%;
+// 	height: auto;
+// 	aspect-ratio: 16/9;
+// 	vertical-align: top;
+// }
 
 .sub-header {
 	.title {
@@ -152,17 +152,17 @@ iframe {
 				z-index: 5;
 			}
 			.slick-next {
-				background: url("../image/common/btn/btn_r.png") no-repeat top/contain !important;
+				background: url("../image/common/btn/btn_r.png") no-repeat top/contain;
 				right: 0px;
 				&::before {
-					content: "" !important;
+					content: "";
 				}
 			}
 			.slick-prev {
-				background: url("../image/common/btn/btn_l.png") no-repeat top/contain !important;
+				background: url("../image/common/btn/btn_l.png") no-repeat top/contain;
 				left: 0px;
 				&::before {
-					content: "" !important;
+					content: "";
 				}
 			}
 			.slick-dots {
@@ -183,4 +183,29 @@ iframe {
 			}
 		}
 	}
+}
+
+// モーダル
+.modaal-video-wrap {
+	//動画表示時の横幅
+	width: 90%;
+	margin: auto;
+	max-width: 960px;
+}
+/*動画表示のモーダルの余白を変更したい場合*/
+.modaal-video .modaal-inner-wrapper {
+	padding: 0;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+	background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+	background: #666;
 }
