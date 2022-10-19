@@ -1,9 +1,3 @@
-$(".slider").slick({
-	autoplay: true,
-	arrows: true,
-	dots: true,
-});
-
 var access = $.cookie("access");
 if (!access) {
 	flag = true;
