@@ -41,12 +41,12 @@ iframe {
 		text-align: center;
 		transform: skewX(-7deg);
 	}
-	.tabs {
+	.sh-link-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.tab-label {
+	.sh-link {
 		width: 20%;
 		max-width: 250px;
 		aspect-ratio: 25/6;
@@ -80,7 +80,11 @@ iframe {
 			margin-bottom: 15px;
 			font-size: 24px;
 		}
-		.tab-label {
+		.sh-link-wrapper {
+			max-width: 400px;
+			margin: auto;
+		}
+		.sh-link {
 			width: 40%;
 			font-family: shin-go-m;
 			&:nth-child(2n) {
@@ -97,7 +101,7 @@ iframe {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 116px auto 226px;
-	.movie:nth-child(n + 6) {
+	.movie:nth-child(n + 4) {
 		margin-top: 88px;
 	}
 	.movie {
