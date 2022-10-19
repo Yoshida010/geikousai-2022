@@ -12,6 +12,9 @@
 	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
 }
 
+// ----------------------------
+// pc
+// ----------------------------
 .top {
 	//共通
 	img {
@@ -251,6 +254,7 @@
 				justify-content: space-between;
 				align-items: center;
 				img {
+					display: inline-block;
 					width: 46%;
 				}
 			}
@@ -269,7 +273,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: space-between;
-					img {
+					a {
 						width: 31%;
 						&:nth-child(n + 4) {
 							margin-top: 50px;
@@ -305,6 +309,9 @@
 			.mv-space {
 				width: 100%;
 				height: calc(100vh - 109px);
+				.bnr-wrapper {
+					display: none;
+				}
 			}
 
 			//about
@@ -491,7 +498,7 @@
 				.container {
 					.thumb-wrapper {
 						flex-direction: column;
-						img {
+						a {
 							width: 100%;
 							&:nth-child(n + 2) {
 								margin-top: 20px;
@@ -510,7 +517,44 @@
 	}
 }
 
-//slick.js
+// ----------------------------
+// モーダル
+// ----------------------------
+/*モーダル非表示*/
+.modal-content {
+	display: none;
+}
+
+/*モーダルの中身のスタイル*/
+.modaal-container {
+	/*モーダルの横幅*/
+	// max-width: 600px;
+	width: 100%;
+	.ttl {
+		margin-bottom: 8px;
+		font-family: shin-go-b;
+		font-size: 32px;
+	}
+	.txt {
+		font-family: shin-go-r;
+	}
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+	background: #ccc;
+}
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+	background: #666;
+}
+
+// ----------------------------
+// スライダー
+// ----------------------------
 .sponsor-top .slider-top {
 	height: 300px;
 	display: flex;
@@ -577,10 +621,10 @@
 	&::before {
 		content: "";
 		position: absolute;
-		bottom: 0px;
+		bottom: 0.8px;
 		left: 0px;
 		width: 100%;
-		height: 11px;
+		height: 10px;
 		background-color: #d9d9d9;
 		border-radius: 10px;
 		transform: skewX(-20deg);

@@ -23,7 +23,7 @@ header {
 	padding-top: 25px;
 	padding-left: 20px;
 	background-color: #fff;
-	z-index: 1000;
+	z-index: 500;
 
 	.logo-wrapper {
 		display: flex;
@@ -144,7 +144,7 @@ header {
 	background-color: #0d2e4f;
 	border-radius: 50vw;
 	border: 2px solid #fff;
-	z-index: 2000;
+	z-index: 600;
 	span {
 		display: inline-block;
 		width: 100%;
@@ -309,6 +309,9 @@ footer {
 
 // pc
 @media screen and (min-width: 1024px) {
+	.only-sp {
+		display: none;
+	}
 	.pc-none {
 		display: none !important;
 	}
