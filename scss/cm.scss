@@ -7,6 +7,10 @@
 	src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
 }
 @font-face {
+	font-family: shin-go-db;
+	src: url(../font/A-OTF-ShinGoPr6N-DeBold.otf);
+}
+@font-face {
 	font-family: shin-go-b;
 	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
 }
@@ -17,384 +21,178 @@
 .cmpc {
 	display: block;
 }
-
 .cmsp {
 	display: none !important;
 }
-.top {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;
-	font-size: 50px;
-	font-family: vdl-gigajr;
+iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+	vertical-align: top;
 }
 
-.topbtns {
-	display: flex;
-	justify-content: center;
-	gap: 64px;
-}
-
-.selectbtn {
-	width: 250px;
-}
-
-.topbtn {
-	position: relative;
-}
-
-.topbtn p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
-}
-
-.topbtng {
-	color: rgb(78, 132, 101);
-}
-
-.stagebtn {
-	color: white;
-}
-
-.movieli {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
-	justify-content: center;
-	gap: 129px;
-	margin-top: 116px;
-	margin-bottom: 226px;
-}
-
-.row1 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.row2 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.row3 {
-	display: flex;
-	justify-content: center;
-	gap: 22px;
-}
-
-.movie {
-	text-align: center;
-}
-
-.movie p {
-	margin-top: 20px;
-	font-size: 20px;
-	font-family: shin-go-m;
-}
-
-.comingsoon {
-	width: 380px;
-}
-
-.movies {
-	width: 380px;
-	height: 213.75px;
-}
-
-@media screen and (max-width: 1023px) {
-	.cmpc {
-		display: none !important;
-	}
-	.cmsp {
-		display: block !important;
-	}
-	.top {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-		font-size: 48px;
+.sub-header {
+	.title {
+		margin-bottom: 30px;
+		color: #0d2e4f;
 		font-family: vdl-gigajr;
-		font-weight: 400;
-	}
-	.selectbtn {
-		width: 100%;
-	}
-
-	.topbtn {
-		position: relative;
-		width: 255px;
-	}
-
-	.topbtn p {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		margin: 0;
-		padding: 0;
-		width: 170px;
+		font-size: 48px;
+		line-height: 2em;
 		text-align: center;
-		font-size: 24px;
+		transform: skewX(-7deg);
 	}
-	.topbtng {
-		color: rgb(78, 132, 101);
-	}
-
-	.stagebtn {
-		color: white;
-	}
-
-	.movies {
-		width: 315px;
-		height: 177.19px;
-	}
-	.comingsoon {
-		width: 315px;
-	}
-
-	.movieli {
+	.sh-link-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		align-content: space-between;
 		justify-content: center;
-		gap: 129px;
-		margin-top: 116px;
-		margin-bottom: 60px;
 	}
-
-	.row1 {
+	.sh-link {
+		width: 20%;
+		max-width: 250px;
+		aspect-ratio: 25/6;
 		display: flex;
-		flex-direction: column;
-		gap: 62px;
+		align-items: center;
+		justify-content: center;
+		font-family: shin-go-db;
+		font-size: clamp(16px, 2vw, 24px);
+		color: #4e8465;
+		background-image: url(../image/common/btn/bg_subhd_w_pc.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		order: -1;
+		transition: 0.3s;
+		&:nth-child(2) {
+			margin-left: 4vw;
+		}
+		&:nth-child(1) {
+			color: #fff;
+			background-image: url(../image/common/btn/bg_subhd_pc.png);
+		}
 	}
-
-	.icon {
-		margin: 0 auto;
-		width: 44px;
-		margin-bottom: 62px;
+	@media screen and (max-width: 1023px) {
+		.title {
+			margin-bottom: 20px;
+			font-size: 36px;
+		}
 	}
-
-	.movie p {
-		margin-top: 20px;
-		font-size: 16px;
-		font-family: shin-go-m;
-	}
-
-	/*カルーセル*/
-	.carousel {
-		width: 315px;
-		margin: 40px auto auto auto;
-	}
-	.carouselimg {
-		width: 100%;
-	}
-
-	.slider {
-		width: 315px;
-	}
-	.slick-next {
-		right: 0 !important;
-	}
-	.slick-prev {
-		left: 0 !important;
-	}
-	.slick-arrow {
-		z-index: 5 !important;
-	}
-	.slick-arrow:before {
-		content: "" !important;
-		width: 200% !important;
-		height: 200% !important;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.slick-next:before {
-		background: url(btn_right.png) !important;
-		background-size: contain !important;
-		margin-left: -20px;
-		margin-top: 165px;
-	}
-
-	.slick-prev:before {
-		background: url(btn_left.png) !important;
-		background-size: contain !important;
-		margin-left: 0;
-		margin-top: 165px;
-	}
-
-	.txt {
-		text-align: center;
-		margin-bottom: 35px;
-		margin-top: 13px;
-	}
-	.cal {
-		height: 401px;
-	}
-
-	.slick-dots li.slick-active button:before {
-		color: rgb(78, 132, 101);
+	@media screen and (max-width: 767px) {
+		.title {
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+		.sh-link-wrapper {
+			max-width: 400px;
+			margin: auto;
+		}
+		.sh-link {
+			width: 40%;
+			font-family: shin-go-m;
+			&:nth-child(2n) {
+				margin-left: 3vw;
+			}
+		}
 	}
 }
-/*スマホ*/
+
+.movie-container {
+	width: 90%;
+	max-width: 1184px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 116px auto 226px;
+	.movie:nth-child(n + 4) {
+		margin-top: 88px;
+	}
+	.movie {
+		width: 32%;
+		p {
+			margin-top: 20px;
+			font-size: 20px;
+			font-family: shin-go-m;
+			text-align: center;
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.cmpc {
 		display: none !important;
 	}
-
 	.cmsp {
 		display: block !important;
 	}
-	.top {
-		position: relative;
-		display: flex;
+	.movie-container {
+		width: 315px;
 		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-		font-size: 24px;
-		font-family: vdl-gigajr;
-		font-weight: 400;
-	}
-
-	.topbtns {
-		display: flex;
-		justify-content: center;
-		gap: 18px;
-	}
-
-	.selectbtn {
-		width: 100%;
-	}
-
-	.topbtn {
-		position: relative;
-		width: 150px;
-		height: 36px;
-	}
-
-	.topbtn p {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		margin: 0;
-		padding: 0;
-		width: 48px;
-		text-align: center;
-		font-size: 16px;
-	}
-	.topbtng {
-		color: rgb(78, 132, 101);
-	}
-
-	.stagebtn {
-		color: white;
-	}
-	.movies {
-		width: 315px;
-		height: 177.19px;
-	}
-	.comingsoon {
-		width: 315px;
-	}
-	.movieli {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-between;
-		justify-content: center;
-		gap: 129px;
-		margin-top: 116px;
+		margin-top: 73px;
 		margin-bottom: 60px;
+		.movie {
+			width: 100%;
+			p {
+				margin-top: 18px;
+				font-size: 16px;
+			}
+			&:nth-child(2) {
+				margin-top: 68px;
+			}
+		}
 	}
-
-	.row1 {
-		display: flex;
-		flex-direction: column;
-		gap: 62px;
-	}
-
 	.icon {
-		margin: 0 auto;
 		width: 22px;
-		margin-bottom: 62px;
-	}
-
-	.movie p {
-		margin-top: 20px;
-		font-size: 16px;
-		font-family: shin-go-m;
+		margin: 0 auto 62px;
 	}
 
 	/*カルーセル*/
+	/*カルーセル*/
 	.carousel {
+		// arrow含む幅
 		width: 315px;
-		margin: 40px auto auto auto;
-	}
-	.carouselimg {
-		width: 100%;
-	}
-
-	.slider {
-		width: 315px;
-	}
-	.slick-next {
-		right: 0 !important;
-	}
-	.slick-prev {
-		left: 0 !important;
-	}
-	.slick-arrow {
-		z-index: 5 !important;
-	}
-	.slick-arrow:before {
-		content: "" !important;
-		width: 200% !important;
-		height: 200% !important;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.slick-next:before {
-		background: url(btn_right.png) !important;
-		background-size: contain !important;
-		margin-left: -20px;
-		margin-top: 165px;
-	}
-
-	.slick-prev:before {
-		background: url(btn_left.png) !important;
-		background-size: contain !important;
-		margin-left: 0;
-		margin-top: 165px;
-	}
-
-	.txt {
-		text-align: center;
-	}
-	.cal {
-		height: 401px;
-	}
-
-	.slick-dots li.slick-active button:before {
-		color: rgb(78, 132, 101);
+		margin: 0 auto 150px auto;
+		.slider {
+			width: 100%;
+			p {
+				margin-top: 18px;
+				font-family: shin-go-m;
+				text-align: center;
+			}
+			.slick-arrow {
+				width: 40px;
+				height: 40px;
+				top: auto;
+				bottom: -80px;
+				z-index: 5;
+			}
+			.slick-next {
+				background: url("../image/common/btn/btn_r.png") no-repeat top/contain !important;
+				right: 0px;
+				&::before {
+					content: "" !important;
+				}
+			}
+			.slick-prev {
+				background: url("../image/common/btn/btn_l.png") no-repeat top/contain !important;
+				left: 0px;
+				&::before {
+					content: "" !important;
+				}
+			}
+			.slick-dots {
+				bottom: -50px;
+				li {
+					width: 13px;
+					height: 13px;
+					margin: 0 1px;
+				}
+				li button:before {
+					color: #d9d9d9;
+					opacity: 1;
+				}
+				li.slick-active button:before {
+					color: #9fc771;
+					opacity: 1;
+				}
+			}
+		}
 	}
 }

@@ -123,40 +123,24 @@
 			<span></span>
 			<span></span>
 		</button>
-		<div class="main-content">
+		<a href="#top" class="anchor-btn only-sp">
+			<img
+				src="../../image/common/btn/btn_anchor.svg"
+				alt="トップに戻るボタン"
+			/>
+		</a>
+		<main id="top" class="main-content">
 			<!--  ここからページの内容を記載していく  -->
-			<h1 class="top">CM</h1>
-			<div class="topbtns">
-				<a class="topbtn" href="#">
-					<img
-						class="selectbtn cmpc"
-						src="../../image/stage/btn_subHD_pc.png"
-						alt="pc版ボタン"
-					/>
-					<img
-						class="cmsp"
-						src="../../image/btn/btn_sp/btn_subHD_sp.png"
-						alt="sp版ボタン"
-					/>
-					<p class="stagebtn">映像</p>
-				</a>
-				<a class="topbtn" href="#">
-					<img
-						class="selectbtn cmpc"
-						src="../../image/cm/btn_subHDnot_pc.png"
-						alt="pc版ボタン"
-					/>
-					<img
-						class="selectbtn cmsp"
-						src="../../image/btn/btn_sp/btn_subHDnot_sp.png"
-						alt="sp版ボタン"
-					/>
-					<p class="topbtng">グッズ</p>
-				</a>
-			</div>
-			<div class="movieli">
-				<div class="row1">
-					<div class="movie tops cmpc">
+			<section class="sub-header">
+				<h1 class="title">CM</h1>
+				<div class="sh-link-wrapper">
+					<a href="#" class="sh-link">映像</a>
+					<a href="./goods.html" class="sh-link">グッズ</a>
+				</div>
+			</section>
+			<section class="movie-pc">
+				<ul class="movie-container">
+					<li class="movie">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/XxEAj9Zh6cU"
@@ -166,27 +150,12 @@
 							allowfullscreen
 						></iframe>
 						<p>コンセプト映像</p>
-					</div>
-					<div class="movie cmpc">
+					</li>
+					<li class="movie tops">
 						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
 						<p>オープニング</p>
-					</div>
-					<div class="movie cmsp">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/XxEAj9Zh6cU"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p>コンセプト映像</p>
-					</div>
-					<div class="movie tops cmsp">
-						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
-						<p>オープニング</p>
-					</div>
-					<div class="movie cmpc">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/0PbOUd2-CKQ"
@@ -196,10 +165,8 @@
 							allowfullscreen
 						></iframe>
 						<p>カフェ</p>
-					</div>
-				</div>
-				<div class="row2 cmpc">
-					<div class="movie">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies cmpc"
 							src="https://www.youtube.com/embed/uwxfYI5SfEI"
@@ -208,9 +175,9 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen
 						></iframe>
-						<p class="cmsp">ワークショップ</p>
-					</div>
-					<div class="movie">
+						<p>ワークショップ</p>
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/UT_vS0alJ2A"
@@ -220,8 +187,8 @@
 							allowfullscreen
 						></iframe>
 						<p>ステージ企画/企画名</p>
-					</div>
-					<div class="movie">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/am3iwZijDvc"
@@ -231,10 +198,8 @@
 							allowfullscreen
 						></iframe>
 						<p>ステージ企画/企画名</p>
-					</div>
-				</div>
-				<div class="row3 cmpc">
-					<div class="movie">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/xRBd-y0R-68"
@@ -244,8 +209,8 @@
 							allowfullscreen
 						></iframe>
 						<p>ステージ企画/企画名</p>
-					</div>
-					<div class="movie">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/IBvNWNlUiBA"
@@ -255,8 +220,8 @@
 							allowfullscreen
 						></iframe>
 						<p>ステージ企画/企画名</p>
-					</div>
-					<div class="movie">
+					</li>
+					<li class="movie cmpc">
 						<iframe
 							class="movies"
 							src="https://www.youtube.com/embed/Uz2LfhwX_00"
@@ -266,56 +231,49 @@
 							allowfullscreen
 						></iframe>
 						<p>ステージ企画/企画名</p>
-					</div>
-				</div>
-			</div>
+					</li>
+				</ul>
+			</section>
 			<div class="icon">
 				<img class="cmsp" src="../../image/cm/icon_sq_sp.png" />
 			</div>
 
 			<!--カルーセル-->
-			<div class="cal cmsp">
-				<div class="carousel cmsp">
+			<section class="cal cmsp">
+				<div class="carousel">
 					<ul class="slider">
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">カフェ</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ワークショップ</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ステージ企画/企画名</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ステージ企画/企画名</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ステージ企画/企画名</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ステージ企画/企画名</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<p class="txt">ステージ企画/企画名</p>
 						</li>
 					</ul>
 				</div>
-				<div id="text-slider-container">
-					<div id="text-slider-box"></div>
-					<div id="text-slider">
-						<p class="txt">カフェ</p>
-						<p class="txt">ワークショップ</p>
-						<p class="txt">ステージ企画/企画名</p>
-						<p class="txt">ステージ企画/企画名</p>
-						<p class="txt">ステージ企画/企画名</p>
-						<p class="txt">ステージ企画/企画名</p>
-						<p class="txt">ステージ企画/企画名</p>
-					</div>
-				</div>
-			</div>
-
-			<!--  ここまでにページの内容を記載する  -->
-		</div>
+			</section>
+		</main>
 		<footer id="footer">
 			<div class="f-container">
 				<div class="left-content">
@@ -342,18 +300,14 @@
 				</div>
 			</div>
 		</footer>
-		<script src="../../js/index.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="../../js/index.js"></script>
 		<script>
 			$(".slider").slick({
-				asNavFor: "#text-slider",
 				autoplay: true,
 				arrows: true,
-			});
-			$("#text-slider").slick({
 				dots: true,
-				arrows: false,
 			});
 		</script>
 	</body>
