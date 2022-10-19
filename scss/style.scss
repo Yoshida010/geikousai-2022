@@ -203,12 +203,14 @@ footer {
 		}
 		.right-content {
 			margin-top: 30px;
+			font-family: shin-go-r;
 			.top-content {
 				display: flex;
 				justify-content: center;
 				margin-bottom: 14px;
 				h3 {
 					font-size: 13px;
+					font-family: shin-go-b;
 				}
 				a {
 					font-size: 10px;
@@ -291,6 +293,9 @@ footer {
 		span:nth-child(3) {
 			transform: translateY(-7px) rotate(45deg);
 		}
+	}
+	.anchor-btn {
+		display: none !important;
 	}
 	.container-anchor {
 		padding-top: 109px;
