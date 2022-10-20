@@ -1,288 +1,183 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../css/reset.css" />
-		<link rel="stylesheet" href="../../css/style.css" />
-		<link rel="stylesheet" href="../../css/about.css" />
-		<script>
-			(function (d) {
-				var config = {
-						kitId: "cea8vmg",
-						scriptTimeout: 3000,
-						async: true,
-					},
-					h = d.documentElement,
-					t = setTimeout(function () {
-						h.className =
-							h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-					}, config.scriptTimeout),
-					tk = d.createElement("script"),
-					f = false,
-					s = d.getElementsByTagName("script")[0],
-					a;
-				h.className += " wf-loading";
-				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-				tk.async = true;
-				tk.onload = tk.onreadystatechange = function () {
-					a = this.readyState;
-					if (f || (a && a != "complete" && a != "loaded")) return;
-					f = true;
-					clearTimeout(t);
-					try {
-						Typekit.load(config);
-					} catch (e) {}
-				};
-				s.parentNode.insertBefore(tk, s);
-			})(document);
-		</script>
-		<title>ABOUT | 芸工祭2022</title>
-	</head>
-	<body>
-		<header id="header">
-			<div class="left-content">
-				<a class="logo-wrapper" href="../index.html">
-					<img
-						class="logo-icon"
-						src="../../image/common/icon/logo_icon.svg"
-						alt="芸工祭のロゴアイコン"
-					/>
-					<img
-						class="logo-text"
-						src="../../image/common/icon/logo_text_bl.svg"
-						alt="芸工祭のロゴテキスト"
-					/>
-				</a>
-			</div>
-			<div id="hamburgerMenu" class="right-content">
-				<a class="pc-none logo-wrapper" href="../index.html">
-					<img
-						class="logo-icon"
-						src="../../image/common/icon/logo_icon.svg"
-						alt="芸工祭のロゴアイコン"
-					/>
-					<img
-						class="logo-text"
-						src="../../image/common/icon/logo_text_w.svg"
-						alt="芸工祭のロゴテキスト"
-					/>
-				</a>
-				<nav class="menu-wrapper">
-					<div class="menu">
-						<a class="menu-ttl" href="../about/index.html">ABOUT</a>
-						<div class="menu-contents">
-							<a href="../about/index.html#theme">今年のテーマ</a>
-							<a href="../about/index.html#access">芸工への行き方</a>
-							<a href="../about/index.html#sns">SNS</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a class="menu-ttl" href="../event/index.html">EVENT</a>
-						<div class="menu-contents">
-							<a href="../event/index.html">ステージ</a>
-							<a href="../event/cafe.html">カフェ</a>
-							<a href="../event/workshop.html">ワークショップ</a>
-							<a href="../event/booth.html">ブース</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a class="menu-ttl" href="../cm/index.html">CM</a>
-						<div class="menu-contents">
-							<a href="../cm/index.html">映像</a>
-							<a href="../cm/goods.html">グッズ</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a
-							class="menu-ttl"
-							href="#"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							GAME
-						</a>
-					</div>
-				</nav>
-				<a class="bnr-news pc-none" href="../news/index.html">
-					新型コロナウイルス<br />について
-				</a>
-			</div>
-		</header>
-		<button id="hamburgerBtn" class="hamburger-btn pc-none">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<a href="#top" class="anchor-btn">
-			<img
-				src="../../image/common/btn/btn_anchor.svg"
-				alt="トップに戻るボタン"
-			/>
-		</a>
-		<main class="main-content about">
-			<section class="sub-header">
-				<div id="top" class="container container-anchor">
-					<h1 class="h-title">ABOUT</h1>
-					<div class="wrapper-link">
-						<a href="#theme" class="link-theme">今年のテーマ</a>
-						<a href="#access" class="link-access">芸工への行き方</a>
-						<a href="#sns" class="link-sns">SNS</a>
-					</div>
-				</div>
-			</section>
-			<section class="theme">
-				<div id="theme" class="container container-anchor">
-					<video
-						class="only-pc"
-						src="../../image/about/logo_animation.mp4"
-						loop
-						autoplay
-						muted
-					></video>
-					<img
-						class="only-sp logo-only-icon"
-						src="../../image/about/logo_only_icon.svg"
-						alt="文字なしロゴの画像"
-					/>
-					<p class="text">
-						新しい挑戦が難しいコロナ禍でも<br class="only-sp" />go onより<br
-							class="only-pc"
-						/>
-						更にぐーんと前に突き進み続ける<br
-							class="only-sp"
-						/>意味のGOOOON(グーン)。<br /><br class="only-sp" />
-						4つのOは<br
-							class="only-sp"
-						/>産業・情報・建築・来場者が繋がりを表し、<br /><br
-							class="only-sp"
-						/>
-						展示・企画では<br
-							class="only-sp"
-						/>様々な個性をもつ人々の出会いが<br />
-						みんなを前にぐーんと進ませてくれます。
-					</p>
-				</div>
-			</section>
-			<section class="date">
-				<div class="container">
-					<h2 class="title">開催日時</h2>
-					<div class="wrapper-text">
-						<p class="text-date sat">
-							<span class="fs-l">10/22</span><br />10:00~17:00
-						</p>
-						<p class="text-date sun">
-							<span class="fs-l">10/23</span><br />10:00~16:30
-						</p>
-					</div>
-				</div>
-			</section>
-			<section class="access">
-				<div id="access" class="container container-anchor">
-					<h2 class="title">芸工への行き方</h2>
-					<img
-						class="only-pc"
-						src="../../image/about/map_pc.jpg"
-						alt="pc版芸工周辺の地図"
-					/>
-					<img
-						class="only-sp"
-						src="../../image/about/map_sp.jpg"
-						alt="sp版芸工周辺の地図"
-					/>
-					<p class="address only-sp">
-						名古屋市立大学 大学院芸術工学研究科 芸術工学部<br /><br />
-						〒464-0083<br />
-						名古屋市千種区北千種2丁目1番10号<br /><br />
-						TEL：052-721-1225(代)<br />
-						FAX：052-721-3110
-					</p>
-					<h3 class="title-case">バスをご利用の場合</h3>
-					<img
-						class="only-pc"
-						src="../../image/about/bus_pc.jpg"
-						alt="pc版バスでの芸工への行き方"
-					/>
-					<img
-						class="only-sp"
-						src="../../image/about/bus_sp.jpg"
-						alt="sp版バスでの芸工への行き方"
-					/>
-					<h3 class="title-case">地下鉄をご利用の場合</h3>
-					<img
-						class="only-pc"
-						src="../../image/about/subway_pc.jpg"
-						alt="pc版地下鉄での芸工への行き方"
-					/>
-					<img
-						class="only-sp"
-						src="../../image/about/subway_sp.jpg"
-						alt="sp版地下鉄での芸工への行き方"
-					/>
-				</div>
-			</section>
-			<section class="sns">
-				<div id="sns" class="container container-anchor">
-					<h2 class="title">SNS</h2>
-					<div class="wrapper-icons">
-						<a
-							href="https://twitter.com/geik0"
-							class="twitter"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img
-								src="../../image/about/twitter.svg"
-								alt="Twitterのアイコン"
-							/>
-						</a>
-						<a
-							href="https://instagram.com/geiko.fes_2022?igshid=YmMyMTA2M2Y="
-							class="instagram"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img
-								src="../../image/about/instagram.png"
-								alt="インスタグラムのアイコン"
-							/>
-						</a>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer id="footer">
-			<div class="f-container">
-				<div class="left-content">
-					<img
-						src="../../image/common/icon/logo_icon.svg"
-						alt="芸工祭のロゴ(テキスト無し)の画像"
-					/>
-				</div>
-				<div class="right-content">
-					<div class="top-content">
-						<h3>名古屋市立大学芸術工学部</h3>
-						<a
-							href="https://www.nagoya-cu.ac.jp/sda/"
-							target="_blank"
-							rel="noopener noreferrer"
-							>名古屋市立大学芸術工学部HP</a
-						>
-					</div>
-					<p>
-						〒464-008 名古屋市千種区北千種2丁目1番10号<br />
-						TEL052-721-1225(代) FAX052-721-3110
-					</p>
-					<small><span>&copy;</span> Copyright 2022geikosai</small>
-				</div>
-			</div>
-		</footer>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script src="../../js/index.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/about.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cea8vmg",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>ABOUT | 芸工祭2022</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="left-content">
+        <a class="logo-wrapper" href="../index.html">
+          <img class="logo-icon" src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../../image/common/icon/logo_text_bl.svg" alt="芸工祭のロゴテキスト" />
+        </a>
+      </div>
+      <div id="hamburgerMenu" class="right-content">
+        <a class="pc-none logo-wrapper" href="../index.html">
+          <img class="logo-icon" src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../../image/common/icon/logo_text_w.svg" alt="芸工祭のロゴテキスト" />
+        </a>
+        <nav class="menu-wrapper">
+          <div class="menu">
+            <a class="menu-ttl" href="../about/index.html">ABOUT</a>
+            <div class="menu-contents">
+              <a href="../about/index.html#theme">今年のテーマ</a>
+              <a href="../about/index.html#access">芸工への行き方</a>
+              <a href="../about/index.html#sns">SNS</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="../event/index.html">EVENT</a>
+            <div class="menu-contents">
+              <a href="../event/index.html">ステージ</a>
+              <a href="../event/cafe.html">カフェ</a>
+              <a href="../event/workshop.html">ワークショップ</a>
+              <a href="../event/booth.html">ブース</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="../cm/index.html">CM</a>
+            <div class="menu-contents">
+              <a href="../cm/index.html">映像</a>
+              <a href="../cm/goods.html">グッズ</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="#" target="_blank" rel="noopener noreferrer"> GAME </a>
+          </div>
+        </nav>
+        <a class="bnr-news pc-none" href="../news/index.html"> 新型コロナウイルス<br />について </a>
+      </div>
+    </header>
+    <button id="hamburgerBtn" class="hamburger-btn pc-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#top" class="anchor-btn">
+      <img src="../../image/common/btn/btn_anchor.svg" alt="トップに戻るボタン" />
+    </a>
+    <main class="main-content about">
+      <section class="sub-header">
+        <div id="top" class="container container-anchor">
+          <h1 class="h-title">ABOUT</h1>
+          <div class="wrapper-link">
+            <a href="#theme" class="link-theme">今年のテーマ</a>
+            <a href="#access" class="link-access">芸工への行き方</a>
+            <a href="#sns" class="link-sns">SNS</a>
+          </div>
+        </div>
+      </section>
+      <section class="theme">
+        <div id="theme" class="container container-anchor">
+          <video class="only-pc" src="../../image/about/logo_animation.mp4" loop autoplay muted></video>
+          <img class="only-sp logo-only-icon" src="../../image/about/logo_only_icon.svg" alt="文字なしロゴの画像" />
+          <p class="text">
+            新しい挑戦が難しいコロナ禍でも<br class="only-sp" />go onより<br class="only-pc" />
+            更にぐーんと前に突き進み続ける<br class="only-sp" />意味のGOOOON(グーン)。<br /><br class="only-sp" />
+            4つのOは<br class="only-sp" />産業・情報・建築・来場者が繋がりを表し、<br /><br class="only-sp" />
+            展示・企画では<br class="only-sp" />様々な個性をもつ人々の出会いが<br />
+            みんなを前にぐーんと進ませてくれます。
+          </p>
+        </div>
+      </section>
+      <section class="date">
+        <div class="container">
+          <h2 class="title">開催日時</h2>
+          <div class="wrapper-text">
+            <p class="text-date sat"><span class="fs-l">10/22</span><br />10:00~17:00</p>
+            <p class="text-date sun"><span class="fs-l">10/23</span><br />10:00~16:30</p>
+          </div>
+        </div>
+      </section>
+      <section class="access">
+        <div id="access" class="container container-anchor">
+          <h2 class="title">芸工への行き方</h2>
+          <img class="only-pc" src="../../image/about/map_pc.jpg" alt="pc版芸工周辺の地図" />
+          <img class="only-sp" src="../../image/about/map_sp.jpg" alt="sp版芸工周辺の地図" />
+          <p class="address only-sp">
+            名古屋市立大学 大学院芸術工学研究科 芸術工学部<br /><br />
+            〒464-0083<br />
+            名古屋市千種区北千種2丁目1番10号<br /><br />
+            TEL：052-721-1225(代)<br />
+            FAX：052-721-3110
+          </p>
+          <h3 class="title-case">バスをご利用の場合</h3>
+          <img class="only-pc" src="../../image/about/bus_pc.jpg" alt="pc版バスでの芸工への行き方" />
+          <img class="only-sp" src="../../image/about/bus_sp.jpg" alt="sp版バスでの芸工への行き方" />
+          <h3 class="title-case">地下鉄をご利用の場合</h3>
+          <img class="only-pc" src="../../image/about/subway_pc.jpg" alt="pc版地下鉄での芸工への行き方" />
+          <img class="only-sp" src="../../image/about/subway_sp.jpg" alt="sp版地下鉄での芸工への行き方" />
+        </div>
+      </section>
+      <section class="sns">
+        <div id="sns" class="container container-anchor">
+          <h2 class="title">SNS</h2>
+          <div class="wrapper-icons">
+            <a href="https://twitter.com/geik0" class="twitter" target="_blank" rel="noopener noreferrer">
+              <img src="../../image/about/twitter.svg" alt="Twitterのアイコン" />
+            </a>
+            <a href="https://instagram.com/geiko.fes_2022?igshid=YmMyMTA2M2Y=" class="instagram" target="_blank" rel="noopener noreferrer">
+              <img src="../../image/about/instagram.png" alt="インスタグラムのアイコン" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="f-container">
+        <div class="left-content">
+          <img src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴ(テキスト無し)の画像" />
+        </div>
+        <div class="right-content">
+          <div class="top-content">
+            <h3>名古屋市立大学芸術工学部</h3>
+            <a href="https://www.nagoya-cu.ac.jp/sda/" target="_blank" rel="noopener noreferrer">名古屋市立大学芸術工学部HP</a>
+          </div>
+          <p>
+            〒464-008 名古屋市千種区北千種2丁目1番10号<br />
+            TEL052-721-1225(代) FAX052-721-3110
+          </p>
+          <small><span>&copy;</span> Copyright 2022geikosai</small>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../../js/index.js"></script>
+  </body>
 </html>
