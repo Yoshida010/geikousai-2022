@@ -1,1364 +1,924 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/reset.css" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
-		/>
-		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" href="../css/index.css" />
-		<script>
-			(function (d) {
-				var config = {
-						kitId: "cea8vmg",
-						scriptTimeout: 3000,
-						async: true,
-					},
-					h = d.documentElement,
-					t = setTimeout(function () {
-						h.className =
-							h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-					}, config.scriptTimeout),
-					tk = d.createElement("script"),
-					f = false,
-					s = d.getElementsByTagName("script")[0],
-					a;
-				h.className += " wf-loading";
-				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-				tk.async = true;
-				tk.onload = tk.onreadystatechange = function () {
-					a = this.readyState;
-					if (f || (a && a != "complete" && a != "loaded")) return;
-					f = true;
-					clearTimeout(t);
-					try {
-						Typekit.load(config);
-					} catch (e) {}
-				};
-				s.parentNode.insertBefore(tk, s);
-			})(document);
-		</script>
-		<title>芸工祭2022</title>
-	</head>
-	<body>
-		<header id="header">
-			<div class="left-content">
-				<a class="logo-wrapper" href="#">
-					<img
-						class="logo-icon"
-						src="../image/common/icon/logo_icon.svg"
-						alt="芸工祭のロゴアイコン"
-					/>
-					<img
-						class="logo-text"
-						src="../image/common/icon/logo_text_bl.svg"
-						alt="芸工祭のロゴテキスト"
-					/>
-				</a>
-			</div>
-			<div id="hamburgerMenu" class="right-content">
-				<a class="pc-none logo-wrapper" href="#">
-					<img
-						class="logo-icon"
-						src="../image/common/icon/logo_icon.svg"
-						alt="芸工祭のロゴアイコン"
-					/>
-					<img
-						class="logo-text"
-						src="../image/common/icon/logo_text_w.svg"
-						alt="芸工祭のロゴテキスト"
-					/>
-				</a>
-				<nav class="menu-wrapper">
-					<div class="menu">
-						<a class="menu-ttl" href="./about/index.html">ABOUT</a>
-						<div class="menu-contents">
-							<a href="./about/index.html#theme">今年のテーマ</a>
-							<a href="./about/index.html#access">芸工への行き方</a>
-							<a href="./about/index.html#sns">SNS</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a class="menu-ttl" href="./event/index.html">EVENT</a>
-						<div class="menu-contents">
-							<a href="./event/index.html">ステージ</a>
-							<a href="./event/cafe.html">カフェ</a>
-							<a href="./event/workshop.html">ワークショップ</a>
-							<a href="./event/booth.html">ブース</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a class="menu-ttl" href="./cm/index.html">CM</a>
-						<div class="menu-contents">
-							<a href="./cm/index.html">映像</a>
-							<a href="./cm/goods.html">グッズ</a>
-						</div>
-					</div>
-					<div class="menu">
-						<a
-							class="menu-ttl"
-							href="#"
-							target="_blank"
-							rel="noopener noreferrer"
-							>GAME</a
-						>
-					</div>
-				</nav>
-				<a class="bnr-news pc-none" href="./news/index.html"
-					>新型コロナウイルス<br />について</a
-				>
-			</div>
-		</header>
-		<button id="hamburgerBtn" class="hamburger-btn pc-none">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<a href="#top" class="anchor-btn">
-			<img src="../image/common/btn/btn_anchor.svg" alt="トップに戻るボタン" />
-		</a>
-		<main id="top" class="main-content top">
-			<section class="mv">
-				<div class="img-wrapper only-pc">
-					<img src="../image/index/mv_pc.gif" alt="PC版メインビジュアル" />
-				</div>
-				<div class="img-wrapper only-sp">
-					<img src="../image/index/mv_sp.png" alt="sp版メインビジュアル" />
-				</div>
-			</section>
-			<div class="parallax-content">
-				<section class="mv-space">
-					<a class="bnr-wrapper" href="./news/index.html">
-						<img
-							src="../image/index/bnr_virus_pc.png"
-							alt="新型コロナウイルス感染者情報"
-						/>
-					</a>
-				</section>
-				<section class="sponsor-top">
-					<ul id="slider" class="slider-top">
-						<li>
-							<a href="#sponsor01" class="modal-open">
-								<img
-									src="../image/index/spn_slider01.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor02" class="modal-open">
-								<img
-									src="../image/index/spn_slider02.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor03" class="modal-open">
-								<img
-									src="../image/index/spn_slider03.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor04" class="modal-open">
-								<img
-									src="../image/index/spn_slider04.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor05" class="modal-open">
-								<img
-									src="../image/index/spn_slider05.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor06" class="modal-open">
-								<img
-									src="../image/index/spn_slider06.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor07" class="modal-open">
-								<img
-									src="../image/index/spn_slider07.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor08" class="modal-open">
-								<img
-									src="../image/index/spn_slider08.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor09" class="modal-open">
-								<img
-									src="../image/index/spn_slider09.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor10" class="modal-open">
-								<img
-									src="../image/index/spn_slider10.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor11" class="modal-open">
-								<img
-									src="../image/index/spn_slider11.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#sponsor12" class="modal-open">
-								<img
-									src="../image/index/spn_slider12.jpg"
-									alt="スポンサー画像"
-								/>
-							</a>
-						</li>
-					</ul>
-					<div class="dots-top">
-						<div class="dots-top-bg"></div>
-					</div>
-				</section>
-				<section class="about">
-					<div class="container">
-						<div class="text-container">
-							<h1 class="title">ABOUT</h1>
-							<div class="text-wrapper">
-								<h2 class="title-another">
-									<span class="fs-l">芸工生</span><span class="fs-s">で</span
-									><span class="fs-m">作る</span
-									><br class="only-pc" />ひとつ<span class="fs-s">の</span
-									>作品!!
-								</h2>
-								<p class="text">
-									装飾に彩られたキャンパス、<br />
-									笑いの溢れるステージ企画に<br />
-									アイデアたっぷりの模擬店。<br />
-									お洒落で美味しい本格カフェも。<br />
-									とにかく見どころ満載で<br />
-									満足間違いなしです！！！
-								</p>
-							</div>
-						</div>
-						<div class="btn-wrapper">
-							<a href="./about/index.html#theme">
-								<img
-									class="only-pc"
-									src="../image/index/btn_theme_pc.png"
-									alt="今年のテーマボタンのpc版画像"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/btn_theme_sp.png"
-									alt="今年のテーマボタンのsp版画像"
-								/>
-							</a>
-							<a href="./about/index.html#access">
-								<img
-									class="only-pc"
-									src="../image/index/btn_access_pc.png"
-									alt="芸工へのアクセスのpc版画像"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/btn_access_sp.png"
-									alt="芸工へのアクセスのsp版画像"
-								/>
-							</a>
-							<a href="./about/index.html#sns">
-								<img
-									class="only-pc"
-									src="../image/index/btn_sns_pc.png"
-									alt="snsのpc版画像"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/btn_sns_sp.png"
-									alt="snsのsp版画像"
-								/>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="event">
-					<div class="container">
-						<h1 class="title">EVENT</h1>
-						<div class="bnr-wrapper">
-							<a href="./event/index.html">
-								<img
-									class="only-pc"
-									src="../image/index/bnr01.png"
-									alt="ステージのバナー"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/bnr01_sp.png"
-									alt="ステージのバナー"
-								/>
-							</a>
-							<a href="./event/cafe.html">
-								<img
-									class="only-pc"
-									src="../image/index/bnr02.png"
-									alt="カフェのバナー"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/bnr02_sp.png"
-									alt="カフェのバナー"
-								/>
-							</a>
-							<a href="./event/workshop.html">
-								<img
-									class="only-pc"
-									src="../image/index/bnr03.png"
-									alt="wsのバナー"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/bnr03_sp.png"
-									alt="wsのバナー"
-								/>
-							</a>
-							<a href="./event/booth.html">
-								<img
-									class="only-pc"
-									src="../image/index/bnr04.png"
-									alt="ブースのバナー"
-								/>
-								<img
-									class="only-sp"
-									src="../image/index/bnr04_sp.png"
-									alt="ブースのバナー"
-								/>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="cm">
-					<div class="container">
-						<h1 class="title">CM</h1>
-						<div class="wrapper">
-							<a class="content movie" href="./cm/index.html">
-								<h2 class="thumb-ttl">
-									GEIKO SAI 2022<br /><span>Official movie</span>
-								</h2>
-								<div class="img-wrapper">
-									<img
-										class="only-pc"
-										src="../image/index/frame_w526.png"
-										alt="映像部署のサムネ"
-									/>
-									<img
-										class="only-sp"
-										src="../image/index/frame_w319.png"
-										alt="映像部署のサムネ"
-									/>
-								</div>
-								<button class="btn-more">
-									もっと見る<img
-										src="../image/common/icon/arrow_w.svg"
-										alt="白い矢印"
-									/>
-								</button>
-							</a>
-							<a class="content graphic" href="./cm/goods.html">
-								<h2 class="thumb-ttl">
-									GEIKO SAI 2022<br /><span>Official goods</span>
-								</h2>
-								<div class="img-wrapper">
-									<img
-										class="only-pc"
-										src="../image/index/frame_w526.png"
-										alt="グラフィック部署のサムネ"
-									/>
-									<img
-										class="only-sp"
-										src="../image/index/frame_w319.png"
-										alt="グラフィック部署のサムネ"
-									/>
-								</div>
-								<button class="btn-more">
-									もっと見る<img
-										src="../image/common/icon/arrow_w.svg"
-										alt="白い矢印"
-									/>
-								</button>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="game">
-					<div class="container">
-						<h1 class="title">GAME</h1>
-						<div class="thumb-wrapper">
-							<img src="../image/index/thumb_game01.jpg" alt="ゲームのサムネ" />
-							<img
-								class="only-pc"
-								src="../image/index/thumb_game02.jpg"
-								alt="ゲームのサムネ"
-							/>
-						</div>
-						<a class="btn-more" href="#">
-							もっと見る<img
-								src="../image/common/icon/arrow_w.svg"
-								alt="白い矢印"
-							/>
-						</a>
-					</div>
-				</section>
-				<section class="sponsor-bottom">
-					<div class="container">
-						<div class="thumb-wrapper">
-							<a href="#sponsor13" class="modal-open">
-								<img src="../image/index/spn_foot01.jpg" alt="スポンサー画像" />
-							</a>
-							<a href="#sponsor14" class="modal-open">
-								<img src="../image/index/spn_foot02.jpg" alt="スポンサー画像" />
-							</a>
-							<a href="#sponsor15" class="modal-open">
-								<img src="../image/index/spn_foot03.jpg" alt="スポンサー画像" />
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="sponsor-modal-container">
-					<section id="sponsor01" class="modal-content">
-						<div class="modal-img modal-img01">
-							<img
-								src="../image/index/spn_modal01.jpg"
-								alt="龍華園のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">焼肉 龍華園</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市千種区向陽一丁目3-36</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-763-3975</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:00~23:00 (L.O. 22:00)</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									創業1978年から守り続ける秘伝のタレと全国各地の厳選した黒毛和牛をご用意。<br />
-									記念日での利用には事前予約で、飾りつけやアイスの無料サービスなどもしております。<br />
-									楽しいひと時をお過ごしください。<br />
-									アルバイト募集中！
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor02" class="modal-content">
-						<div class="modal-img modal-img02">
-							<img
-								src="../image/index/spn_modal02.jpg"
-								alt="Maison du Furomageのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">Maison du Furomage</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									名古屋市千種区覚王山通9-16-3ラアケア覚王山1F
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-734-8688</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									8:00〜21:00（L.O.20:00）<br />
-									月曜定休 ※月曜が祝日の場合火曜お休み
-								</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									「Maison du
-									Fromage」を訳すと「チーズのお家」。ヨーロッパを中心とした世界各地のチーズを使った料理をご賞味ください。チーズの販売もさせて頂いていますので、ぜひ、お立ち寄りください。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor03" class="modal-content">
-						<div class="modal-img modal-img03">
-							<img
-								src="../image/index/spn_modal03.jpg"
-								alt="Attic by hanzoのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">Attic by hanzo</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									〒464-0075<br />
-									愛知県名古屋市千種区内山３丁目10-22号<br />
-									YAMATOビル1F
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-784-5116</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									17:00〜23:00<br />
-									不定休
-								</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									この夏にオープンしたばかりの夜カフェバーです。オムライス、オリジナルバーガー、フルーツをふんだんに使った色々デザート！コーヒー、スムージー、クリームソーダなどなど！<br />
-									アルバイト募集 明るく元気な人を募集中です！豪華賄い付き！ 時給
-									1000円〜
-									週2.3回からOK！楽しく働く！をみんなで作っていきたいです！同時に居酒屋もスタッフ募集中！
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor04" class="modal-content">
-						<div class="modal-img modal-img04">
-							<img
-								src="../image/index/spn_modal04.jpg"
-								alt="天しゃりのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">天しゃり</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市千種区今池3-4-1佐野ビル1階</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-734-3533</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:00〜23:00 不定休</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									天しゃりはここでしか食べることのできない
-									創作天ぷらやインスタ映えのする鮮魚の桶盛りが楽しめる和食居酒屋です！
-									美味しい料理に合うお酒の種類なども豊富なので是非食べに来てください！
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor05" class="modal-content">
-						<div class="modal-img modal-img05">
-							<img
-								src="../image/index/spn_modal05.jpg"
-								alt="創作串揚 つだのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">創作串揚 つだ</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									本店 名古屋市東区泉２-８-２ALA泉1階<br />
-									金シャチ店 名古屋市中区二の丸１番 ２・３東門エリ ア宗春ゾーン
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									本店 052-935-5553<br />
-									金シャチ店 052-212-5559
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									本店 17:00〜23:00 月曜、第１・３日曜定休<br />
-									金シャチ店 11:00〜15:00、17:00〜23:00 不定休
-								</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									季節ごとに旬の食材を使用！毎日その日の大将おすすめの食材が出てくるワクワク感も楽しみの一つです。サクッと揚がった串揚げは軽く何本でも食べられます！本店はカウンターとテーブルで２０席と落ち着いた雰囲気で、デート、家族連れ、接待など様々なお客様をお待ちしております。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor06" class="modal-content">
-						<div class="modal-img modal-img06">
-							<img
-								src="../image/index/spn_modal06.jpg"
-								alt="居酒屋 たかのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">居酒屋 たか</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									〒464-0075<br />
-									愛知県名古屋市千種区内山３丁目３１−１１
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-731-6807</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:00〜22:00 日曜祝日第２土曜定休</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									お刺身が美味しい個人経営の居酒屋です！ 今池駅から徒歩すぐ！
-									お刺身の他にもスパイシーなポテトサラダや沢山のおばんざい、ふわっふわのアジフライがオススメです！<br />
-									アルバイト募集 明るく元気な人を募集中です！ 豪華賄い付き！
-									時給 1000円〜(昇給あり) 週1.2回からOK！
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor07" class="modal-content">
-						<div class="modal-img modal-img07">
-							<img
-								src="../image/index/spn_modal07.jpg"
-								alt="佐鳴予備校のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">佐鳴予備校</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									〒460-0006<br />
-									愛知県名古屋市中区葵１丁目22-13（名古屋本社）
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_link.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<a
-									class="modal-txt"
-									href="https://youtube.be/2nfg3WehKko"
-									target="_blank"
-									rel="noopener noreferrer"
-									>https://youtube.be/2nfg3WehKko</a
-								>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:00~23:00 (L.O. 22:00)</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									小中高対象の学習塾『佐鳴予備校』広報室では多くの大学生がスタッフとして各広報宣伝ツール(ポスター・パンフレット・グッズ・受験情報冊子・YouTube動画など)を日々企画・作成しています。
-								</p>
-							</li>
-							<li class="sanaru-txt">
-								<p class="modal-txt">
-									広報部広報スタッフ募集中（本社勤務・在宅勤務 選択可）<br />
-									現在、さなる広報室では新規スタッフを随時募集中です!!面接希望の方は、右記申し込みフォームからアクセス後、必要事項を入力しエントリーしてください。
-								</p>
-								<div class="modal-qr">
-									<img
-										src="../image/index/spn_qr.png"
-										alt="佐鳴予備校のQRコード"
-									/>
-								</div>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor08" class="modal-content">
-						<div class="modal-img modal-img08">
-							<img
-								src="../image/index/spn_modal08.jpg"
-								alt="酒蔵館のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">酒蔵館</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									〒460-0008<br />
-									愛知県名古屋市中区栄３丁目４−１１２
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-261-1551</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									ランチ 11:30～13:30（L.O. 13:15）<br />
-									ディナー 17:00～24:30（L.O. 24:00）<br />
-									不定休
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor09" class="modal-content">
-						<div class="modal-img modal-img09">
-							<img
-								src="../image/index/spn_modal09.jpg"
-								alt="鯛しゃぶ庵 くぎのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">鯛しゃぶ庵 くぎ</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市中区錦3-12-12 ハードワンビルB1F</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">050-5890-3304</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:30〜23:30 日曜定休</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									錦3丁目の中腹、本格和食料理人が作る鯛しゃぶ店。秘伝の出汁は一度食べれば病み付きになるほど！コース料理、伊勢海老やアワビ等のアラカルトも多数ございます。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor10" class="modal-content">
-						<div class="modal-img modal-img10">
-							<img
-								src="../image/index/spn_modal10.jpg"
-								alt="きんぼしのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">きんぼし</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									愛知県名古屋市千種区 今池五丁目4-9（今池店）<br />
-									※新栄店、伏見店、藤が丘店もございます。
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-732-5421（今池店）</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									平　日：17:30~23:00( 最終入店22:15，L.O.22:30)<br />
-									土日祝：16:30~22:30 (最終入店21:45,L.O.22:00)<br />
-									火曜定休（今池店） ※全店舗合わせたら毎日営業
-								</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									きんぼしでは７年前から芸工生が働き始め、
-									今ではスタッフの半数が芸工生で占めています。
-									まだ一度もきんぼしの串を食べたことがない諸君、是非食べに来てください！
-									最高においしいお料理と芸工生のパワフルな接客でお待ちしています。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor11" class="modal-content">
-						<div class="modal-img modal-img11">
-							<img
-								src="../image/index/spn_modal11.jpg"
-								alt="錦三山車楼のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">錦三山車楼</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">愛知県名古屋市中区錦3-10-14 協和錦ビル</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-951-0222</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									【月曜日～土曜日】<br />
-									17:00～24:00<br />
-									フードラストオーダー 22:50<br />
-									ドリンクラストオーダー 23:30<br />
-									【日曜、祝日】<br />
-									定休日<br />
-									全店舗 年末年始 不定休
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor12" class="modal-content">
-						<div class="modal-img modal-img12">
-							<img
-								src="../image/index/spn_modal12.jpg"
-								alt="炭火割烹 大嶋のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">炭火割烹 大嶋</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">
-									〒464-0848<br />
-									愛知県名古屋市千種区春岡１丁目19--5
-								</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-753-7709</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">17:00〜23:00(L.O.22:30) 水曜定休</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									~厳選食材を最大の調味料「炭火の薫香」と共に~<br />
-									当店は、洗練された上質な空間で炭火料理を楽しめる炭火割烹です。
-									シンプルな技法にこだわり余分なものを使用しておりませんので、炭火料理本来の味わいを堪能できます。
-									和牛や魚介、野菜など種類豊富な炭火料理をご用意しておりますので、
-									日本酒や焼酎などとのマリアージュをお楽しみ下さいませ。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor13" class="modal-content">
-						<div class="modal-img modal-img13">
-							<img
-								src="../image/index/spn_modal13.jpg"
-								alt="三河屋のモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">三河屋</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市千種区北千種2-2-3</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-711-2720</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">11:00〜15:00 17:00〜21:00</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor14" class="modal-content">
-						<div class="modal-img modal-img14">
-							<img
-								src="../image/index/spn_modal14.jpg"
-								alt="べんがらやのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">べんがらや</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市千種区今池4-7-11ボトムラインB1F</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-731-0073</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">16:00~23:30 月曜定休</p>
-							</li>
-							<li class="modal-txt-wrapper ai-start">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_bubble.svg"
-										alt="吹き出しのアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									一人飲みから大人数の個室宴会まで可能。 産直の鮮魚や地鶏、
-									多種多彩な一品料理に地酒やコース料理も。
-									お刺身などは日によって仕入れた鮮魚を
-									おすすめメニューとしてご用意しています。
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section id="sponsor15" class="modal-content">
-						<div class="modal-img modal-img15">
-							<img
-								src="../image/index/spn_modal15.jpg"
-								alt="コルムのモーダル画像"
-							/>
-						</div>
-						<ul class="modal-txt-container">
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_shop.svg"
-										alt="お店のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">コルム</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img src="../image/index/icon_map.svg" alt="地図のアイコン" />
-								</div>
-								<p class="modal-txt">名古屋市千種区北千種2-3-2</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_phone.svg"
-										alt="電話のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">052-772-7145</p>
-							</li>
-							<li class="modal-txt-wrapper">
-								<div class="modal-icon">
-									<img
-										src="../image/index/icon_time.svg"
-										alt="時計のアイコン"
-									/>
-								</div>
-								<p class="modal-txt">
-									8:00〜18:00（火〜土）<br />
-									8:00〜15:00（日）<br />
-									月曜定休
-								</p>
-							</li>
-						</ul>
-					</section>
-				</section>
-				<footer id="footer">
-					<div class="f-container">
-						<div class="left-content">
-							<img
-								src="../image/common/icon/logo_icon.svg"
-								alt="芸工祭のロゴ(テキスト無し)の画像"
-							/>
-						</div>
-						<div class="right-content">
-							<div class="top-content">
-								<h3>名古屋市立大学芸術工学部</h3>
-								<a
-									href="https://www.nagoya-cu.ac.jp/sda/"
-									target="_blank"
-									rel="noopener noreferrer"
-									>名古屋市立大学芸術工学部HP</a
-								>
-							</div>
-							<p>
-								〒464-0083 名古屋市千種区北千種2丁目1番10号<br />
-								TEL052-721-1225(代) FAX052-721-3110
-							</p>
-							<small><span>&copy;</span> Copyright 2022geikosai</small>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</main>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<script src="./assets/js/common.js"></script>
-		<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-		<script src="../js/top.js"></script>
-		<script src="../js/index.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="芸工生で作るひとつの作品!!装飾に彩られたキャンパス、笑いの溢れるステージ企画にアイデアたっぷりの模擬店。お洒落で美味しい本格カフェも。とにかく見どころ満載で満足間違いなしです！！！" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cea8vmg",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>芸工祭2022</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="left-content">
+        <a class="logo-wrapper" href="#">
+          <img class="logo-icon" src="../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../image/common/icon/logo_text_bl.svg" alt="芸工祭のロゴテキスト" />
+        </a>
+      </div>
+      <div id="hamburgerMenu" class="right-content">
+        <a class="pc-none logo-wrapper" href="#">
+          <img class="logo-icon" src="../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../image/common/icon/logo_text_w.svg" alt="芸工祭のロゴテキスト" />
+        </a>
+        <nav class="menu-wrapper">
+          <div class="menu">
+            <a class="menu-ttl" href="./about/index.html">ABOUT</a>
+            <div class="menu-contents">
+              <a href="./about/index.html#theme">今年のテーマ</a>
+              <a href="./about/index.html#access">芸工への行き方</a>
+              <a href="./about/index.html#sns">SNS</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="./event/index.html">EVENT</a>
+            <div class="menu-contents">
+              <a href="./event/index.html">ステージ</a>
+              <a href="./event/cafe.html">カフェ</a>
+              <a href="./event/workshop.html">ワークショップ</a>
+              <a href="./event/booth.html">ブース</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="./cm/index.html">CM</a>
+            <div class="menu-contents">
+              <a href="./cm/index.html">映像</a>
+              <a href="./cm/goods.html">グッズ</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="menu-ttl" href="#" target="_blank" rel="noopener noreferrer">GAME</a>
+          </div>
+        </nav>
+        <a class="bnr-news pc-none" href="./news/index.html">新型コロナウイルス<br />について</a>
+      </div>
+    </header>
+    <button id="hamburgerBtn" class="hamburger-btn pc-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#top" class="anchor-btn">
+      <img src="../image/common/btn/btn_anchor.svg" alt="トップに戻るボタン" />
+    </a>
+    <main id="top" class="main-content top">
+      <section class="mv">
+        <div class="img-wrapper only-pc">
+          <img src="../image/index/mv_pc.gif" alt="PC版メインビジュアル" />
+        </div>
+        <div class="img-wrapper only-sp">
+          <img src="../image/index/mv_sp.png" alt="sp版メインビジュアル" />
+        </div>
+      </section>
+      <div class="parallax-content">
+        <section class="mv-space">
+          <a class="bnr-wrapper" href="./news/index.html">
+            <img src="../image/index/bnr_virus_pc.png" alt="新型コロナウイルス感染者情報" />
+          </a>
+        </section>
+        <section class="sponsor-top">
+          <ul id="slider" class="slider-top">
+            <li>
+              <a href="#sponsor01" class="modal-open">
+                <img src="../image/index/spn_slider01.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor02" class="modal-open">
+                <img src="../image/index/spn_slider02.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor03" class="modal-open">
+                <img src="../image/index/spn_slider03.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor04" class="modal-open">
+                <img src="../image/index/spn_slider04.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor05" class="modal-open">
+                <img src="../image/index/spn_slider05.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor06" class="modal-open">
+                <img src="../image/index/spn_slider06.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor07" class="modal-open">
+                <img src="../image/index/spn_slider07.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor08" class="modal-open">
+                <img src="../image/index/spn_slider08.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor09" class="modal-open">
+                <img src="../image/index/spn_slider09.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor10" class="modal-open">
+                <img src="../image/index/spn_slider10.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor11" class="modal-open">
+                <img src="../image/index/spn_slider11.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor12" class="modal-open">
+                <img src="../image/index/spn_slider12.jpg" alt="スポンサー画像" />
+              </a>
+            </li>
+          </ul>
+          <div class="dots-top">
+            <div class="dots-top-bg"></div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="text-container">
+              <h1 class="title">ABOUT</h1>
+              <div class="text-wrapper">
+                <h2 class="title-another"><span class="fs-l">芸工生</span><span class="fs-s">で</span><span class="fs-m">作る</span><br class="only-pc" />ひとつ<span class="fs-s">の</span>作品!!</h2>
+                <p class="text">
+                  装飾に彩られたキャンパス、<br />
+                  笑いの溢れるステージ企画に<br />
+                  アイデアたっぷりの模擬店。<br />
+                  お洒落で美味しい本格カフェも。<br />
+                  とにかく見どころ満載で<br />
+                  満足間違いなしです！！！
+                </p>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <a href="./about/index.html#theme">
+                <img class="only-pc" src="../image/index/btn_theme_pc.png" alt="今年のテーマボタンのpc版画像" />
+                <img class="only-sp" src="../image/index/btn_theme_sp.png" alt="今年のテーマボタンのsp版画像" />
+              </a>
+              <a href="./about/index.html#access">
+                <img class="only-pc" src="../image/index/btn_access_pc.png" alt="芸工へのアクセスのpc版画像" />
+                <img class="only-sp" src="../image/index/btn_access_sp.png" alt="芸工へのアクセスのsp版画像" />
+              </a>
+              <a href="./about/index.html#sns">
+                <img class="only-pc" src="../image/index/btn_sns_pc.png" alt="snsのpc版画像" />
+                <img class="only-sp" src="../image/index/btn_sns_sp.png" alt="snsのsp版画像" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="event">
+          <div class="container">
+            <h1 class="title">EVENT</h1>
+            <div class="bnr-wrapper">
+              <a href="./event/index.html">
+                <img class="only-pc" src="../image/index/bnr01.png" alt="ステージのバナー" />
+                <img class="only-sp" src="../image/index/bnr01_sp.png" alt="ステージのバナー" />
+              </a>
+              <a href="./event/cafe.html">
+                <img class="only-pc" src="../image/index/bnr02.png" alt="カフェのバナー" />
+                <img class="only-sp" src="../image/index/bnr02_sp.png" alt="カフェのバナー" />
+              </a>
+              <a href="./event/workshop.html">
+                <img class="only-pc" src="../image/index/bnr03.png" alt="wsのバナー" />
+                <img class="only-sp" src="../image/index/bnr03_sp.png" alt="wsのバナー" />
+              </a>
+              <a href="./event/booth.html">
+                <img class="only-pc" src="../image/index/bnr04.png" alt="ブースのバナー" />
+                <img class="only-sp" src="../image/index/bnr04_sp.png" alt="ブースのバナー" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="cm">
+          <div class="container">
+            <h1 class="title">CM</h1>
+            <div class="wrapper">
+              <a class="content movie" href="./cm/index.html">
+                <h2 class="thumb-ttl">GEIKO SAI 2022<br /><span>Official movie</span></h2>
+                <div class="img-wrapper">
+                  <img class="only-pc" src="../image/index/frame_w526.png" alt="映像部署のサムネ" />
+                  <img class="only-sp" src="../image/index/frame_w319.png" alt="映像部署のサムネ" />
+                </div>
+                <button class="btn-more">もっと見る<img src="../image/common/icon/arrow_w.svg" alt="白い矢印" /></button>
+              </a>
+              <a class="content graphic" href="./cm/goods.html">
+                <h2 class="thumb-ttl">GEIKO SAI 2022<br /><span>Official goods</span></h2>
+                <div class="img-wrapper">
+                  <img class="only-pc" src="../image/index/frame_w526.png" alt="グラフィック部署のサムネ" />
+                  <img class="only-sp" src="../image/index/frame_w319.png" alt="グラフィック部署のサムネ" />
+                </div>
+                <button class="btn-more">もっと見る<img src="../image/common/icon/arrow_w.svg" alt="白い矢印" /></button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="game">
+          <div class="container">
+            <h1 class="title">GAME</h1>
+            <div class="thumb-wrapper">
+              <img src="../image/index/thumb_game01.jpg" alt="ゲームのサムネ" />
+              <img class="only-pc" src="../image/index/thumb_game02.jpg" alt="ゲームのサムネ" />
+            </div>
+            <a class="btn-more" href="#"> もっと見る<img src="../image/common/icon/arrow_w.svg" alt="白い矢印" /> </a>
+          </div>
+        </section>
+        <section class="sponsor-bottom">
+          <div class="container">
+            <div class="thumb-wrapper">
+              <a href="#sponsor13" class="modal-open">
+                <img src="../image/index/spn_foot01.jpg" alt="スポンサー画像" />
+              </a>
+              <a href="#sponsor14" class="modal-open">
+                <img src="../image/index/spn_foot02.jpg" alt="スポンサー画像" />
+              </a>
+              <a href="#sponsor15" class="modal-open">
+                <img src="../image/index/spn_foot03.jpg" alt="スポンサー画像" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="sponsor-modal-container">
+          <section id="sponsor01" class="modal-content">
+            <div class="modal-img modal-img01">
+              <img src="../image/index/spn_modal01.jpg" alt="龍華園のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">焼肉 龍華園</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区向陽一丁目3-36</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-763-3975</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:00~23:00 (L.O. 22:00)</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">
+                  創業1978年から守り続ける秘伝のタレと全国各地の厳選した黒毛和牛をご用意。<br />
+                  記念日での利用には事前予約で、飾りつけやアイスの無料サービスなどもしております。<br />
+                  楽しいひと時をお過ごしください。<br />
+                  アルバイト募集中！
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor02" class="modal-content">
+            <div class="modal-img modal-img02">
+              <img src="../image/index/spn_modal02.jpg" alt="Maison du Furomageのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">Maison du Furomage</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区覚王山通9-16-3ラアケア覚王山1F</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-734-8688</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  8:00〜21:00（L.O.20:00）<br />
+                  月曜定休 ※月曜が祝日の場合火曜お休み
+                </p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">「Maison du Fromage」を訳すと「チーズのお家」。ヨーロッパを中心とした世界各地のチーズを使った料理をご賞味ください。チーズの販売もさせて頂いていますので、ぜひ、お立ち寄りください。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor03" class="modal-content">
+            <div class="modal-img modal-img03">
+              <img src="../image/index/spn_modal03.jpg" alt="Attic by hanzoのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">Attic by hanzo</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  〒464-0075<br />
+                  愛知県名古屋市千種区内山３丁目10-22号<br />
+                  YAMATOビル1F
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-784-5116</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  17:00〜23:00<br />
+                  不定休
+                </p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">
+                  この夏にオープンしたばかりの夜カフェバーです。オムライス、オリジナルバーガー、フルーツをふんだんに使った色々デザート！コーヒー、スムージー、クリームソーダなどなど！<br />
+                  アルバイト募集 明るく元気な人を募集中です！豪華賄い付き！ 時給 1000円〜 週2.3回からOK！楽しく働く！をみんなで作っていきたいです！同時に居酒屋もスタッフ募集中！
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor04" class="modal-content">
+            <div class="modal-img modal-img04">
+              <img src="../image/index/spn_modal04.jpg" alt="天しゃりのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">天しゃり</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区今池3-4-1佐野ビル1階</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-734-3533</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:00〜23:00 不定休</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">天しゃりはここでしか食べることのできない 創作天ぷらやインスタ映えのする鮮魚の桶盛りが楽しめる和食居酒屋です！ 美味しい料理に合うお酒の種類なども豊富なので是非食べに来てください！</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor05" class="modal-content">
+            <div class="modal-img modal-img05">
+              <img src="../image/index/spn_modal05.jpg" alt="創作串揚 つだのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">創作串揚 つだ</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  本店 名古屋市東区泉２-８-２ALA泉1階<br />
+                  金シャチ店 名古屋市中区二の丸１番 ２・３東門エリ ア宗春ゾーン
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  本店 052-935-5553<br />
+                  金シャチ店 052-212-5559
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  本店 17:00〜23:00 月曜、第１・３日曜定休<br />
+                  金シャチ店 11:00〜15:00、17:00〜23:00 不定休
+                </p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">季節ごとに旬の食材を使用！毎日その日の大将おすすめの食材が出てくるワクワク感も楽しみの一つです。サクッと揚がった串揚げは軽く何本でも食べられます！本店はカウンターとテーブルで２０席と落ち着いた雰囲気で、デート、家族連れ、接待など様々なお客様をお待ちしております。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor06" class="modal-content">
+            <div class="modal-img modal-img06">
+              <img src="../image/index/spn_modal06.jpg" alt="居酒屋 たかのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">居酒屋 たか</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  〒464-0075<br />
+                  愛知県名古屋市千種区内山３丁目３１−１１
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-731-6807</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:00〜22:00 日曜祝日第２土曜定休</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">
+                  お刺身が美味しい個人経営の居酒屋です！ 今池駅から徒歩すぐ！ お刺身の他にもスパイシーなポテトサラダや沢山のおばんざい、ふわっふわのアジフライがオススメです！<br />
+                  アルバイト募集 明るく元気な人を募集中です！ 豪華賄い付き！ 時給 1000円〜(昇給あり) 週1.2回からOK！
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor07" class="modal-content">
+            <div class="modal-img modal-img07">
+              <img src="../image/index/spn_modal07.jpg" alt="佐鳴予備校のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">佐鳴予備校</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  〒460-0006<br />
+                  愛知県名古屋市中区葵１丁目22-13（名古屋本社）
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_link.svg" alt="電話のアイコン" />
+                </div>
+                <a class="modal-txt" href="https://youtube.be/2nfg3WehKko" target="_blank" rel="noopener noreferrer">https://youtube.be/2nfg3WehKko</a>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:00~23:00 (L.O. 22:00)</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">小中高対象の学習塾『佐鳴予備校』広報室では多くの大学生がスタッフとして各広報宣伝ツール(ポスター・パンフレット・グッズ・受験情報冊子・YouTube動画など)を日々企画・作成しています。</p>
+              </li>
+              <li class="sanaru-txt">
+                <p class="modal-txt">
+                  広報部広報スタッフ募集中（本社勤務・在宅勤務 選択可）<br />
+                  現在、さなる広報室では新規スタッフを随時募集中です!!面接希望の方は、右記申し込みフォームからアクセス後、必要事項を入力しエントリーしてください。
+                </p>
+                <div class="modal-qr">
+                  <img src="../image/index/spn_qr.png" alt="佐鳴予備校のQRコード" />
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor08" class="modal-content">
+            <div class="modal-img modal-img08">
+              <img src="../image/index/spn_modal08.jpg" alt="酒蔵館のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">酒蔵館</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  〒460-0008<br />
+                  愛知県名古屋市中区栄３丁目４−１１２
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-261-1551</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  ランチ 11:30～13:30（L.O. 13:15）<br />
+                  ディナー 17:00～24:30（L.O. 24:00）<br />
+                  不定休
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor09" class="modal-content">
+            <div class="modal-img modal-img09">
+              <img src="../image/index/spn_modal09.jpg" alt="鯛しゃぶ庵 くぎのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">鯛しゃぶ庵 くぎ</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市中区錦3-12-12 ハードワンビルB1F</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">050-5890-3304</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:30〜23:30 日曜定休</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">錦3丁目の中腹、本格和食料理人が作る鯛しゃぶ店。秘伝の出汁は一度食べれば病み付きになるほど！コース料理、伊勢海老やアワビ等のアラカルトも多数ございます。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor10" class="modal-content">
+            <div class="modal-img modal-img10">
+              <img src="../image/index/spn_modal10.jpg" alt="きんぼしのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">きんぼし</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  愛知県名古屋市千種区 今池五丁目4-9（今池店）<br />
+                  ※新栄店、伏見店、藤が丘店もございます。
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-732-5421（今池店）</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  平　日：17:30~23:00( 最終入店22:15，L.O.22:30)<br />
+                  土日祝：16:30~22:30 (最終入店21:45,L.O.22:00)<br />
+                  火曜定休（今池店） ※全店舗合わせたら毎日営業
+                </p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">きんぼしでは７年前から芸工生が働き始め、 今ではスタッフの半数が芸工生で占めています。 まだ一度もきんぼしの串を食べたことがない諸君、是非食べに来てください！ 最高においしいお料理と芸工生のパワフルな接客でお待ちしています。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor11" class="modal-content">
+            <div class="modal-img modal-img11">
+              <img src="../image/index/spn_modal11.jpg" alt="錦三山車楼のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">錦三山車楼</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">愛知県名古屋市中区錦3-10-14 協和錦ビル</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-951-0222</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  【月曜日～土曜日】<br />
+                  17:00～24:00<br />
+                  フードラストオーダー 22:50<br />
+                  ドリンクラストオーダー 23:30<br />
+                  【日曜、祝日】<br />
+                  定休日<br />
+                  全店舗 年末年始 不定休
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor12" class="modal-content">
+            <div class="modal-img modal-img12">
+              <img src="../image/index/spn_modal12.jpg" alt="炭火割烹 大嶋のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">炭火割烹 大嶋</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  〒464-0848<br />
+                  愛知県名古屋市千種区春岡１丁目19--5
+                </p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-753-7709</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">17:00〜23:00(L.O.22:30) 水曜定休</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">
+                  ~厳選食材を最大の調味料「炭火の薫香」と共に~<br />
+                  当店は、洗練された上質な空間で炭火料理を楽しめる炭火割烹です。 シンプルな技法にこだわり余分なものを使用しておりませんので、炭火料理本来の味わいを堪能できます。 和牛や魚介、野菜など種類豊富な炭火料理をご用意しておりますので、 日本酒や焼酎などとのマリアージュをお楽しみ下さいませ。
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor13" class="modal-content">
+            <div class="modal-img modal-img13">
+              <img src="../image/index/spn_modal13.jpg" alt="三河屋のモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">三河屋</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区北千種2-2-3</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-711-2720</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">11:00〜15:00 17:00〜21:00</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor14" class="modal-content">
+            <div class="modal-img modal-img14">
+              <img src="../image/index/spn_modal14.jpg" alt="べんがらやのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">べんがらや</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区今池4-7-11ボトムラインB1F</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-731-0073</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">16:00~23:30 月曜定休</p>
+              </li>
+              <li class="modal-txt-wrapper ai-start">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_bubble.svg" alt="吹き出しのアイコン" />
+                </div>
+                <p class="modal-txt">一人飲みから大人数の個室宴会まで可能。 産直の鮮魚や地鶏、 多種多彩な一品料理に地酒やコース料理も。 お刺身などは日によって仕入れた鮮魚を おすすめメニューとしてご用意しています。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="sponsor15" class="modal-content">
+            <div class="modal-img modal-img15">
+              <img src="../image/index/spn_modal15.jpg" alt="コルムのモーダル画像" />
+            </div>
+            <ul class="modal-txt-container">
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_shop.svg" alt="お店のアイコン" />
+                </div>
+                <p class="modal-txt">コルム</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_map.svg" alt="地図のアイコン" />
+                </div>
+                <p class="modal-txt">名古屋市千種区北千種2-3-2</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_phone.svg" alt="電話のアイコン" />
+                </div>
+                <p class="modal-txt">052-772-7145</p>
+              </li>
+              <li class="modal-txt-wrapper">
+                <div class="modal-icon">
+                  <img src="../image/index/icon_time.svg" alt="時計のアイコン" />
+                </div>
+                <p class="modal-txt">
+                  8:00〜18:00（火〜土）<br />
+                  8:00〜15:00（日）<br />
+                  月曜定休
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <footer id="footer">
+          <div class="f-container">
+            <div class="left-content">
+              <img src="../image/common/icon/logo_icon.svg" alt="芸工祭のロゴ(テキスト無し)の画像" />
+            </div>
+            <div class="right-content">
+              <div class="top-content">
+                <h3>名古屋市立大学芸術工学部</h3>
+                <a href="https://www.nagoya-cu.ac.jp/sda/" target="_blank" rel="noopener noreferrer">名古屋市立大学芸術工学部HP</a>
+              </div>
+              <p>
+                〒464-0083 名古屋市千種区北千種2丁目1番10号<br />
+                TEL052-721-1225(代) FAX052-721-3110
+              </p>
+              <small><span>&copy;</span> Copyright 2022geikosai</small>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script src="../js/top.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>
