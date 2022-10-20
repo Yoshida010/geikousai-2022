@@ -5,8 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../../css/reset.css" />
-		<link rel="stylesheet" href="../../css/style.css" />
-		<link rel="stylesheet" href="../../css/cm.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
@@ -15,6 +13,14 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+		/>
+		<link rel="stylesheet" href="../../css/style.css" />
+		<link rel="stylesheet" href="../../css/cm.css" />
+		<link rel="stylesheet" href="../../css/youtube.css" />
 		<script>
 			(function (d) {
 				var config = {
@@ -123,122 +129,105 @@
 			<span></span>
 			<span></span>
 		</button>
-		<main class="main-content">
+		<a href="#top" class="anchor-btn only-sp">
+			<img
+				src="../../image/common/btn/btn_anchor.svg"
+				alt="トップに戻るボタン"
+			/>
+		</a>
+		<main id="top" class="main-content">
 			<!--  ここからページの内容を記載していく  -->
 			<section class="sub-header">
 				<h1 class="title">CM</h1>
-				<div class="tabs">
-					<a href="#" class="tab-label" for="tab01">映像</a>
-					<a href="./goods.html" class="tab-label" for="tab02">グッズ</a>
+				<div class="sh-link-wrapper">
+					<a href="#" class="sh-link">映像</a>
+					<a href="./goods.html" class="sh-link">グッズ</a>
 				</div>
 			</section>
 			<section class="movie-pc">
 				<ul class="movie-container">
 					<li class="movie">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/XxEAj9Zh6cU"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+						<a
+							href="https://www.youtube.com/embed/Md_DxUNp4sM"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/Md_DxUNp4sM/mqdefault.jpg"
+								alt="コンセプト映像のサムネ"
+							/>
+						</a>
 						<p>コンセプト映像</p>
 					</li>
-					<li class="movie">
+					<li class="movie tops">
 						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
 						<p>オープニング</p>
 					</li>
 					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/XxEAj9Zh6cU"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p>コンセプト映像</p>
-					</li>
-					<li class="movie tops cmpc">
-						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
-						<p>オープニング</p>
-					</li>
-					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/0PbOUd2-CKQ"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+						<a
+							href="https://www.youtube.com/embed/nVXr5WcfWW4"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/nVXr5WcfWW4/mqdefault.jpg"
+								alt="カフェ映像のサムネ"
+							/>
+						</a>
 						<p>カフェ</p>
 					</li>
 					<li class="movie cmpc">
-						<iframe
-							class="movies cmpc"
-							src="https://www.youtube.com/embed/uwxfYI5SfEI"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+						<a
+							href="https://www.youtube.com/embed/szDPVvVv9mg"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/szDPVvVv9mg/mqdefault.jpg"
+								alt="ワークショップのサムネ"
+							/>
+						</a>
 						<p>ワークショップ</p>
 					</li>
 					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/UT_vS0alJ2A"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+						<a
+							href="https://www.youtube.com/embed/YvDQF9rb3mA"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/YvDQF9rb3mA/mqdefault.jpg"
+								alt="男女反転のサムネ"
+							/>
+						</a>
+						<p>ステージ企画/男女反転</p>
+					</li>
+					<li class="movie cmpc">
+						<a
+							href="https://www.youtube.com/embed/jSI-YmOVkMg"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/jSI-YmOVkMg/mqdefault.jpg"
+								alt="昼ステのサムネ"
+							/>
+						</a>
+						<p>ステージ企画/昼ステ</p>
+					</li>
+					<li class="movie cmpc">
+						<a
+							href="https://www.youtube.com/embed/2XL1rwkjKaw"
+							class="video-open video-thumb"
+						>
+							<img
+								src="http://i.ytimg.com/vi/2XL1rwkjKaw/mqdefault.jpg"
+								alt="夜ステのサムネ"
+							/>
+						</a>
+						<p>ステージ企画/夜ステ</p>
+					</li>
+					<li class="movie cmpc">
+						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
 						<p>ステージ企画/企画名</p>
 					</li>
 					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/am3iwZijDvc"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p>ステージ企画/企画名</p>
-					</li>
-					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/xRBd-y0R-68"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p>ステージ企画/企画名</p>
-					</li>
-					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/IBvNWNlUiBA"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<p>ステージ企画/企画名</p>
-					</li>
-					<li class="movie cmpc">
-						<iframe
-							class="movies"
-							src="https://www.youtube.com/embed/Uz2LfhwX_00"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+						<img class="comingsoon" src="../../image/cm/comingsoon_pc.jpg" />
 						<p>ステージ企画/企画名</p>
 					</li>
 				</ul>
@@ -252,24 +241,64 @@
 				<div class="carousel">
 					<ul class="slider">
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<a
+								href="https://www.youtube.com/embed/nVXr5WcfWW4"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/nVXr5WcfWW4/mqdefault.jpg"
+									alt="カフェのサムネ"
+								/>
+							</a>
 							<p class="txt">カフェ</p>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<a
+								href="https://www.youtube.com/embed/szDPVvVv9mg"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/szDPVvVv9mg/mqdefault.jpg"
+									alt="ワークショップのサムネ"
+								/>
+							</a>
 							<p class="txt">ワークショップ</p>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
-							<p class="txt">ステージ企画/企画名</p>
+							<a
+								href="https://www.youtube.com/embed/YvDQF9rb3mA"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/YvDQF9rb3mA/mqdefault.jpg"
+									alt="男女反転のサムネ"
+								/>
+							</a>
+							<p class="txt">ステージ企画/男女反転</p>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
-							<p class="txt">ステージ企画/企画名</p>
+							<a
+								href="https://www.youtube.com/embed/jSI-YmOVkMg"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/jSI-YmOVkMg/mqdefault.jpg"
+									alt="昼ステのサムネ"
+								/>
+							</a>
+							<p class="txt">ステージ企画/昼ステ</p>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
-							<p class="txt">ステージ企画/企画名</p>
+							<a
+								href="https://www.youtube.com/embed/2XL1rwkjKaw"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/2XL1rwkjKaw/mqdefault.jpg"
+									alt="夜ステのサムネ"
+								/>
+							</a>
+							<p class="txt">ステージ企画/夜ステ</p>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
@@ -310,14 +339,10 @@
 			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="../../js/index.js"></script>
-		<script>
-			$(".slider").slick({
-				autoplay: true,
-				arrows: true,
-				dots: true,
-			});
-		</script>
+		<script src="../../js/cmmovie.js"></script>
 	</body>
 </html>

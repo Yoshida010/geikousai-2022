@@ -1,6 +1,7 @@
 $("#hamburgerBtn").click(function () {
 	$("#hamburgerMenu").toggleClass("hamburger-active");
 	$("#hamburgerBtn").toggleClass("hamburger-btn-active");
+	$("body").toggleClass("overflow-hidden");
 });
 
 $('a[href*="#"]').click(function () {

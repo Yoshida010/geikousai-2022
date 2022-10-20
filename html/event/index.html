@@ -13,8 +13,14 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+		/>
 		<link rel="stylesheet" href="../../css/style.css" />
 		<link rel="stylesheet" href="../../css/event.css" />
+		<link rel="stylesheet" href="../../css/youtube.css" />
 		<script>
 			(function (d) {
 				var config = {
@@ -123,7 +129,7 @@
 			<span></span>
 			<span></span>
 		</button>
-		<a href="#top" class="anchor-btn only-sp">
+		<a href="#top" class="anchor-btn">
 			<img
 				src="../../image/common/btn/btn_anchor.svg"
 				alt="トップに戻るボタン"
@@ -169,13 +175,43 @@
 				<div class="carousel">
 					<ul class="slider">
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<a
+								href="https://www.youtube.com/embed/YvDQF9rb3mA"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/YvDQF9rb3mA/mqdefault.jpg"
+									alt="男女反転のサムネ"
+								/>
+							</a>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<a
+								href="https://www.youtube.com/embed/jSI-YmOVkMg"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/jSI-YmOVkMg/mqdefault.jpg"
+									alt="昼ステのサムネ"
+									class="only-sp"
+								/>
+								<img
+									src="http://i.ytimg.com/vi/jSI-YmOVkMg/maxresdefault.jpg"
+									alt="昼ステのサムネ"
+									class="only-pc"
+								/>
+							</a>
 						</li>
 						<li>
-							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
+							<a
+								href="https://www.youtube.com/embed/2XL1rwkjKaw"
+								class="video-open video-thumb"
+							>
+								<img
+									src="http://i.ytimg.com/vi/2XL1rwkjKaw/mqdefault.jpg"
+									alt="夜ステのサムネ"
+								/>
+							</a>
 						</li>
 						<li>
 							<img class="carouselimg" src="../../image/cm/comingsoon_pc.jpg" />
@@ -216,13 +252,9 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script src="../../js/index.js"></script>
-		<script>
-			$(".slider").slick({
-				autoplay: true,
-				dots: true,
-				arrows: true,
-			});
-		</script>
+		<script src="../../js/stage.js"></script>
 	</body>
 </html>

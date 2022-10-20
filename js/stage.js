@@ -1,7 +1,7 @@
 $(".slider").slick({
-	autoplay: true,
-	arrows: true,
+	// autoplay: true,
 	dots: true,
+	arrows: true,
 });
 
 var access = $.cookie("access");

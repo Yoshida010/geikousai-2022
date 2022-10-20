@@ -65,6 +65,12 @@
 		background-image: url(../image/common/btn/btn_more_pc.png);
 		background-repeat: no-repeat;
 		background-size: contain;
+		img {
+			width: 16.5px;
+			height: 14.5px;
+			margin-left: 15px;
+			transform: rotate(-90deg);
+		}
 	}
 
 	//メインビジュアル
@@ -77,6 +83,8 @@
 		justify-content: center;
 		background-color: #fff;
 		z-index: 1;
+		// 仮で
+		overflow: hidden;
 		.img-wrapper {
 			width: 44%;
 			max-width: 500px;
@@ -126,26 +134,28 @@
 						display: inline-block;
 						margin-top: 20px;
 						font-family: shin-go-b;
-						font-size: 28px;
-						line-height: 40px;
+						font-size: 41px;
+						line-height: 1.4em;
 						//ふきだし
 						&::before {
 							content: "";
 							position: absolute;
 							width: 75px;
 							height: 40px;
-							top: -20px;
-							left: 168px;
+							top: -26px;
+							left: 153px;
 							background-image: url(../image/index/balloon.svg);
 							background-repeat: no-repeat;
 							background-size: contain;
 						}
 						.fs-l {
-							font-size: 54px;
-							line-height: 54px;
+							font-size: 50px;
+						}
+						.fs-m {
+							font-size: 27px;
 						}
 						.fs-s {
-							font-size: 22px;
+							font-size: 21px;
 						}
 					}
 					.text {
@@ -294,6 +304,12 @@
 		.title {
 			font-size: 54px;
 		}
+		.btn-more {
+			img {
+				width: 12.5px;
+				height: 10.5px;
+			}
+		}
 
 		//メインビジュアル
 		.mv {
@@ -324,21 +340,22 @@
 					.text-wrapper {
 						.title-another {
 							margin-top: 28px;
-							font-size: 22px;
-							line-height: 40px;
+							font-size: 34px;
 							//ふきだし
 							&::before {
 								width: 60px;
 								height: 32px;
-								top: -15px;
-								left: 132px;
+								top: -22px;
+								left: 125px;
 							}
 							.fs-l {
-								font-size: 44px;
-								line-height: 44px;
+								font-size: 40px;
+							}
+							.fs-m {
+								font-size: 24px;
 							}
 							.fs-s {
-								font-size: 16px;
+								font-size: 20px;
 							}
 						}
 						.text {
@@ -374,11 +391,15 @@
 			font-size: 16px;
 			aspect-ratio: 314/71;
 			background-image: url(../image/common/btn/btn_more_sp.png);
+			img {
+				width: 12px;
+				height: 13px;
+				margin-left: 10px;
+			}
 		}
 
 		.mv .img-wrapper {
 			width: 100%;
-			max-width: 520px;
 			transform: none;
 		}
 		.parallax-content {
@@ -396,6 +417,24 @@
 					display: block;
 					.text-wrapper {
 						text-align: center;
+						.title-another {
+							font-size: 29px;
+							&::before {
+								width: 40px;
+								height: 21px;
+								left: 105px;
+								top: -10px;
+							}
+							.fs-l {
+								font-size: 35px;
+							}
+							.fs-m {
+								font-size: 19px;
+							}
+							.fs-s {
+								font-size: 15px;
+							}
+						}
 					}
 				}
 				&::before,

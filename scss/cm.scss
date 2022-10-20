@@ -1,8 +1,4 @@
 @font-face {
-	font-family: shin-go-r;
-	src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
-}
-@font-face {
 	font-family: shin-go-m;
 	src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
 }
@@ -10,29 +6,17 @@
 	font-family: shin-go-db;
 	src: url(../font/A-OTF-ShinGoPr6N-DeBold.otf);
 }
-@font-face {
-	font-family: shin-go-b;
-	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
-}
-@font-face {
-	font-family: shin-go-h;
-	src: url(../font/A-OTF-ShinGoPr6N-Heavy.otf);
-}
 .cmpc {
 	display: block;
 }
 .cmsp {
 	display: none !important;
 }
-iframe {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	vertical-align: top;
-}
 
 .sub-header {
 	.title {
+		width: 300px;
+		margin: 0 auto;
 		margin-bottom: 30px;
 		color: #0d2e4f;
 		font-family: vdl-gigajr;
@@ -41,12 +25,12 @@ iframe {
 		text-align: center;
 		transform: skewX(-7deg);
 	}
-	.tabs {
+	.sh-link-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.tab-label {
+	.sh-link {
 		width: 20%;
 		max-width: 250px;
 		aspect-ratio: 25/6;
@@ -80,7 +64,11 @@ iframe {
 			margin-bottom: 15px;
 			font-size: 24px;
 		}
-		.tab-label {
+		.sh-link-wrapper {
+			max-width: 400px;
+			margin: auto;
+		}
+		.sh-link {
 			width: 40%;
 			font-family: shin-go-m;
 			&:nth-child(2n) {
@@ -97,7 +85,7 @@ iframe {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 116px auto 226px;
-	.movie:nth-child(n + 6) {
+	.movie:nth-child(n + 4) {
 		margin-top: 88px;
 	}
 	.movie {
@@ -160,17 +148,17 @@ iframe {
 				z-index: 5;
 			}
 			.slick-next {
-				background: url("../image/common/btn/btn_r.png") no-repeat top/contain !important;
+				background: url("../image/common/btn/btn_r.png") no-repeat top/contain;
 				right: 0px;
 				&::before {
-					content: "" !important;
+					content: "";
 				}
 			}
 			.slick-prev {
-				background: url("../image/common/btn/btn_l.png") no-repeat top/contain !important;
+				background: url("../image/common/btn/btn_l.png") no-repeat top/contain;
 				left: 0px;
 				&::before {
-					content: "" !important;
+					content: "";
 				}
 			}
 			.slick-dots {
