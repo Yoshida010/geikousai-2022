@@ -254,15 +254,11 @@
 			background-image: url(../image/index/bg_event_pc.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
-			p {
-				margin: 20px 0 13px;
-				font-family: shin-go-r;
-				font-style: 16px;
-			}
 			.thumb-wrapper {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				margin-top: 45px;
 				img {
 					display: inline-block;
 					width: 46%;
@@ -435,6 +431,10 @@
 								font-size: 15px;
 							}
 						}
+						.text {
+							margin-top: 25px;
+							font-size: 16px;
+						}
 					}
 				}
 				&::before,
@@ -524,6 +524,7 @@
 				background-image: url(../image/index/bg_game_sp.jpg);
 				.thumb-wrapper {
 					flex-direction: column;
+					margin-top: 30px;
 					img {
 						width: 100%;
 					}
