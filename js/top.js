@@ -1,10 +1,10 @@
 $(function () {
 	$("#slider").slick({
-		arrows: true, // 前・次のボタンを表示する
-		dots: true, // ドットナビゲーションを表示する
-		appendDots: $(".dots-top"), // ドットナビゲーションの生成位置を変更
-		speed: 800, // スライドさせるスピード（ミリ秒）
-		centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+		arrows: true,
+		dots: true,
+		appendDots: $(".dots-top"),
+		speed: 800,
+		centerMode: true,
 		variableWidth: true, // スライド幅の自動計算を無効化
 		slidesToShow: 5,
 		slidesToScroll: 1,
@@ -13,7 +13,6 @@ $(function () {
 	});
 });
 
-//初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
 var access = $.cookie("access");
 if (!access) {
 	flag = true;
@@ -24,14 +23,19 @@ if (!access) {
 
 //モーダル表示
 $(".modal-open").modaal({
-	start_open: flag, // ページロード時に表示するか
-	overlay_close: true, //モーダル背景クリック時に閉じるか
+	overlay_close: true,
 	before_open: function () {
-		// モーダルが開く前に行う動作
-		$("html").css("overflow-y", "hidden"); /*縦スクロールバーを出さない*/
+		$("html").css("overflow-y", "hidden");
 	},
 	after_close: function () {
-		// モーダルが閉じた後に行う動作
-		$("html").css("overflow-y", "scroll"); /*縦スクロールバーを出す*/
+		$("html").css("overflow-y", "scroll");
 	},
 });
+
+var modalScroll = setInterval(function () {
+	var val = $(".modaal-container").scrollTop();
+	if (val > 0) {
+		clearInterval(modalScroll);
+		$(".modaal-container").scrollTop(0);
+	}
+}, 0);
