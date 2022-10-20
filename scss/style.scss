@@ -316,6 +316,9 @@ footer {
 
 // pc
 @media screen and (min-width: 1024px) {
+	.only-sp {
+		display: none;
+	}
 	.pc-none {
 		display: none !important;
 	}
