@@ -193,7 +193,7 @@ footer {
 	width: 100%;
 	padding: 50px 30px;
 	background-color: #0d2e4f;
-	color: #fff;
+
 	.f-container {
 		display: block;
 		max-width: 300px;
@@ -210,10 +210,12 @@ footer {
 				justify-content: center;
 				margin-bottom: 14px;
 				h3 {
+					color: #fff;
 					font-size: 13px;
 					font-family: shin-go-b;
 				}
 				a {
+					color: #fff;
 					font-size: 10px;
 					margin-left: 8px;
 					margin-bottom: 1px;
@@ -223,6 +225,7 @@ footer {
 			p {
 				width: fit-content;
 				margin: auto;
+				color: #fff;
 				font-size: 10px;
 				line-height: 1.7em;
 			}
@@ -230,8 +233,9 @@ footer {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				font-size: 10px;
 				margin-top: 20px;
+				color: #fff;
+				font-size: 10px;
 				span {
 					font-size: 15px;
 					margin-right: 3px;
@@ -416,7 +420,7 @@ footer {
 			align-items: center;
 			justify-content: space-between;
 			.left-content {
-				width: 277px;
+				width: 250px;
 				margin: 0;
 			}
 			.right-content {
