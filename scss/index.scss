@@ -12,6 +12,9 @@
 	src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
 }
 
+// ----------------------------
+// pc
+// ----------------------------
 .top {
 	//共通
 	img {
@@ -261,6 +264,7 @@
 				justify-content: space-between;
 				align-items: center;
 				img {
+					display: inline-block;
 					width: 46%;
 				}
 			}
@@ -279,7 +283,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: space-between;
-					img {
+					a {
 						width: 31%;
 						&:nth-child(n + 4) {
 							margin-top: 50px;
@@ -533,7 +537,7 @@
 				.container {
 					.thumb-wrapper {
 						flex-direction: column;
-						img {
+						a {
 							width: 100%;
 							&:nth-child(n + 2) {
 								margin-top: 20px;
@@ -552,7 +556,228 @@
 	}
 }
 
-//slick.js
+// ----------------------------
+// モーダル ここから
+// ----------------------------
+/*モーダル非表示*/
+.modal-content {
+	display: none;
+}
+
+/*モーダル外のpadding*/
+.modaal-inner-wrapper {
+	padding: 0 100px;
+}
+
+/*モーダルの中身のスタイル*/
+.modaal-container {
+	/*モーダルの横幅*/
+	width: 100%;
+	max-width: 800px;
+	padding: 45px;
+	height: auto;
+	max-height: 720px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	.modaal-content-container {
+		width: 100%;
+		max-width: 510px;
+		margin: auto;
+		padding: 0;
+	}
+	.modal-img {
+		margin: 0 auto 25px auto;
+	}
+	.modal-txt-container {
+		.modal-txt-wrapper {
+			display: flex;
+			align-items: flex-start;
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		}
+		.modal-icon {
+			width: 30px;
+			margin-right: 15px;
+			margin-top: 3px;
+			&:first-child {
+				margin-top: 6px;
+			}
+		}
+		.modal-txt {
+			line-height: 2em;
+			font-size: 18px;
+			font-family: shin-go-m;
+			color: #3e3e3e;
+			flex: 1;
+		}
+		.sanaru-txt {
+			display: flex;
+			align-items: center;
+			.modal-txt {
+				margin-left: 45px;
+			}
+			.modal-qr {
+				margin-left: 15px;
+			}
+		}
+	}
+	/*画像サイズを指定*/
+	.modal-img01 {
+		width: 308px;
+	}
+	.modal-img02,
+	.modal-img04,
+	.modal-img05,
+	.modal-img07,
+	.modal-img11 {
+		width: 320px;
+	}
+	.modal-img03 {
+		width: 478px;
+	}
+	.modal-img06 {
+		width: 378px;
+	}
+	.modal-img08,
+	.modal-img09 {
+		width: 502px;
+	}
+	.modal-img10 {
+		width: 289px;
+	}
+	.modal-img12,
+	.modal-img14 {
+		width: 464px;
+	}
+	.modal-img13,
+	.modal-img15 {
+		width: 424px;
+	}
+}
+
+/*モーダルのボタン*/
+.modaal-close {
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 13.7px;
+	right: -54.7px;
+	cursor: pointer;
+	&::before,
+	&::after {
+		width: 45px;
+		height: 2px;
+		position: fixed;
+		top: auto;
+		left: auto;
+		border-radius: 50vw;
+		background-color: #fff;
+	}
+	&:hover {
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+}
+
+// sp版の表示はこちら
+@media screen and (max-width: 767px) {
+	/*モーダル外のpadding*/
+	.modaal-inner-wrapper {
+		padding: 0;
+	}
+
+	/*モーダルの中身のスタイル*/
+	.modaal-container {
+		/*モーダルの横幅*/
+		width: 90%;
+		min-width: 330px;
+		max-height: 70%;
+		padding: 32px;
+		.modal-img {
+			width: 96%;
+			margin-bottom: 16px;
+		}
+		.modal-txt-container {
+			.modal-icon {
+				width: 20px;
+				margin-right: 8px;
+				margin-top: 0px;
+				&:first-child {
+					margin-top: 1px;
+				}
+			}
+			.modal-txt {
+				font-size: 12px;
+				line-height: 1.7em;
+			}
+			.sanaru-txt {
+				.modal-txt {
+					margin-left: 28px;
+				}
+				.modal-qr {
+					margin-left: 4px;
+				}
+			}
+		}
+		/*画像サイズを指定 0.413*/
+		.modal-img01,
+		.modal-img02,
+		.modal-img04,
+		.modal-img05,
+		.modal-img07,
+		.modal-img11 {
+			min-width: 132px;
+		}
+		.modal-img03,
+		.modal-img06 {
+			min-width: 156px;
+		}
+		.modal-img08,
+		.modal-img09 {
+			min-width: 207.3px;
+		}
+		.modal-img10 {
+			min-width: 289px;
+		}
+		.modal-img12,
+		.modal-img14 {
+			min-width: 120px;
+		}
+		.modal-img13,
+		.modal-img15 {
+			min-width: 175px;
+		}
+	}
+
+	/*モーダルのボタン*/
+	.modaal-close {
+		width: 22px;
+		height: 22px;
+		top: 12px;
+		right: 12px;
+		&::before,
+		&::after {
+			width: 24px;
+			background-color: #3e3e3e;
+		}
+		&:hover {
+			&::before,
+			&::after {
+				background-color: #3e3e3e;
+			}
+		}
+	}
+}
+// ----------------------------
+// モーダル ここまで
+// ----------------------------
+
+// ----------------------------
+// スライダー
+// ----------------------------
 .sponsor-top .slider-top {
 	height: 300px;
 	display: flex;
@@ -619,10 +844,10 @@
 	&::before {
 		content: "";
 		position: absolute;
-		bottom: 0px;
+		bottom: 0.9px;
 		left: 0px;
 		width: 100%;
-		height: 11px;
+		height: 10px;
 		background-color: #d9d9d9;
 		border-radius: 10px;
 		transform: skewX(-20deg);
@@ -633,10 +858,10 @@
 }
 .dots-top .slick-dots li {
 	display: inline-block;
-	width: 10%;
+	width: 8.33%;
 }
 .dots-top .slick-dots button {
-	display: block;
+	display: none;
 	width: 100%;
 	height: 10px;
 	font-size: 0;
@@ -644,10 +869,10 @@
 	border: 0;
 	outline: none;
 	cursor: pointer;
-	background: #d9d9d9;
 	border-radius: 10px;
 	transform: skewX(-20deg);
 }
 .dots-top .slick-dots .slick-active button {
+	display: block;
 	background: linear-gradient(90deg, #99c955 0%, #30895e 100%);
 }
