@@ -86,9 +86,9 @@
 		// 仮で
 		overflow: hidden;
 		.img-wrapper {
-			width: 44%;
-			max-width: 500px;
-			transform: translateX(-35px) translateY(-5%);
+			width: 51%;
+			max-width: 700px;
+			transform: translateX(-7.3%) translateY(-5%);
 		}
 	}
 
@@ -307,13 +307,6 @@
 			}
 		}
 
-		//メインビジュアル
-		.mv {
-			.img-wrapper {
-				width: 50%;
-			}
-		}
-
 		//コンテンツ
 		.parallax-content {
 			position: relative;
@@ -396,6 +389,7 @@
 
 		.mv .img-wrapper {
 			width: 100%;
+			max-width: 584px;
 			transform: none;
 		}
 		.parallax-content {
