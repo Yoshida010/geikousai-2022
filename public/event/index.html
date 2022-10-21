@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../../image/common/icon/favicon.ico" />
+    <link rel="icon" href="../image/common/icon/favicon.ico" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css" />
-    <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/cafe.css" />
-    <link rel="stylesheet" href="../../css/youtube.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/event.css" />
+    <link rel="stylesheet" href="../css/youtube.css" />
     <script>
       (function (d) {
         var config = {
@@ -40,20 +42,21 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
-    <title>カフェ | 芸工祭2022</title>
+
+    <title>ステージ | 芸工祭2022</title>
   </head>
   <body>
     <header id="header">
       <div class="left-content">
         <a class="logo-wrapper" href="../index.html">
-          <img class="logo-icon" src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
-          <img class="logo-text" src="../../image/common/icon/logo_text_bl.svg" alt="芸工祭のロゴテキスト" />
+          <img class="logo-icon" src="../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../image/common/icon/logo_text_bl.svg" alt="芸工祭のロゴテキスト" />
         </a>
       </div>
       <div id="hamburgerMenu" class="right-content">
         <a class="pc-none logo-wrapper" href="../index.html">
-          <img class="logo-icon" src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
-          <img class="logo-text" src="../../image/common/icon/logo_text_w.svg" alt="芸工祭のロゴテキスト" />
+          <img class="logo-icon" src="../image/common/icon/logo_icon.svg" alt="芸工祭のロゴアイコン" />
+          <img class="logo-text" src="../image/common/icon/logo_text_w.svg" alt="芸工祭のロゴテキスト" />
         </a>
         <nav class="menu-wrapper">
           <div class="menu">
@@ -92,47 +95,67 @@
       <span></span>
       <span></span>
     </button>
-    <a href="#top" class="anchor-btn only-sp">
-      <img src="../../image/common/btn/btn_anchor.svg" alt="トップに戻るボタン" />
+    <a href="#top" class="anchor-btn">
+      <img src="./../image/common/btn/btn_anchor.svg" alt="トップに戻るボタン" />
     </a>
     <main id="top" class="main-content event">
       <section class="sub-header">
         <h1 class="title">EVENT</h1>
         <div class="sh-link-wrapper">
-          <a href="./index.html" class="sh-link">ステージ</a>
-          <a href="#" class="sh-link">カフェ</a>
+          <a href="#" class="sh-link">ステージ</a>
+          <a href="./cafe.html" class="sh-link">カフェ</a>
           <a href="./workshop.html" class="sh-link">ワークショップ</a>
           <a href="./booth.html" class="sh-link">ブース</a>
         </div>
       </section>
       <section class="page-content">
-        <h1 class="page-title">カフェ</h1>
-        <p class="band">Cafe</p>
-        <section class="cafe-main">
-          <a class="cafe-btn-wrapper" href="#">
-            <div class="cafe-icon">
-              <img src="../../image/cafe/cafe-icon.svg" alt="cafe-icon" />
+        <h1 class="page-title">ステージ</h1>
+        <p class="band">Stage</p>
+        <div class="wrapper">
+          <!--  ここからページの内容を記載していく  -->
+          <div class="tab-wrap">
+            <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" />
+            <label class="tab-label tab-label-l" for="TAB-01">10.22 Sat</label>
+            <div class="tab-content">
+              <img class="img10 stpc" src="./../image/stage/1022_pc.png" />
+              <img class="img10 stsp" src="./../image/stage/1022_sp.jpg" />
             </div>
-            <p class="cafe-btn">
-              特設サイト<span class="only-pc">を見る</span>
-              <img class="arrow" src="../../image/common/btn/arrow_l.svg" alt="arrow" />
-            </p>
-          </a>
-        </section>
-        <section class="cafe-cm">
-          <div class="youtube-wrapper">
-            <a href="https://www.youtube.com/embed/nVXr5WcfWW4" class="video-open video-thumb">
-              <img src="http://i.ytimg.com/vi/nVXr5WcfWW4/mqdefault.jpg" alt="カフェのサムネ" class="only-sp" />
-              <img src="http://i.ytimg.com/vi/nVXr5WcfWW4/maxresdefault.jpg" alt="カフェのサムネ" class="only-pc" />
-            </a>
+            <input id="TAB-02" type="radio" name="TAB" class="tab-switch" />
+            <label class="tab-label tab-label-r" for="TAB-02">10.23 Sun</label>
+            <div class="tab-content tableft">
+              <img class="img10 stpc" src="./../image/stage/1023_pc.png" />
+              <img class="img10 stsp" src="./../image/stage/1023_sp.jpg" />
+            </div>
           </div>
-        </section>
+        </div>
+        <!--カルーセル-->
+        <div class="carousel">
+          <ul class="slider">
+            <li>
+              <a href="https://www.youtube.com/embed/YvDQF9rb3mA" class="video-open video-thumb">
+                <img src="http://i.ytimg.com/vi/YvDQF9rb3mA/mqdefault.jpg" alt="男女反転のサムネ" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/embed/jSI-YmOVkMg" class="video-open video-thumb">
+                <img src="http://i.ytimg.com/vi/jSI-YmOVkMg/mqdefault.jpg" alt="昼ステのサムネ" class="only-sp" />
+                <img src="http://i.ytimg.com/vi/jSI-YmOVkMg/maxresdefault.jpg" alt="昼ステのサムネ" class="only-pc" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/embed/2XL1rwkjKaw" class="video-open video-thumb">
+                <img src="http://i.ytimg.com/vi/2XL1rwkjKaw/mqdefault.jpg" alt="夜ステのサムネ" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!--  ここまでにページの内容を記載する  -->
     </main>
     <footer id="footer">
       <div class="f-container">
         <div class="left-content">
-          <img src="../../image/common/icon/logo_icon.svg" alt="芸工祭のロゴ(テキスト無し)の画像" />
+          <img src="./../image/common/icon/logo_icon.svg" alt="芸工祭のロゴ(テキスト無し)の画像" />
         </div>
         <div class="right-content">
           <div class="top-content">
@@ -147,10 +170,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <script src="../../js/index.js"></script>
-    <script src="../../js/cafe.js"></script>
+    <script src="./../js/index.js"></script>
+    <script src="./../js/stage.js"></script>
   </body>
 </html>
