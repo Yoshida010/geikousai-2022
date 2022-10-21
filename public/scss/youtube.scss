@@ -52,27 +52,55 @@ img {
   }
 }
 
-// モーダル
-.modaal-video-wrap {
-  //動画表示時の横幅
-  width: 90%;
-  margin: auto;
-  max-width: 960px;
-}
-/*動画表示のモーダルの余白を変更したい場合*/
+/*モーダル*/
+/*動画表示のモーダルの変更*/
 .modaal-video .modaal-inner-wrapper {
+  width: 90%;
+  max-width: 960px;
+  height: fit-content;
+  display: inline-block;
   padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-/*モーダルのボタンの色を変更したい場合*/
-.modaal-close:after,
-.modaal-close:before {
-  background: #ccc;
+.modaal-video-wrap {
+  margin: 0;
 }
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before {
-  background: #666;
+/*モーダルのボタンの色を変更*/
+.modaal-close {
+  width: 42px;
+  height: 33px;
+  position: absolute;
+  top: -57px;
+  right: 0px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    width: 45px;
+    height: 2px;
+    top: auto;
+    left: auto;
+    border-radius: 50vw;
+    background-color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0);
+    &::before,
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .modaal-close {
+    width: 29px;
+    height: 27px;
+    top: -37px;
+    &::before,
+    &::after {
+      width: 32px;
+    }
+  }
 }
