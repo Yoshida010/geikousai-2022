@@ -590,16 +590,7 @@
       font-family: shin-go-m;
       color: #3e3e3e;
       flex: 1;
-    }
-    .sanaru-txt {
-      display: flex;
-      align-items: center;
-      .modal-txt {
-        margin-left: 45px;
-      }
-      .modal-qr {
-        margin-left: 15px;
-      }
+      word-break: break-word;
     }
   }
   /*画像サイズを指定*/
@@ -674,7 +665,7 @@
     /*モーダルの横幅*/
     width: 90%;
     min-width: 330px;
-    max-height: 70%;
+    max-height: 600px;
     padding: 32px;
     .modal-img {
       width: 96%;
@@ -692,14 +683,6 @@
       .modal-txt {
         font-size: 12px;
         line-height: 1.7em;
-      }
-      .sanaru-txt {
-        .modal-txt {
-          margin-left: 28px;
-        }
-        .modal-qr {
-          margin-left: 4px;
-        }
       }
     }
     /*画像サイズを指定 0.413*/
