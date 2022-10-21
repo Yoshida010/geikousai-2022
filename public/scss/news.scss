@@ -11,7 +11,7 @@
   src: url(../font/A-OTF-ShinGoPr6N-Bold.otf);
 }
 
-a {
+.link {
   cursor: pointer;
   color: #3e3e3e;
 }
@@ -34,6 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
     .logo-icon {
       width: 52.71px;
     }
