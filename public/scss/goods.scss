@@ -159,19 +159,3 @@
     margin-top: 300px;
   }
 }
-
-/*lightroom2のカスタマイズ*/
-.lightbox {
-  top: 50% !important;
-  transform: translateY(-50%);
-  .lb-outerContainer,
-  .lb-dataContainer {
-    width: 95% !important;
-    max-width: 704px;
-    height: auto !important;
-  }
-  .lb-image {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
