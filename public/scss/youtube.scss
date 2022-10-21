@@ -1,78 +1,106 @@
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 .only-pc {
-	display: block !important;
+  display: block !important;
 }
 .only-sp {
-	display: none !important;
+  display: none !important;
 }
 .youtube-wrapper {
-	width: 95%;
-	max-width: 800px;
-	margin: auto;
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
 }
 .video-thumb {
-	width: 100%;
-	position: relative;
-	display: inline-block;
-	background-color: #000;
-	&::before {
-		content: "";
-		position: absolute;
-		width: 80px;
-		height: 80px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-image: url(../image/common/icon/btn_play.svg);
-		background-repeat: no-repeat;
-		background-size: contain;
-		z-index: 1;
-	}
-	img {
-		opacity: 0.7;
-	}
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../image/common/icon/btn_play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+  img {
+    opacity: 0.7;
+  }
 }
 @media screen and (max-width: 767px) {
-	.only-pc {
-		display: none !important;
-	}
-	.only-sp {
-		display: block !important;
-	}
-	.youtube-wrapper {
-		max-width: 315px;
-	}
-	.video-thumb {
-		&::before {
-			width: 60px;
-			height: 60px;
-		}
-	}
+  .only-pc {
+    display: none !important;
+  }
+  .only-sp {
+    display: block !important;
+  }
+  .youtube-wrapper {
+    max-width: 315px;
+  }
+  .video-thumb {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
-// モーダル
-.modaal-video-wrap {
-	//動画表示時の横幅
-	width: 90%;
-	margin: auto;
-	max-width: 960px;
-}
-/*動画表示のモーダルの余白を変更したい場合*/
+/*モーダル*/
+/*動画表示のモーダルの変更*/
 .modaal-video .modaal-inner-wrapper {
-	padding: 0;
+  width: 90%;
+  max-width: 960px;
+  height: fit-content;
+  display: inline-block;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-/*モーダルのボタンの色を変更したい場合*/
-.modaal-close:after,
-.modaal-close:before {
-	background: #ccc;
+.modaal-video-wrap {
+  margin: 0;
 }
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before {
-	background: #666;
+/*モーダルのボタンの色を変更*/
+.modaal-close {
+  width: 42px;
+  height: 33px;
+  position: absolute;
+  top: -57px;
+  right: 0px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    width: 45px;
+    height: 2px;
+    top: auto;
+    left: auto;
+    border-radius: 50vw;
+    background-color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0);
+    &::before,
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .modaal-close {
+    width: 29px;
+    height: 27px;
+    top: -37px;
+    &::before,
+    &::after {
+      width: 32px;
+    }
+  }
 }

@@ -1,161 +1,177 @@
 @font-face {
-	font-family: shin-go-r;
-	src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
+  font-family: shin-go-r;
+  src: url(../font/A-OTF-ShinGoPr6N-Regular.otf);
 }
 @font-face {
-	font-family: shin-go-m;
-	src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
+  font-family: shin-go-m;
+  src: url(../font/A-OTF-ShinGoPr6N-Medium.otf);
 }
 @font-face {
-	font-family: shin-go-db;
-	src: url(../font/A-OTF-ShinGoPr6N-DeBold.otf);
+  font-family: shin-go-db;
+  src: url(../font/A-OTF-ShinGoPr6N-DeBold.otf);
 }
 
 // ---------------------------------
 // cm - グッズ
 // ---------------------------------
 .cmpc {
-	display: block;
+  display: block;
 }
 .cmsp {
-	display: none !important;
+  display: none !important;
 }
 
 .sub-header {
-	.title {
-		width: 300px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		color: #0d2e4f;
-		font-family: vdl-gigajr;
-		font-size: 48px;
-		line-height: 2em;
-		text-align: center;
-		transform: skewX(-7deg);
-	}
-	.sh-link-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.sh-link {
-		width: 20%;
-		max-width: 250px;
-		aspect-ratio: 25/6;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: shin-go-db;
-		font-size: clamp(16px, 2vw, 24px);
-		color: #4e8465;
-		background-image: url(../image/common/btn/bg_subhd_w_pc.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		order: -1;
-		transition: 0.3s;
-		&:nth-child(2) {
-			margin-left: 4vw;
-		}
-		&:nth-child(2) {
-			color: #fff;
-			background-image: url(../image/common/btn/bg_subhd_pc.png);
-		}
-	}
-	@media screen and (max-width: 1023px) {
-		.title {
-			margin-bottom: 20px;
-			font-size: 36px;
-		}
-	}
-	@media screen and (max-width: 767px) {
-		.title {
-			margin-bottom: 15px;
-			font-size: 24px;
-		}
-		.sh-link-wrapper {
-			max-width: 400px;
-			margin: auto;
-		}
-		.sh-link {
-			width: 40%;
-			font-family: shin-go-m;
-			&:nth-child(2n) {
-				margin-left: 3vw;
-			}
-		}
-	}
+  .title {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #0d2e4f;
+    font-family: vdl-gigajr;
+    font-size: 48px;
+    line-height: 2em;
+    text-align: center;
+    transform: skewX(-7deg);
+  }
+  .sh-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sh-link {
+    width: 20%;
+    max-width: 250px;
+    aspect-ratio: 25/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: shin-go-db;
+    font-size: clamp(16px, 2vw, 24px);
+    color: #4e8465;
+    background-image: url(../image/common/btn/bg_subhd_w_pc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    order: -1;
+    transition: 0.3s;
+    &:nth-child(2) {
+      margin-left: 4vw;
+    }
+    &:nth-child(2) {
+      color: #fff;
+      background-image: url(../image/common/btn/bg_subhd_pc.png);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .title {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .title {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    .sh-link-wrapper {
+      max-width: 400px;
+      margin: auto;
+    }
+    .sh-link {
+      width: 40%;
+      font-family: shin-go-m;
+      &:nth-child(2n) {
+        margin-left: 3vw;
+      }
+    }
+  }
 }
 
 .exp {
-	margin-top: 70px;
-	text-align: center;
-	font-size: 20px;
-	font-family: shin-go-r;
-	line-height: 1.6em;
-	color: #3e3e3e;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-family: shin-go-r;
+  line-height: 1.6em;
+  color: #3e3e3e;
 }
 
 .goods-container {
-	margin-bottom: 215px;
-	.goods-list {
-		width: 94%;
-		max-width: 1123px;
-		display: flex;
-		justify-content: space-between;
-		margin: 74px auto 0;
-		color: #3e3e3e;
-	}
-	.goods {
-		width: 22.7%;
-	}
-	.goodname {
-		margin-top: 19px;
-		font-size: 20px;
-		font-family: shin-go-m;
-		line-height: 1.7em;
-	}
-	.price {
-		font-size: 20px;
-		font-family: shin-go-r;
-	}
+  margin-bottom: 215px;
+  .goods-list {
+    width: 94%;
+    max-width: 1123px;
+    display: flex;
+    justify-content: space-between;
+    margin: 74px auto 0;
+    color: #3e3e3e;
+  }
+  .goods {
+    width: 22.7%;
+  }
+  .goodname {
+    margin-top: 19px;
+    font-size: 20px;
+    font-family: shin-go-m;
+    line-height: 1.7em;
+  }
+  .price {
+    font-size: 20px;
+    font-family: shin-go-r;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-	.cmpc {
-		display: none !important;
-	}
-	.cmsp {
-		display: block !important;
-	}
-	.exp {
-		margin-top: 62px;
-		font-size: 16px;
-	}
-	.goods-container {
-		margin-bottom: 76px;
-		.goods-list {
-			width: 85%;
-			min-width: 313px;
-			max-width: 520px;
-			flex-wrap: wrap;
-		}
-		.goods {
-			width: 46.5%;
-			&:nth-child(n + 3) {
-				margin-top: 18px;
-			}
-		}
-		.goodname {
-			margin-top: 9px;
-			font-size: 14px;
-			line-height: 1.7em;
-		}
-		.price {
-			font-size: 14px;
-		}
-	}
+  .cmpc {
+    display: none !important;
+  }
+  .cmsp {
+    display: block !important;
+  }
+  .exp {
+    margin-top: 62px;
+    font-size: 16px;
+  }
+  .goods-container {
+    margin-bottom: 76px;
+    .goods-list {
+      width: 85%;
+      min-width: 313px;
+      max-width: 520px;
+      flex-wrap: wrap;
+    }
+    .goods {
+      width: 46.5%;
+      &:nth-child(n + 3) {
+        margin-top: 18px;
+      }
+    }
+    .goodname {
+      margin-top: 9px;
+      font-size: 14px;
+      line-height: 1.7em;
+    }
+    .price {
+      font-size: 14px;
+    }
+  }
 
-	.spcap {
-		margin-top: 300px;
-	}
+  .spcap {
+    margin-top: 300px;
+  }
+}
+
+/*lightroom2のカスタマイズ*/
+.lightbox {
+  top: 50% !important;
+  transform: translateY(-50%);
+  .lb-outerContainer,
+  .lb-dataContainer {
+    width: 95% !important;
+    max-width: 704px;
+    height: auto !important;
+  }
+  .lb-image {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
