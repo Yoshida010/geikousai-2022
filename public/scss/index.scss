@@ -85,9 +85,11 @@
     z-index: 1;
     overflow: hidden;
     .img-wrapper {
-      width: 51%;
-      max-width: 630px;
-      transform: translateX(-7.3%);
+      width: 58%;
+      max-width: 840px;
+      .mv-video {
+        width: 100%;
+      }
     }
   }
 
